@@ -1,0 +1,24 @@
+1：	cfgmaker  Create mrtg.cfg files 
+cfgmaker [Options] [community@]router
+
+cfgmaker -output /var/www/mrtg/172.172.1.2.mrtg.cfg public@172.172.1.2
+
+cfgmaker -output /var/www/mrtg/172.22.0.254.mrtg.cfg ruijie@172.22.0.254
+
+/usr/bin/cfgmaker --snmp-option=:::::2 -output /var/www/mrtg/172.172.1.1.mrtg.cfg public@172.172.1.1
+
+以下内容为解决，MRTG监控端口流量大于100M的交换机，数据不准确的问题所用的参考。
+
+--snmp-option=:::::2  //在cfgmaker中加入此项用于支持snmpv2.
+
+
+
+2:
+	indexmaker --output=/var/ww/html/index.html  /var/www/html/mrtg.cfg 
+	
+自动执行
+contab -e	
+[root@localhost mrtg]# crontab -l
+*/5 * * * * env LANG=C /usr/bin/mrtg /var/www/mrtg/172.172.1.1.mrtg.cfg --logging /var/log/mrtg.log
+*/5 * * * * env LANG=C /usr/bin/mrtg /var/www/mrtg/172.172.1.2.mrtg.cfg --logging /var/log/mrtg.log
+[root@localhost mrtg]# 
