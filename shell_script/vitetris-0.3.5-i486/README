@@ -1,0 +1,110 @@
+VITETRIS - Tetris clone by Victor Nilsson
+
+Homepage: http://victornils.net/tetris
+
+Rotation, scoring, levels and speed should resemble the early Tetris games by
+Nintendo, with the addition of a short lock delay which makes it possible to
+play at higher levels.  (It does not make it possible to prevent the piece
+from ever locking by abusing lock delay resets.)
+
+BUILD AND INSTALL
+-----------------
+
+To build just run:
+./configure && make
+
+A single executable "tetris" should have been created, which may be moved
+anywhere.
+
+If anything goes wrong make sure you have basic development tools installed.
+There are no required library dependencies (except libc).
+
+For build options type:
+./configure help
+
+If you build with Xlib the game will pause automatically when your terminal
+window loses focus.  It will also handle terminal resizing.
+
+Game options and highscores are saved in .vitetris in your user home dir.
+
+If the file /var/games/vitetris-hiscore exists and is readable, it is used as
+a system-wide highscore file.  Highscores are always saved in .vitetris still,
+merged with new scores (from other users) read from the system-wide file.
+
+If you wish to change these filenames, look for CONFIG_FILENAME and
+HISCORE_FILENAME in file.h.
+
+HOW TO PLAY
+-----------
+
+To navigate in the menus, use the cursor keys, ENTER to proceed (or leave
+a menu), and ESC to go back.
+
+The first thing you want to do if you have a white background is to enter
+"Options" and set "Term BG" to "white" (press right).
+
+To change key bindings, go to "Input Setup".  To the left are keys used in
+menus, to the right in-game keys.  Press ENTER to set a key, press ENTER again
+to clear or reset to default, or press ESC to cancel.
+
+If not explicitly set, the following in-game keys depend on some other key
+binding (e.g. if UP is used for "Up", it is also used for "Rotate"):
+
+	 Rotate  - Up
+	 Rot cw  - A
+	 Rot acw - B
+	Softdrop - Dwn
+
+"Rot cw" means "Rotate clockwise" and "acw" anticlockwise.
+
+To pause in a single-player game, press P or ENTER.  Another special key is Q,
+which quits immediatelly (be careful).
+
+The display will be adjusted to the size of your terminal.  There are three
+height modes: 20, 24 and 25.  If your terminal size is not detected, you can
+set the width and height with command-line options, for example:
+./tetris width=35 height=20
+
+You can also hide the Top Scores or tetrominos statistics this way.
+
+To see a list of all command-line options, type:
+./tetris help
+
+FAQ
+---
+
+1. Does it run on Windows?
+
+Not really.  It works under cygwin, but the easiest way to play from a Windows
+computer is probably to run it remotely using ssh, e.g. with PuTTY.
+
+2. Why does the piece not move faster when I hold down a key?
+
+As only key-press events are read, this depends on your keyboard
+configuration.  To change the auto-repeat rate under X, run:
+xset r rate DELAY RATE
+
+DELAY is the number of milliseconds before auto-repeat starts (e.g. 150), RATE
+is the number of repeats per second (e.g. 30).
+
+On the console, kbdrate may be used:
+kbdrate -d DELAY -r RATE
+
+3. The "vi" in vitetris is for the vi editor, right?
+
+I never thought about it that way until I got this question.  Sure, it is all
+written in Vim.  But those two first letters are from my first name.
+(Originally I thought about using a name with "vt" in it.)
+
+CREDITS
+-------
+
+The original Tetris game was designed and programmed by Alexey Pajitnov in
+1985.
+
+The wiki at tetrisconcept.com has been a valuable resource.
+
+tt (Tetris for Terminals) was written by Mike Taylor in 1989.
+
+Testers: Hugo Fernbom and Andreas Carlsson (who has also hosted my files on
+his wardrobe server).

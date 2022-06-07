@@ -1,0 +1,45 @@
+Version 0.3.5
+* Start height of random blocks added.
+* Improved menus.
+* Command-line option "-nomenu" added, which skips menus.
+* Terminal resizing better handled.
+* Fixed time delays in slow terminals (when printing is slow). This problem
+  was observed under cygwin/Win 98 on a 400-MHz Pentium II.
+* Drops are ignored when piece is at its spawn position, to prevent
+  double-drop mistakes when auto-repeat is fast (or otherwise).
+* README file changed.
+
+Version 0.3.4
+* Fixed missing flush of output when winner is shown in 2-player mode.
+* SIGWINCH signal is now handled, which means that terminal resizing can be
+  detected without using Xlib.
+* The position line under Top Scores now shows up when score qualifies for the
+  highscore list.
+
+Version 0.3.3
+* Fixed bugs that cause problems under cygwin and possibly under other
+  systems.
+* Fixed bug in 1-player mode which caused keys with no action to drop piece
+  one row.
+* Fixed detection of X window in gnome-terminal.
+* Output buffering is now used.
+* Interrupt signal is now handled.
+* Various other small fixes.
+* Two-clause BSD-style licence added.
+
+Version 0.3.2
+* Fixed bug that would cause freeze when softdrop key is held down and
+  softdrop speed is set to 20 (discovered by Andreas Carlsson). This bug is
+  not present in version 0.2.x.
+* Fixed bug introduced in 0.3.1 which causes term bg to be set to white on
+  every startup.
+* New tt-bg mode for drawing blocks added.
+
+Version 0.3.1
+* When a horizontal move fails in levels where fall time < lock delay, it is
+  performed again when piece is moved down by gravity.
+* tt mode added - blocks can be drawn as in Tetris for Terminals.
+* Terminal options can be specified on command line.
+* Command-line option "-hiscore" can be used to merge highscore files.
+* Listing of command-line options with "-help" added.
+* Some code cleanup.

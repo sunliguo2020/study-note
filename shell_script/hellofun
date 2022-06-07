@@ -1,0 +1,10 @@
+#!/bin/bash
+function hello
+{
+echo "hellofun"
+echo
+return 22222
+}
+hello
+val=a
+echo $val

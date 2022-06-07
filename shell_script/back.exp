@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f 
+#需要执行的rsync备份脚本
+spawn /var/test.sh
+#等待出现 password:的提示，然后发送密码
+expect "password:" { send "sun#gaoTM\n" }
+#不知道是啥意思，没有这句还不行
+expect ".*\@.*#"
