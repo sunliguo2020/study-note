@@ -1,0 +1,1210 @@
+611办公室接在249.252 的9号端口上。地址201-207.   刘铮:249.201 mac:00:14:2A:52:E6:49
+
+光连接器的接头类型      光纤的种类       光接口类型   三个概念的区分
+
+12芯单模光缆
+4芯多模光缆
+墙式光纤配线盒
+机架式光纤接续箱
+单模光纤耦合器
+多模光纤耦合器
+单模st光纤头
+多模st光纤头
+单模sc－st跳线（2米）
+多模sc－st跳线（2米）
+1.5米机柜
+壁挂机柜
+
+
+按传输模式分 
+按光在光纤中的传输模式可分为：单模光纤和多模光纤。 
+
+多模光纤的纤芯直径为50~62.5μm，包层外直径125μm，单模光纤的纤芯直径为8.3μm，包层外直径125μm。光纤的工作波长有短波长0.85μm、长波长1.31μm和1.55μm。光纤损耗一般是随波长加长而减小，0.85μm的损耗为2.5dB/km,1.31μm的损耗为0.35dB/km，1.55μm的损耗为0.20dB/km，这是光纤的最低损耗，波长1.65μm以上的损耗趋向加大。由于OHˉ的吸收作用，0.90~1.30μm和1.34~1.52μm范围内都有损耗高峰，这两个范围未能充分利用。80年代起，倾向于多用单模光纤，而且先用长波长1.31μm。 
+
+多模光纤 
+多模光纤(Multi Mode Fiber)：中心玻璃芯较粗(50或62.5μm)，可传多种模式的光。但其模间色散较大，这就限制了传输数字信号的频率，而且随距离的增加会更加严重。例如：600MB/KM的光纤在2KM时则只有300MB的带宽了。因此，多模光纤传输的距离就比较近，一般只有几公里。 
+
+单模光纤 
+单模光纤(Single Mode Fiber)：中心玻璃芯很细(芯径一般为9或10μm)，只能传一种模式的光。因此，其模间色散很小，适用于远程通讯，但还存在着材料色散和波导色散，这样单模光纤对光源的谱宽和稳定性有较高的要求，即谱宽要窄，稳定性要好。后来又发现在1.31μm波长处，单模光纤的材料色散和波导色散一为正、一为负，大小也正好相等。这就是说在1.31μm波长处，单模光纤的总色散为零。从光纤的损耗特性来看，1.31μm处正好是光纤的一个低损耗窗口。这样，1.31μm波长区就成了光纤通信的一个很理想的工作窗口，也是现在实用光纤通信系统的主要工作波段。1.31μm常规单模光纤的主要参数是由国际电信联盟ITU－T在G652建议中确定的，因此这种光纤又称G652光纤。
+
+单模传输与多模传输
+
+　　　在光纤通信理论中，光纤有单模、多模之分，区别在于：
+
+　　　1. 单模光纤芯径小（10m m左右），仅允许一个模式传输，色散小，工作在长波长（1310nm和1550nm），与光器件的耦合相对困难
+
+　　　2. 多模光纤芯径大（62.5m m或50m m），允许上百个模式传输，色散大，工作在850nm或1310nm。与光器件的耦合相对容易
+
+　　　而对于光端模块来讲，严格的说并没有单模、多模之分。所谓单模、多模模块，指的是光端模块采用的光器件与何种光纤配合能获得最佳传输特性。
+
+　　　一般有以下区别：
+
+　　　1. 单模模块一般采用LD或光谱线较窄的LED作为光源，耦合部件尺寸与单模光纤配合好，使用单模光纤传输时能传输较远距离
+
+　　　2. 多模模块一般采用价格较低的LED作为光源，耦合部件尺寸与多模光纤配合好。
+光纤是新一代的传输介质，与铜质介质相比，光纤具有一些明显的优势。因为光纤不会向外界辐射电子信号，所以使用光纤介质的网络无论是在安全性，可靠性还是网络性能方面都有了很大的提高。 光纤传输的带宽大大超出铜质线缆， 而且光纤支持的最大连接距离达两公里以上。是组建较大规模网络的必然选择。现在有两种不同类型的光纤，分别是单模光纤和多模光纤。（所谓“模”就是指以一定的角度进入光纤的一束光线）。多模光纤使用发光二极管（LED）作为发光设备，而单模光纤使用的则是激光二极管（LD）。 多模光纤允许多束光线穿过光纤。因为不同光线进入光纤的角度不同，所以到达光纤末端的时间也不同。这就是我们通常所说的模色散。色散从一定程度上限制了多模光纤所能实现的带宽和传输距离。正是基于这种原因，多模光纤一般被用于同一办公楼或距离相对较近的区域内的网络连接。单模光纤只允许一束光线穿过光纤。因为只有一种模态，所以不会发生色散。使用单模光纤传递数据的质量更高，传输距离更长。单模光纤通常被用来连接办公楼之间或地理分散更广的网络。
+
+
+桥架
+
+480T:
+	all except used below         	default  	202.194.240.68/26(gateway/netmask)
+	1 2 3 4  			center   	202.194.240.62/26
+	11 12 15 			office   	202.194.254.254/24
+	9 10 14  			floor6   	202.194.252.254/23
+
+
+7508:
+VID  VLAN Name      Used for                             Ports                 
+---  -------------  ------------------------------------ ----------------------
+1    DEFAULT        IP,IPX,ATALK,DEC,SNA,IPv6,L2         gi.1.(3-5)
+2    2              IP                                   et.1.1, gi.2.(1-3)
+3    3              IP                                   gi.1.2
+4    4              IP                                   gi.2.(4-8)
+
+
+
+
+Routes belonging to Static : 
+
+Destination          Gateway              Owner     Netif        
+-----------          -------              -----     -----        
+default              202.194.240.69       Static    vlan3        
+202.194.240.0/26     202.194.240.68       Static    vlan3        
+202.194.241.0/24     202.194.240.69       Static    vlan3        
+202.194.242.0/24     202.194.240.69       Static    vlan3        
+202.194.243.0/24     202.194.240.69       Static    vlan3        
+202.194.244.0/24     202.194.240.69       Static    vlan3        
+202.194.245.0/24     202.194.240.69       Static    vlan3        
+202.194.246.0/24     202.194.240.65       Static    vlan3        
+202.194.247.0/24     202.194.240.66       Static    vlan3        
+202.194.251.0/24     202.194.240.70       Static    vlan3        
+202.194.252.0/24     202.194.240.68       Static    vlan3        
+202.194.254.0/24     202.194.240.68       Static    vlan3     
+
+
+
+Directly connected Routes : 
+
+Destination          Gateway              Owner     Netif        
+-----------          -------              -----     -----        
+127.0.0.1            127.0.0.1            -         lo0          
+202.194.240.64/26    directly connected   -         vlan3        
+202.194.249.0/24     directly connected   -         vlan4        
+202.194.250.0/24     directly connected   -         vlan2  
+
+
+Total ARP entries: 76
+----------------|--------------------------|------------------------|-----------
+     IP Address |     MAC Address          |     Interface[~Port]   |     Flags 
+----------------|--------------------------|------------------------|-----------
+202.194.240.65  | 00:0D:55:40:01:43        | vlan3~gi.1.2           |           
+202.194.240.66  | 02:D0:B7:EE:95:10        | vlan3~gi.1.2           |           
+202.194.240.67  | 00:02:85:22:A3:A0        | lo0                    | Static    
+202.194.240.68  | 00:D0:B7:39:37:00        | vlan3~gi.1.2           |           
+202.194.240.69  | 00:00:00:00:00:06        | vlan3~gi.1.2           |           
+202.194.240.70  | 00:E0:FC:12:6F:35        | vlan3~gi.1.2           |           
+202.194.240.86  | 00:0E:0C:05:A0:1F        | vlan3~gi.1.2           |           
+202.194.240.87  | 00:04:23:AF:95:85        | vlan3~gi.1.2           |           
+202.194.240.88  | 00:C0:9F:0C:8C:3C        | vlan3~gi.1.2           |           
+202.194.240.100 | 00:E0:FC:4F:0E:F0        | vlan3~gi.1.2           |           
+202.194.240.110 | 00:0C:76:52:AD:AC        | vlan3~gi.1.2           |           
+202.194.240.119 | 00:0A:E6:F3:8C:7E        | vlan3~gi.1.2           |           
+202.194.240.125 | 00:14:85:F4:C5:8D        | vlan3~gi.1.2           |           
+202.194.240.126 | 00:14:85:F4:C5:8D        | vlan3~gi.1.2           |           
+202.194.249.1   | 00:02:85:22:A3:A0        | lo0                    | Static    
+202.194.249.21  | 00:0D:87:71:B6:3A        | vlan4~gi.2.7           |           
+202.194.249.25  | 00:0A:EB:CE:1E:9D        | vlan4~gi.2.7           |           
+202.194.249.30  | 00:0A:E6:32:A4:08        | vlan4~gi.2.4           |           
+202.194.249.32  | 00:10:5C:C0:B9:0D        | vlan4~gi.2.8           |           
+202.194.249.34  | 4C:00:10:3A:70:E6        | vlan4~gi.2.5           |           
+202.194.249.37  | 00:D0:F8:39:3C:A0        | vlan4~gi.2.8           |           
+202.194.249.45  | 00:0D:87:88:2F:14        | vlan4~gi.2.4           |           
+202.194.249.49  | 00:0D:87:59:EF:DE        | vlan4~gi.2.5           |           
+202.194.249.58  | 00:10:5C:C2:94:A0        | vlan4~gi.2.8           |           
+202.194.249.61  | 00:0A:EB:DC:F2:D3        | vlan4~gi.2.6           |           
+202.194.249.64  | 00:10:5C:E2:7D:6D        | vlan4~gi.2.6           |           
+202.194.249.65  | 00:0A:EB:DC:F2:7B        | vlan4~gi.2.7           |           
+202.194.249.95  | 00:14:2A:0F:2F:CD        | vlan4~gi.2.5           |           
+202.194.249.101 | 00:0D:87:2D:9B:4F        | vlan4~gi.2.5           |           
+202.194.249.105 | 00:0C:76:DF:DD:F3        | vlan4~gi.2.6           |           
+202.194.249.110 | 00:11:5B:CE:50:FD        | vlan4~gi.2.7           |           
+202.194.249.119 | 00:10:5C:F3:88:77        | vlan4~gi.2.5           |           
+202.194.249.123 | 00:E0:4C:3A:49:46        | vlan4~gi.2.5           |           
+202.194.249.129 | 00:11:5B:69:08:AC        | vlan4~gi.2.7           |           
+202.194.249.140 | 00:14:2A:52:ED:3C        | vlan4~gi.2.7           |           
+202.194.249.146 | 00:11:09:10:F9:B8        | vlan4~gi.2.7           |           
+202.194.249.150 | 00:07:E9:BC:82:70        | vlan4~gi.2.4           |           
+202.194.249.153 | 00:11:5B:43:14:1F        | vlan4~gi.2.4           |           
+202.194.249.154 | Unresolved               | vlan4                  |           
+202.194.249.176 | 00:0D:87:36:E0:F3        | vlan4~gi.2.8           |           
+202.194.249.177 | 00:90:81:81:90:2E        | vlan4~gi.2.7           |           
+202.194.249.179 | 00:15:58:36:14:6B        | vlan4~gi.2.8           |           
+202.194.249.183 | 00:20:ED:62:AA:DB        | vlan4~gi.2.4           |           
+202.194.249.201 | 00:14:2A:52:E6:49        | vlan4~gi.2.7           |           
+202.194.249.207 | 00:13:D3:12:07:A8        | vlan4~gi.2.7           |           
+202.194.249.211 | 00:14:2A:41:AE:84        | vlan4~gi.2.7           |           
+202.194.249.212 | 00:14:2A:3C:59:A8        | vlan4~gi.2.7           |           
+202.194.249.216 | 00:13:D3:5C:D3:91        | vlan4~gi.2.7           |           
+202.194.249.221 | Unresolved               | vlan4                  |           
+202.194.249.234 | 00:14:2A:03:18:CD        | vlan4~gi.2.8           |           
+202.194.249.235 | 00:14:2A:17:D8:3C        | vlan4~gi.2.4           |           
+202.194.249.247 | 00:0C:76:DC:F7:1E        | vlan4~gi.2.5           |           
+202.194.249.249 | 00:11:5B:1F:58:31        | vlan4~gi.2.5           |           
+202.194.249.250 | 00:30:F1:78:E8:21        | vlan4~gi.2.4           |           
+202.194.249.251 | 00:30:F1:78:F3:A1        | vlan4~gi.2.6           |           
+202.194.249.253 | 00:30:F1:78:CA:E1        | vlan4~gi.2.5           |           
+202.194.249.254 | 00:30:F1:78:E6:E1        | vlan4~gi.2.8           |           
+202.194.250.1   | 00:02:85:22:A3:A0        | lo0                    | Static    
+202.194.250.10  | 00:30:48:21:9D:0E        | vlan2~gi.2.3           |           
+202.194.250.12  | 00:04:23:B1:48:AF        | vlan2~gi.2.3           |           
+202.194.250.21  | 00:0E:7B:9F:0A:0C        | vlan2~gi.2.2           |           
+202.194.250.24  | 00:14:78:C2:55:D7        | vlan2~gi.2.3           |           
+202.194.250.70  | 00:11:5B:11:5F:3A        | vlan2~gi.2.2           |           
+202.194.250.117 | 00:10:5C:D8:56:E0        | vlan2~gi.2.2           |           
+202.194.250.148 | 00:13:D3:2B:8C:F9        | vlan2~gi.2.2           |           
+202.194.250.153 | 00:10:5C:FE:FC:CE        | vlan2~gi.2.1           |           
+202.194.250.194 | 00:30:48:21:9D:0E        | vlan2~gi.2.3           |           
+202.194.250.200 | 00:0D:60:D1:67:BE        | vlan2~gi.2.1           |           
+202.194.250.202 | 00:13:D3:5B:BF:15        | vlan2~gi.2.3           |           
+202.194.250.210 | Unresolved               | vlan2                  |           
+202.194.250.215 | 00:10:5C:D8:51:F5        | vlan2~gi.2.2           |           
+202.194.250.231 | 00:10:5C:F8:6F:25        | vlan2~gi.2.3           |           
+202.194.250.242 | 00:11:09:13:1B:B3        | vlan2~gi.2.2           |           
+202.194.250.244 | 00:11:5B:59:E3:41        | vlan2~gi.2.3           |           
+202.194.250.248 | 00:D0:F8:38:AC:89        | vlan2~gi.2.2           |           
+202.194.250.254 | 00:30:F1:78:F9:A1        | vlan2~gi.2.3         
+
+
+
+
+办公楼二层交换机：
+show arp vlan 4
+
+ IP ARP table - VLAN 4
+
+  IP Address      MAC Address       Type   
+  --------------- ----------------- -------
+  202.194.249.1   000285-22a3a0     dynamic
+
+show arp vlan 2
+
+ IP ARP table - VLAN 2
+
+  IP Address      MAC Address       Type   
+  --------------- ----------------- -------
+  202.194.250.1   000285-22a3a0     dynamic
+
+
+
+
+202.194.240.69
+show vlan detailed 
+VLAN                                      Group    AFT
+ ID     VLAN Name                          ID     Index   Learned
+-----   -------------------------------   -----   -----   -------
+1       Default                           2       1         -
+   Switch Ports:3/7,3/8,3/9,3/10,3/11,3/12,4/1,
+                4/2,4/3,4/4,5/1,5/2,5/3,5/4
+2       toshanda                          4       11        -
+   Switch Ports:3/1,3/2
+3       tosanlian                         5       12        -
+   Switch Ports:3/5,3/6
+4       totushuguan                       6       13        -
+   Switch Ports:3/3,3/4,4/5
+6       toinsideswitch                    7       14        -
+   Switch Ports:3/13,3/14,3/15,3/16,3/17,3/18,3/19,
+                3/20,3/21,3/22,3/23,3/24,4/6,4/7,
+                4/8,5/5,5/6,5/7,5/8
+4097    Discard                           3       3         -
+   Switch Ports:1/1
+Sdie-Core# show vlan 
+VLAN                                      Group    AFT
+ ID     VLAN Name                          ID     Index   Learned
+-----   -------------------------------   -----   -----   -------
+1       Default                           2       1         -
+2       toshanda                          4       11        -
+3       tosanlian                         5       12        -
+4       totushuguan                       6       13        -
+6       toinsideswitch                    7       14        -
+4097    Discard                           3       3         -
+
+
+
+show module 
+Module  Model Number          Base Type      Ports  Fabric Ports
+------  --------------------  -------------  -----  -------------------
+1       M8000R-SUP            Supervisor     0      1/1, 1/FORE        
+        Name                             Notes                  
+        -------------------------------  ------------------------------
+        Module 1                                                       
+Module  Model Number          Base Type      Ports  Fabric Ports
+------  --------------------  -------------  -----  -------------------
+3       M8024R-100TX          Fast Ethernet  24                        
+        Name                             Notes                  
+        -------------------------------  ------------------------------
+        Module 3                                                       
+Module  Model Number          Base Type      Ports  Fabric Ports
+------  --------------------  -------------  -----  -------------------
+4       M8008R-1000GB         Gigabit        8                         
+        Name                             Notes                  
+        -------------------------------  ------------------------------
+        Module 4                                                       
+Module  Model Number          Base Type      Ports  Fabric Ports
+------  --------------------  -------------  -----  -------------------
+5       M8008R-1000GB         Gigabit        8                         
+        Name                             Notes                  
+        -------------------------------  ------------------------------
+        Module 5            
+
+
+show arp（static改为dynamic可以在config模式下，用no arp命令） 
+   Address         MAC Address          I/F         Type     TTL   
+--------------- ----------------- ---------------- ------- --------
+202.194.240.64  ff:ff:ff:ff:ff:ff toinsideswitch   Local   Not Aged
+202.194.240.65  00:0d:55:40:01:43 toinsideswitch   Dynamic 14398  
+202.194.240.66  02:d0:b7:ee:95:10 toinsideswitch   Dynamic 14400  
+202.194.240.67  00:02:85:22:a3:a0 toinsideswitch   Dynamic 14399  
+202.194.240.68  00:d0:b7:39:37:00 toinsideswitch   Dynamic 14400  
+202.194.240.69  00:00:00:00:00:06 toinsideswitch   Local   Not Aged
+202.194.240.70  00:e0:fc:12:6f:35 toinsideswitch   Dynamic 14399  
+202.194.240.75  00:90:fb:0a:47:2a toinsideswitch   Dynamic 14321  
+202.194.240.86  00:0e:0c:05:a0:1f toinsideswitch   Dynamic 13816  
+202.194.240.87  00:04:23:af:95:85 toinsideswitch   Dynamic 14093  
+202.194.240.88  00:c0:9f:0c:8c:3c toinsideswitch   Dynamic 14326  
+202.194.240.90  00:04:23:b8:2a:8e toinsideswitch   Dynamic 14287  
+202.194.240.94  00:90:0b:05:27:af toinsideswitch   Dynamic 14368  
+202.194.240.95  00:90:0b:05:27:af toinsideswitch   Dynamic 13299  
+202.194.240.97  00:0b:db:94:a7:31 toinsideswitch   Dynamic 13778  
+202.194.240.99  00:0b:db:94:a7:31 toinsideswitch   Dynamic 3137   
+202.194.240.100 00:e0:fc:4f:0e:f0 toinsideswitch   Dynamic 14400  
+202.194.240.110 00:0c:76:52:ad:ac toinsideswitch   Dynamic 7825   
+202.194.240.114 00:0d:87:2c:4a:51 toinsideswitch   Dynamic 13847  
+202.194.240.118 00:07:e9:48:71:98 toinsideswitch   Dynamic 14221  
+202.194.240.119 00:0a:e6:f3:8c:7e toinsideswitch   Dynamic 14239  
+202.194.240.120 00:0d:87:12:be:0d toinsideswitch   Dynamic 14234  
+--More--
+202.194.240.121 00:0d:87:2b:c5:33 toinsideswitch   Dynamic 14022  
+202.194.240.125 00:14:85:f4:c5:8d toinsideswitch   Dynamic 13986  
+202.194.240.127 ff:ff:ff:ff:ff:ff toinsideswitch   Local   Not Aged
+202.194.96.60   ff:ff:ff:ff:ff:ff toshanda         Local   Not Aged
+202.194.96.61   00:e0:b1:47:d8:88 toshanda         Dynamic 14397  
+202.194.96.62   00:00:00:00:00:03 toshanda         Local   Not Aged
+202.194.96.63   ff:ff:ff:ff:ff:ff toshanda         Local   Not Aged
+218.98.166.0    ff:ff:ff:ff:ff:ff tosanlian        Local   Not Aged
+218.98.166.1    00:07:50:b5:8f:c2 tosanlian        Dynamic 14400  
+218.98.166.62   00:00:00:00:00:04 tosanlian        Local   Not Aged
+218.98.166.63   ff:ff:ff:ff:ff:ff tosanlian        Local   Not Aged
+202.194.245.0   ff:ff:ff:ff:ff:ff totushuguan      Local   Not Aged
+202.194.245.1   00:90:27:39:d7:65 totushuguan      Dynamic 14085  
+202.194.245.2   02:90:27:0b:ba:bc totushuguan      Dynamic 10599  
+202.194.245.3   00:d0:b7:25:cb:a3 totushuguan      Dynamic 12605  
+202.194.245.5   00:20:ed:5e:24:96 totushuguan      Dynamic 10153  
+202.194.245.25  00:0c:76:68:cc:76 totushuguan      Dynamic 9242   
+202.194.245.254 00:00:00:00:00:05 totushuguan      Local   Not Aged
+202.194.245.255 ff:ff:ff:ff:ff:ff totushuguan      Local   Not Aged
+10.2.2.0        ff:ff:ff:ff:ff:ff Internal-Network Local   Not Aged
+10.2.2.1        00:00:00:00:03:ea Internal-Network Local   Not Aged
+10.2.2.31       ff:ff:ff:ff:ff:ff Internal-Network Local   Not Aged  
+
+
+
+
+Sdie-Core# show ip route 
+   Network            Mask           I/F       Next-Hop Addr  Cost TTL Source 
+--------------- --------------- ------------- --------------- ---- --- -------
+0.0.0.0         0.0.0.0         toshanda     202.194.96.61      1 n/a Stat-Lo
+10.2.2.0        255.255.255.224 Internal-Network   <local>         1 n/a Local  
+58.192.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+58.194.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+58.196.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+58.200.0.0      255.248.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+59.64.0.0       255.252.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+59.68.0.0       255.252.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+59.72.0.0       255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+59.74.0.0       255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+59.76.0.0       255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+59.77.0.0       255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+59.78.0.0       255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+125.216.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+125.218.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+125.222.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+162.105.0.0     255.255.255.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+166.111.0.0     255.255.255.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+202.4.128.0     255.255.224.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+202.38.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.38.64.0     255.255.224.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+202.38.192.0    255.255.192.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+202.112.0.0     255.255.192.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+
+202.112.64.0    255.255.192.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+202.112.128.0   255.255.128.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+202.113.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.114.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.115.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.116.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.117.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.118.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.119.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.120.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.127.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.192.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.194.15.0    255.255.255.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+202.194.96.60   255.255.255.252 toshanda        <local>         1 n/a Local  
+202.194.240.0   255.255.255.192 toinsideswitch202.194.240.68     1 n/a Stat-Lo
+202.194.240.64  255.255.255.192 toinsideswitch   <local>         1 n/a Local  
+202.194.241.0   255.255.255.0   tosanlian    218.98.166.1       1 n/a Stat-Lo
+202.194.242.0   255.255.255.0   tosanlian    218.98.166.1       1 n/a Stat-Lo
+202.194.243.0   255.255.255.0   tosanlian    218.98.166.1       1 n/a Stat-Lo
+202.194.244.0   255.255.255.0   tosanlian    218.98.166.1       1 n/a Stat-Lo
+202.194.245.0   255.255.255.0   totushuguan     <local>         1 n/a Local  
+202.194.246.0   255.255.255.0   toinsideswitch202.194.240.65     1 n/a Stat-Lo
+202.194.247.0   255.255.255.0   toinsideswitch202.194.240.66     1 n/a Stat-Lo
+202.194.249.0   255.255.255.0   toinsideswitch202.194.240.67     1 n/a Stat-Lo
+202.194.250.0   255.255.255.0   toinsideswitch202.194.240.67     1 n/a Stat-Lo
+
+202.194.251.0   255.255.255.0   toinsideswitch202.194.240.70     1 n/a Stat-Lo
+202.194.252.0   255.255.254.0   toinsideswitch202.194.240.68     1 n/a Stat-Lo
+202.194.254.0   255.255.255.0   toinsideswitch202.194.240.68     1 n/a Stat-Lo
+202.194.255.0   255.255.255.0   toinsideswitch202.194.240.100    1 n/a Stat-Lo
+202.195.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.196.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.198.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.200.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.202.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.204.0.0     255.252.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+202.205.11.0    255.255.255.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+210.25.0.0      255.255.128.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+210.25.128.0    255.255.192.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+210.26.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+210.28.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+210.30.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+210.31.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+210.32.0.0      255.252.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+210.36.0.0      255.252.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+210.40.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+210.42.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+210.44.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+210.46.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.64.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.66.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+
+211.67.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.68.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.69.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.70.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.71.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.80.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.81.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.82.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.83.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.84.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+211.86.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+218.98.166.0    255.255.255.192 tosanlian       <local>         1 n/a Local  
+218.192.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+218.193.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+218.194.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+218.195.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+218.196.0.0     255.252.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.216.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.218.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.220.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.221.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.222.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.224.0.0     255.252.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.224.0.0     255.255.128.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+219.224.128.0   255.255.192.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+
+219.224.192.0   255.255.192.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+219.226.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.227.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.228.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.230.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.242.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+219.243.0.0     255.255.128.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+219.243.128.0   255.255.192.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+219.243.192.0   255.255.192.0   toshanda     202.194.96.61      1 n/a Stat-Lo
+219.255.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.16.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.18.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.20.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.22.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.23.0.0      255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.24.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.26.0.0      255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.28.0.0      255.252.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.192.0.0     255.252.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.196.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.198.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.199.0.0     255.255.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.200.0.0     255.252.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.204.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo
+222.206.0.0     255.254.0.0     toshanda     202.194.96.61      1 n/a Stat-Lo     
+
+
+
+
+Sdie-Core#  show running-config 
+Current configuration:
+!
+! Avaya Cajun Switch Agent v5.4.5 Cajun Switch
+!
+set vlan 2 name "toshanda"
+set vlan 3 name "tosanlian"
+set vlan 4 name "totushuguan" init-HT-size 2048
+set vlan 6 name "toinsideswitch"
+set vlan auto 4095 name "Internal-Network"
+!
+!
+custom-access-type "englishonline"
+!
+hostname "Sdie-Core"
+snmp-server location "SDIE-NIC"
+snmp-server contact "System Administrator"
+clock timezone "bei"
+clock summer-time recurring 1 Sunday Apr 02:00 5 Sunday Oct 02:00 60
+username "root" password encrypted-type1 "$sybA.DP1mGZf1JUsWNoNJ/" access-type a
+dmin
+username "diag" password encrypted-type1 "$PQO.vGxkvDHkEDCJ2YsoD1" access-type r
+ead-write
+username "manuf" password encrypted-type1 "$seHFLP9b16m2v/534WCk90" access-type 
+read-write
+--More--
+snmp-server community encrypted "cHVibGlj" ro normal
+snmp-server community encrypted "cHJpdmF0ZQ==" rw normal
+!
+logging history rip
+!
+logging protocol event rip info
+logging protocol event rip trace
+logging protocol event rip debug
+!
+set utilization monitoring cpu
+set utilization monitoring forwarding-engine
+!
+set console type tty
+set console baud 9600
+set console flowcontrol xon/xoff
+set console databits 8
+set console parity none
+set console stopbits 1
+no set console initcmd 
+!
+set temperature cpu-sensor shutdown 100
+set temperature cpu-sensor warning upper 85
+!
+!
+! Begin Module 1 configuration
+--More--
+module 1 begin type M8500_SUP
+module 1 end
+! End Module 1 configuration
+!
+! Begin Module 3 configuration
+module 3 begin type M8524_100TX
+set port flow-control 3/1 enable
+set port flow-control 3/2 enable
+set port flow-control 3/3 enable
+set port flow-control 3/4 enable
+set port flow-control 3/5 enable
+set port flow-control 3/6 enable
+set port flow-control 3/7 enable
+set port flow-control 3/8 enable
+set port flow-control 3/9 enable
+set port flow-control 3/10 enable
+set port flow-control 3/11 enable
+set port flow-control 3/12 enable
+set port flow-control 3/13 enable
+set port rate-limit-mode 3/13 enable-include-known-multicasts
+set port rate-limit-rate 3/13 80%
+set port flow-control 3/14 enable
+set port rate-limit-rate 3/16 1%
+set port flow-control 3/17 enable
+set port flow-control 3/18 enable
+--More--
+set port flow-control 3/19 enable
+set port flow-control 3/20 enable
+set port flow-control 3/21 enable
+set port flow-control 3/22 enable
+set port flow-control 3/23 enable
+set port flow-control 3/24 enable
+set port vlan 3/1 2
+set port vlan 3/2 2
+set port vlan 3/3 4
+set port vlan 3/4 4
+set port vlan 3/5 3
+set port vlan 3/6 3
+set port vlan 3/13 6
+set port vlan 3/14 6
+set port vlan 3/15 6
+set port vlan 3/16 6
+set port vlan 3/17 6
+set port vlan 3/18 6
+set port vlan 3/19 6
+set port vlan 3/20 6
+set port vlan 3/21 6
+set port vlan 3/22 6
+set port vlan 3/23 6
+set port vlan 3/24 6
+module 3 end
+--More--
+! End Module 3 configuration
+!
+! Begin Module 4 configuration
+module 4 begin type M8508_1000
+set port flow-control 4/1 enable
+set port flow-control 4/2 enable
+set port flow-control 4/3 enable
+set port flow-control 4/4 enable
+set port flow-control 4/5 enable
+set port flow-control 4/6 enable
+set port flow-control 4/7 enable
+set port flow-control 4/8 enable
+set port vlan 4/5 4
+set port vlan 4/6 6
+set port vlan 4/7 6
+set port vlan 4/8 6
+module 4 end
+! End Module 4 configuration
+!
+! Begin Module 5 configuration
+module 5 begin type M8508_1000
+set port flow-control 5/1 enable
+set port flow-control 5/2 enable
+set port flow-control 5/3 enable
+set port pace-priority-mode 5/3 enable
+--More--
+set port flow-control 5/4 enable
+set port flow-control 5/5 enable
+set port flow-control 5/6 enable
+set port flow-control 5/7 enable
+set port flow-control 5/8 enable
+set port default-priority 5/1 0
+set port default-priority 5/2 0
+set port default-priority 5/3 7
+set port ignore-tag-priority 5/3 on
+set port use-diffserv 5/3 on
+set port mask-diffserv 5/3 on
+set port default-priority 5/4 0
+set port vlan 5/5 6
+set port vlan 5/6 6
+set port vlan 5/7 6
+set port vlan 5/8 6
+module 5 end
+! End Module 5 configuration
+!
+cpu_redundancy mac-prefix 00:00:00:00:03:ff
+!
+ip multicast-routing
+ip unicast route-cache hash-mode sa-da
+ip unicast route-cache max-size 30000
+!
+--More--
+ip domain-lookup
+ip name-server 202.194.240.88 202.102.128.68 
+!
+interface "Internal-Network"
+ip address 10.2.2.1 255.255.255.224
+!
+interface "Console"
+ip address 192.168.0.1 255.255.255.0
+ip vlan Ethernet-Console
+ip routing-mode mgmt_only
+!
+interface "toinsideswitch"
+ip address 202.194.240.69 255.255.255.192
+ip vlan name "toinsideswitch"
+!
+interface "toshanda"
+ip address 202.194.96.62 255.255.255.252
+ip vlan name "toshanda"
+!
+interface "tosanlian"
+ip address 218.98.166.62 255.255.255.192
+ip vlan name "tosanlian"
+!
+interface "totushuguan"
+ip address 202.194.245.254 255.255.255.0
+--More--
+ip vlan name "totushuguan"
+!
+ip forward set ipm slow 8 3 noverify
+ip route 0.0.0.0 0.0.0.0 202.194.96.61 1 low
+ip route 202.194.250.0 255.255.255.0 202.194.240.67 1 low
+ip route 202.194.249.0 255.255.255.0 202.194.240.67 1 low
+ip route 202.194.242.0 255.255.255.0 218.98.166.1 1 low
+ip route 202.194.240.0 255.255.255.192 202.194.240.68 1 low
+ip route 202.194.247.0 255.255.255.0 202.194.240.66 1 low
+ip route 202.194.252.0 255.255.254.0 202.194.240.68 1 low
+ip route 202.194.254.0 255.255.255.0 202.194.240.68 1 low
+ip route 202.194.244.0 255.255.255.0 218.98.166.1 1 low
+ip route 202.194.241.0 255.255.255.0 218.98.166.1 1 low
+ip route 202.194.251.0 255.255.255.0 202.194.240.70 1 low
+ip route 202.194.246.0 255.255.255.0 202.194.240.65 1 low
+ip route 202.194.243.0 255.255.255.0 218.98.166.1 1 low
+ip route 202.194.255.0 255.255.255.0 202.194.240.100 1 low
+ip route 162.105.0.0 255.255.255.0 202.194.96.61 1 low
+ip route 166.111.0.0 255.255.255.0 202.194.96.61 1 low
+ip route 202.4.128.0 255.255.224.0 202.194.96.61 1 low
+ip route 202.112.64.0 255.255.192.0 202.194.96.61 1 low
+ip route 202.112.128.0 255.255.128.0 202.194.96.61 1 low
+ip route 202.113.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.204.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 210.31.0.0 255.255.0.0 202.194.96.61 1 low
+--More--
+ip route 211.68.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.71.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.81.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.82.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.242.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.243.0.0 255.255.128.0 202.194.96.61 1 low
+ip route 219.243.128.0 255.255.192.0 202.194.96.61 1 low
+ip route 219.224.0.0 255.255.128.0 202.194.96.61 1 low
+ip route 219.224.128.0 255.255.192.0 202.194.96.61 1 low
+ip route 219.255.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.226.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 222.28.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 222.199.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 59.64.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 202.117.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.200.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.26.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 218.195.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.224.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 222.23.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 222.24.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 59.74.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 59.76.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.115.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.202.0.0 255.254.0.0 202.194.96.61 1 low
+--More--
+ip route 210.40.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 211.83.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 218.194.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.221.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 222.18.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.196.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.198.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.38.192.0 255.255.192.0 202.194.96.61 1 low
+ip route 202.116.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.192.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.36.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 211.66.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 218.192.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.222.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 219.227.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 222.16.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.200.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 125.216.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 125.218.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.114.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.196.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.42.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 211.69.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.67.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.84.0.0 255.254.0.0 202.194.96.61 1 low
+--More--
+ip route 218.196.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 222.20.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.22.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 59.68.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 202.38.64.0 255.255.224.0 202.194.96.61 1 low
+ip route 202.119.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 210.44.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.28.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 211.64.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 211.70.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.86.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 219.218.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 219.230.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.192.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 222.206.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 58.192.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 202.120.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.32.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 211.80.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 218.193.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.220.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.228.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.204.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 59.77.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 59.78.0.0 255.254.0.0 202.194.96.61 1 low
+--More--
+ip route 202.118.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.198.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.46.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.30.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.216.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.26.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 59.72.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 125.222.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 202.38.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.127.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.112.0.0 255.255.192.0 202.194.96.61 1 low
+ip route 210.25.128.0 255.255.192.0 202.194.96.61 1 low
+ip route 219.243.192.0 255.255.192.0 202.194.96.61 1 low
+ip route 219.224.192.0 255.255.192.0 202.194.96.61 1 low
+ip route 210.25.0.0 255.255.128.0 202.194.96.61 1 low
+ip route 58.194.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 58.200.0.0 255.248.0.0 202.194.96.61 1 low
+ip route 58.196.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 202.195.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.194.15.0 255.255.255.0 202.194.96.61 1 low
+ip route 202.205.11.0 255.255.255.0 202.194.96.61 1 low
+!
+ip access-list xuegong 1 permit ip 202.194.240.0 0.0.15.255 host 202.194.240.110
+ip access-list xuegong 2 deny ip any host 202.194.240.110
+ip access-list xuegong 3 deny ip any host 202.194.240.90
+--More--
+ip access-list xuegong 4 permit ip any host 202.194.240.36
+ip acl-logging logging-interval 2
+!
+ip access-group xuegong
+
+
+
+Sdie-Core#   show startup-config 
+Contents of file '/nvram/startup.txt':
+!
+! Avaya Cajun Switch Agent v5.4.5 Cajun Switch
+!
+set vlan 2 name "toshanda"
+set vlan 3 name "tosanlian"
+set vlan 4 name "totushuguan" init-HT-size 2048
+set vlan 6 name "toinsideswitch"
+set vlan auto 4095 name "Internal-Network"
+!
+!
+custom-access-type "englishonline"
+!
+hostname "Sdie-Core"
+snmp-server location "SDIE-NIC"
+snmp-server contact "System Administrator"
+clock timezone "bei"
+clock summer-time recurring 1 Sunday Apr 02:00 5 Sunday Oct 02:00 60
+username "root" password encrypted-type1 "$sybA.DP1mGZf1JUsWNoNJ/" access-type a
+dmin
+username "diag" password encrypted-type1 "$PQO.vGxkvDHkEDCJ2YsoD1" access-type r
+ead-write
+username "manuf" password encrypted-type1 "$seHFLP9b16m2v/534WCk90" access-type 
+read-write
+--More--
+snmp-server community encrypted "cHVibGlj" ro normal
+snmp-server community encrypted "cHJpdmF0ZQ==" rw normal
+!
+set utilization monitoring cpu
+set utilization monitoring forwarding-engine
+!
+set console type tty
+set console baud 9600
+set console flowcontrol xon/xoff
+set console databits 8
+set console parity none
+set console stopbits 1
+no set console initcmd 
+!
+set temperature cpu-sensor shutdown 100
+set temperature cpu-sensor warning upper 85
+!
+!
+! Begin Module 1 configuration
+module 1 begin type M8500_SUP
+module 1 end
+! End Module 1 configuration
+!
+! Begin Module 3 configuration
+module 3 begin type M8524_100TX
+--More--
+set port flow-control 3/1 enable
+set port flow-control 3/2 enable
+set port flow-control 3/3 enable
+set port flow-control 3/4 enable
+set port flow-control 3/5 enable
+set port flow-control 3/6 enable
+set port flow-control 3/7 enable
+set port flow-control 3/8 enable
+set port flow-control 3/9 enable
+set port flow-control 3/10 enable
+set port flow-control 3/11 enable
+set port flow-control 3/12 enable
+set port flow-control 3/13 enable
+set port rate-limit-mode 3/13 enable-include-known-multicasts
+set port rate-limit-rate 3/13 80%
+set port flow-control 3/14 enable
+set port rate-limit-rate 3/16 1%
+set port flow-control 3/17 enable
+set port flow-control 3/18 enable
+set port flow-control 3/19 enable
+set port flow-control 3/20 enable
+set port flow-control 3/21 enable
+set port flow-control 3/22 enable
+set port flow-control 3/23 enable
+set port flow-control 3/24 enable
+--More--
+set port vlan 3/1 2
+set port vlan 3/2 2
+set port vlan 3/3 4
+set port vlan 3/4 4
+set port vlan 3/5 3
+set port vlan 3/6 3
+set port vlan 3/13 6
+set port vlan 3/14 6
+set port vlan 3/15 6
+set port vlan 3/16 6
+set port vlan 3/17 6
+set port vlan 3/18 6
+set port vlan 3/19 6
+set port vlan 3/20 6
+set port vlan 3/21 6
+set port vlan 3/22 6
+set port vlan 3/23 6
+set port vlan 3/24 6
+module 3 end
+! End Module 3 configuration
+!
+! Begin Module 4 configuration
+module 4 begin type M8508_1000
+set port flow-control 4/1 enable
+set port flow-control 4/2 enable
+--More--
+set port flow-control 4/3 enable
+set port flow-control 4/4 enable
+set port flow-control 4/5 enable
+set port flow-control 4/6 enable
+set port flow-control 4/7 enable
+set port flow-control 4/8 enable
+set port vlan 4/5 4
+set port vlan 4/6 6
+set port vlan 4/7 6
+set port vlan 4/8 6
+module 4 end
+! End Module 4 configuration
+!
+! Begin Module 5 configuration
+module 5 begin type M8508_1000
+set port flow-control 5/1 enable
+set port flow-control 5/2 enable
+set port flow-control 5/3 enable
+set port pace-priority-mode 5/3 enable
+set port flow-control 5/4 enable
+set port flow-control 5/5 enable
+set port flow-control 5/6 enable
+set port flow-control 5/7 enable
+set port flow-control 5/8 enable
+set port default-priority 5/1 0
+--More--
+set port default-priority 5/2 0
+set port default-priority 5/3 7
+set port ignore-tag-priority 5/3 on
+set port use-diffserv 5/3 on
+set port mask-diffserv 5/3 on
+set port default-priority 5/4 0
+set port vlan 5/5 6
+set port vlan 5/6 6
+set port vlan 5/7 6
+set port vlan 5/8 6
+module 5 end
+! End Module 5 configuration
+!
+cpu_redundancy mac-prefix 00:00:00:00:03:ff
+!
+ip multicast-routing
+ip unicast route-cache hash-mode sa-da
+ip unicast route-cache max-size 30000
+!
+ip domain-lookup
+ip name-server 202.194.240.88 202.102.128.68 
+!
+interface "Internal-Network"
+ip address 10.2.2.1 255.255.255.224
+!
+--More--
+interface "Console"
+ip address 192.168.0.1 255.255.255.0
+ip vlan Ethernet-Console
+ip routing-mode mgmt_only
+!
+interface "toinsideswitch"
+ip address 202.194.240.69 255.255.255.192
+ip vlan name "toinsideswitch"
+!
+interface "toshanda"
+ip address 202.194.96.62 255.255.255.252
+ip vlan name "toshanda"
+!
+interface "tosanlian"
+ip address 218.98.166.62 255.255.255.192
+ip vlan name "tosanlian"
+!
+interface "totushuguan"
+ip address 202.194.245.254 255.255.255.0
+ip vlan name "totushuguan"
+!
+ip forward set ipm slow 8 3 noverify
+ip route 0.0.0.0 0.0.0.0 202.194.96.61 1 low
+ip route 202.194.250.0 255.255.255.0 202.194.240.67 1 low
+ip route 202.194.249.0 255.255.255.0 202.194.240.67 1 low
+--More--
+ip route 202.194.242.0 255.255.255.0 218.98.166.1 1 low
+ip route 202.194.240.0 255.255.255.192 202.194.240.68 1 low
+ip route 202.194.247.0 255.255.255.0 202.194.240.66 1 low
+ip route 202.194.252.0 255.255.254.0 202.194.240.68 1 low
+ip route 202.194.254.0 255.255.255.0 202.194.240.68 1 low
+ip route 202.194.244.0 255.255.255.0 218.98.166.1 1 low
+ip route 202.194.241.0 255.255.255.0 218.98.166.1 1 low
+ip route 202.194.251.0 255.255.255.0 202.194.240.70 1 low
+ip route 202.194.246.0 255.255.255.0 202.194.240.65 1 low
+ip route 202.194.243.0 255.255.255.0 218.98.166.1 1 low
+ip route 202.194.255.0 255.255.255.0 202.194.240.100 1 low
+ip route 162.105.0.0 255.255.255.0 202.194.96.61 1 low
+ip route 166.111.0.0 255.255.255.0 202.194.96.61 1 low
+ip route 202.4.128.0 255.255.224.0 202.194.96.61 1 low
+ip route 202.112.64.0 255.255.192.0 202.194.96.61 1 low
+ip route 202.112.128.0 255.255.128.0 202.194.96.61 1 low
+ip route 202.113.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.204.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 210.31.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.68.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.71.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.81.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.82.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.242.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.243.0.0 255.255.128.0 202.194.96.61 1 low
+--More--
+ip route 219.243.128.0 255.255.192.0 202.194.96.61 1 low
+ip route 219.224.0.0 255.255.128.0 202.194.96.61 1 low
+ip route 219.224.128.0 255.255.192.0 202.194.96.61 1 low
+ip route 219.255.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.226.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 222.28.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 222.199.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 59.64.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 202.117.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.200.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.26.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 218.195.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.224.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 222.23.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 222.24.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 59.74.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 59.76.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.115.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.202.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.40.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 211.83.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 218.194.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.221.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 222.18.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.196.0.0 255.254.0.0 202.194.96.61 1 low
+--More--
+ip route 222.198.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.38.192.0 255.255.192.0 202.194.96.61 1 low
+ip route 202.116.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.192.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.36.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 211.66.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 218.192.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.222.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 219.227.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 222.16.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.200.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 125.216.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 125.218.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.114.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.196.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.42.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 211.69.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.67.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.84.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 218.196.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 222.20.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.22.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 59.68.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 202.38.64.0 255.255.224.0 202.194.96.61 1 low
+ip route 202.119.0.0 255.255.0.0 202.194.96.61 1 low
+--More--
+ip route 210.44.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.28.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 211.64.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 211.70.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 211.86.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 219.218.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 219.230.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.192.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 222.206.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 58.192.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 202.120.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.32.0.0 255.252.0.0 202.194.96.61 1 low
+ip route 211.80.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 218.193.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.220.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.228.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.204.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 59.77.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 59.78.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 202.118.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.198.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.46.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 210.30.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 219.216.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 222.26.0.0 255.254.0.0 202.194.96.61 1 low
+--More--
+ip route 59.72.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 125.222.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 202.38.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.127.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.112.0.0 255.255.192.0 202.194.96.61 1 low
+ip route 210.25.128.0 255.255.192.0 202.194.96.61 1 low
+ip route 219.243.192.0 255.255.192.0 202.194.96.61 1 low
+ip route 219.224.192.0 255.255.192.0 202.194.96.61 1 low
+ip route 210.25.0.0 255.255.128.0 202.194.96.61 1 low
+ip route 58.194.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 58.200.0.0 255.248.0.0 202.194.96.61 1 low
+ip route 58.196.0.0 255.254.0.0 202.194.96.61 1 low
+ip route 202.195.0.0 255.255.0.0 202.194.96.61 1 low
+ip route 202.194.15.0 255.255.255.0 202.194.96.61 1 low
+ip route 202.205.11.0 255.255.255.0 202.194.96.61 1 low
+!
+ip access-list xuegong 1 permit ip 202.194.240.0 0.0.15.255 host 202.194.240.110
+ip access-list xuegong 2 deny ip any host 202.194.240.110
+ip access-list xuegong 3 deny ip any host 202.194.240.90
+ip access-list xuegong 4 permit ip any host 202.194.240.36
+ip acl-logging logging-interval 2
+!
+ip access-group xuegong
+
+
+
+c类202.194.248未用～ 还有202.194.240.128/26未用。     
+
+
+8月2日早8点半
+Sdie-Core# show arp
+   Address         MAC Address          I/F         Type     TTL   
+--------------- ----------------- ---------------- ------- --------
+202.194.240.64  ff:ff:ff:ff:ff:ff toinsideswitch   Local   Not Aged
+202.194.240.65  00:0d:55:40:01:43 toinsideswitch   Dynamic 14398  
+202.194.240.66  02:d0:b7:ee:95:10 toinsideswitch   Dynamic 14400  
+202.194.240.67  00:02:85:22:a3:a0 toinsideswitch   Dynamic 14399  
+202.194.240.68  00:d0:b7:39:37:00 toinsideswitch   Dynamic 14400  
+202.194.240.69  00:00:00:00:00:06 toinsideswitch   Local   Not Aged
+202.194.240.70  00:e0:fc:12:6f:35 toinsideswitch   Dynamic 14395  
+202.194.240.75  00:90:fb:0a:47:2a toinsideswitch   Dynamic 13117  
+202.194.240.86  00:0e:0c:05:a0:1f toinsideswitch   Dynamic 1411   
+202.194.240.87  00:04:23:af:95:85 toinsideswitch   Dynamic 3749   
+202.194.240.88  00:c0:9f:0c:8c:3c toinsideswitch   Dynamic 14115  
+202.194.240.90  00:04:23:b8:2a:8e toinsideswitch   Dynamic 9604   
+202.194.240.94  00:90:0b:05:27:af toinsideswitch   Dynamic 13860  
+202.194.240.95  00:90:0b:05:27:af toinsideswitch   Dynamic 13860  
+202.194.240.96  00:10:5a:75:9b:e4 toinsideswitch   Dynamic 14322  
+202.194.240.97  00:0b:db:94:a7:31 toinsideswitch   Dynamic 13349  
+202.194.240.98  00:10:5a:75:9b:e4 toinsideswitch   Dynamic 11186  
+202.194.240.100 00:e0:fc:4f:0e:f0 toinsideswitch   Dynamic 14398  
+202.194.240.127 ff:ff:ff:ff:ff:ff toinsideswitch   Local   Not Aged
+202.194.96.60   ff:ff:ff:ff:ff:ff toshanda         Local   Not Aged
+202.194.96.61   00:e0:b1:47:d8:88 toshanda         Dynamic 14400  
+202.194.96.62   00:00:00:00:00:03 toshanda         Local   Not Aged
+--More--
+202.194.96.63   ff:ff:ff:ff:ff:ff toshanda         Local   Not Aged
+202.194.245.0   ff:ff:ff:ff:ff:ff totushuguan      Local   Not Aged
+202.194.245.1   00:90:27:39:d7:65 totushuguan      Dynamic 14377  
+202.194.245.2   02:90:27:0b:ba:bc totushuguan      Dynamic 2706   
+202.194.245.3   00:d0:b7:25:cb:a3 totushuguan      Dynamic 1152   
+202.194.245.5   00:20:ed:5e:24:96 totushuguan      Dynamic 12448  
+202.194.245.25  00:0c:76:68:cc:76 totushuguan      Dynamic 8847   
+202.194.245.26  00:01:2e:08:86:f1 totushuguan      Dynamic 14071  
+202.194.245.95  00:0c:76:49:88:2d totushuguan      Dynamic 13807  
+202.194.245.99  00:30:48:11:a5:07 totushuguan      Dynamic 3878   
+202.194.245.254 00:00:00:00:00:05 totushuguan      Local   Not Aged
+202.194.245.255 ff:ff:ff:ff:ff:ff totushuguan      Local   Not Aged
+10.2.2.0        ff:ff:ff:ff:ff:ff Internal-Network Local   Not Aged
+10.2.2.1        00:00:00:00:03:ea Internal-Network Local   Not Aged
+10.2.2.31       ff:ff:ff:ff:ff:ff Internal-Network Local   Not Aged    
+
+
+
+
+
+受影响系统
+Avaya Cajun P550 Series Fireware 4.3.5
+Avaya Cajun P550R Series Firmware 5.2.14
+Avaya Cajun P580 Series Firmware 5.2.14
+Avaya Cajun P880 Series Firmware 5.2.14
+Avaya Cajun P882 Series Firmware 5.2.14
+详细描述
+Avaya Cajun交换机固件中包含多个没有公开的默认帐户。通过这2个帐户可以比管理员权限高的权限访问交换机。
+
+这两个帐户为：
+
+user    password
+----    --------
+diag    danger
+manuf    xxyyzz
+       
+
+
+
+202.194.247.252   00A0C9C21BC0(主机标识)   (另外的mgt 02A0C9C21BC0)
+202.194.247.254   00D0B7EE9510(主机标识)    
+202.194.247.253   0090270B9884(主机标识)   
+
+
+
+7902:
+有1台IP电话曾经配置过IP，此IP也在CALL MANAGER上注册成功。因工作需要更改IP，本人将IP从新设置，并在CALL MANAGER上PING 地址成功，有响应。但就是CALL MANAGER上注册的还是旧的IP地址，新配置的IP地址无法注册大成功。我试过在CALL MANAGER上将此IP电话配置删除后重新配置，并试过RESET和RESTAR、UPDATE。都不能在CALL MANAGER 上更新IP注册信息。
+
+请高认指点迷津。谢谢。
+
+我做的时候没有用DHCP，好象没有出现这个!
+已经解决，是TFTP SERVER没有配上。 
+
+--------------------------------------------------------------------------------
+
+要在IP PHONE上配置密码后，通过WEB登陆后配成。
+
+
+谢谢大家。
+
+办公楼的例外:其余交换机都是从25号口向上级联的～
+202.194.250.254
+25               Untagged Learn        Down      
+26               Untagged Learn        Up  
+
+202.194.249.252   24号口向下级联一个交换机
+      
+
+
+
+202.194.250.252 | 00:30:F1:79:02:E1        | vlan2~gi.2.1           |           
+202.194.250.253 | 00:30:F1:78:EB:21        | vlan2~gi.2.2           |           
+202.194.250.254 | 00:30:F1:78:F9:A1        | vlan2~gi.2.3           |
+
+202.194.240.0/26  中25—32是分给电教中心了~
+
+
+202.194.254.212  林滕的服务器
+
+
+222.206.97.248 级连222.206.97.247;222.206.96.247级联到222.206.97.248
+浪潮英信NL230服务器:双路INTEL XEON DP 2.8GHz
+
+
+
+240段:mac:3e:91 510T      0f:00 为55,   37:00 为62
+00-0D-87-2C-5F-9F     YANGFENG
+
+山大ns：202.194.15.12；202.194.15.13.
+202.194.249.177:无线路由
+
+
+202.205.11.199    CTI main
+202.205.11.200    CTI BACKUP
+
+
+202.194.240.71    
+1模块：24电+8光
+2模块：12光
+3模块：10光。
+
+
+202.102.152.3    济南cnc

@@ -1,0 +1,25 @@
+Pluggable Authentication Modules for Linux
+/etc/pam.d/<service>
+ldd /usr/sbin/sshd
+ls /lib/security/
+
+/etc/pam.d/login
+auth required pam_securetty.so
+auth required pam_sta
+Pam 服务文件格式:
+Module-type control-flag module-path arguments
+Module-typ:auth,account,session,password
+control-flag: required,requisite,sufficient,optional
+
+eg:
+  auth required pam_securetty.so
+
+login /etc/pam.d/login
+ipop3d /etc/pam.d/pop
+vsftpd /etc/pam.d/vsftp
+sshd /etc/pam.d/sshd
+imap /etc/pam.d/imap
+认证堆栈
+常用PAM 模块
+
+

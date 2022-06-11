@@ -1,0 +1,34 @@
+/etc/sysconfig/i18n
+Controls the system font settings. The language variables are used in /etc/profile.d/lang.sh. An example i18n file:
+
+LANG="en_US"
+LC_ALL="en_US"
+LINGUAS="en_US"
+
+Options:
+
+    * LANG= set locale for all categories, can be any two letter ISO language code.
+    * LC_CTYPE= localedata configuration for classification and conversion of characters.
+    * LC_COLLATE= localedata configuration for collation (sort order) of strings.
+    * LC_MESSAGES= localedata configuration for translation of yes and no messages.
+    * LC_NUMERIC= localedata configuration for non-monetary numeric data.
+    * LC_MONETARY= localedata configuration for monetary data.
+    * LC_TIME= localedata configuration for date and time.
+    * LC_ALL= localedata configuration overriding all of the above.
+    * LANGUAGE= can be a : separated list of ISO language codes.
+    * LINGUAS= can be a ' ' separated list of ISO language codes.
+    * SYSFONT= any font that is legal when used as /usr/bin/consolechars -f $SYSFONT ... (See console-tools package for consolechars command)
+    * UNIMAP= any SFM (screen font map, formerly called Unicode mapping table - see consolechars(8))
+
+      /usr/bin/consolechars -f $SYSFONT --sfm $UNIMAP
+    * SYSFONTACM= any ACM (application charset map - see consolechars(8))
+
+      /usr/bin/consolechars -f $SYSFONT --acm $SYSFONTACM
+
+      The above is used by the /sbin/setsysfont command (which is run by rc.sysinit at boot time.)
+
+ # vi /etc/sysconfig/i18n
+LANG="zh_CN.GB18030"
+LANGUAGE="zh_CN.GB18030:zh_CN.GB2312:zh_CN"
+SUPPORTED="zh_CN.GB18030:zh_CN:zh:en_US.UTF-8:en_US:en"
+SYSFONT="lat0-sun16" 
