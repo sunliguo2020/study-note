@@ -1,0 +1,299 @@
+Linux系统下加挂文件系统的小结 
+
+--------------------------------------------------------------------------------
+
+学习操作系统时我们都了解到文件系统是操作系统的重要组成部分之一。文件系统有很多种类型，比windows的fat、fat32；Linux的ext、 ext2或ext3；FreeBSD的ufs等等。在使用Linux的过程，也常常Linux操作系统使用虚拟文件系统VFS，通过VFS可以直接存取其它已被内核支持的各种文件系统，用起来就像是在普通的 Linux的ext系列文件系统一样。
+
+早期的Linux内置支持的文件系统不多，自 kernel 2.0.x 起并支持到 VFAT ，以后逐渐增加，到目前可以说　决大多数的文件系统都有了支持。只是有一些如NTFS需要重新编译内核才能支持。
+
+Linux在启动过程中，会按照/etc/fstab中的设置，把各个分区上的文件系统加挂到对应到加载点上去。Linux至少需要两个分区才能启动：一个是根分区/，另一个是交换分区，如果在启动时根分区加载失败，Linux就不能完成启动。如果交换分区加载失败，Linux就不能仍能启动，在内存不够的情况下速度就会受很大的影响。根分区的文件系统类型通常是ext、ext2或ext3，但也可以是其它的一些文件系统。
+
+除了加载了Linux所必需的文件系统外，Linux的用户还经常需要使用其它的各种文件系统，特别是在一台机器上同时安装多个操作系统的时候。比如笔者的机器上同时安装了Linux和Windows2000，其中Windows的C盘采用了NTFS文件系统、D盘采用了FAT32文件系统。而当我在 Linux上工作的时候，常常需要访问Windows的C盘和D盘的内容，甚至是网络上的共享目录，Linux下加挂一个文件系统使用的是mount命令，用man mount命令可以得到命令参数的详细解释。下面就来介绍一下在几种情况下以命令行方式加挂文件系统的具体方法：
+
+1.加挂FAT32文件系统
+
+最简单的用法
+
+mount /dev/hda6 /mnt/d
+
+/dev/hda6是笔者Windows的D盘，/mnt/d是目录加挂点。Linux会识别到/dev/hda6分区的文件系统类型是什么，然后加挂的。当然也可以指定分区的文件系统类型，命令如下：
+
+mount -t vfat /dev/hda6 /mnt/d
+
+在实际中操作中，直接加挂一个windows的分区，中文的文件名和目录名会出现乱码，为了避免这种情况可以指定字符集，命令如下：
+
+mount /dev/hda6 /mnt/d -o codepage=936,iocharset=cp936
+
+mount -t vfat /dev/hda6 /mnt/d -o codepage=936,iocharset=cp936
+
+注意：cp936是指简体中文，cp950是指繁体中文。
+
+2.加挂NTFS文件系统 
+
+在目前多数的Linux版本上，需要重编译Linux核心才能，加挂NTFS分区(编译方法请参阅其它文章)。（补充：安装支持NTFS的rpm包后就可以）核心支持NTFS后，可以用以下命令加挂：
+
+mount -t ntfs /dev/hda2 /mnt/c
+
+同样对于中文的文件名和目录名会出现乱码的问题可以指定字符集，不过和加挂vfat分区不同，实际中用以下命令是可行的：
+
+mount -t ntfs -o iocharset=cp936 /dev/hda2 /mnt/c -r
+
+mount -t ntfs -o iocharset=cp936,rw /dev/hda2 /mnt/c 
+
+3.加挂U盘上的文件系统
+
+现在使用U盘的人越来越多了，其实在Linux下使用U盘也非常简单，Linux对USB设备有很好的支持，在你插入U盘后，U盘被识别为一个SCSI盘，通常您用以下命令就能加挂U盘上的文件系统
+
+mount /dev/sda1 /usb
+
+同样对于中文的文件名和目录名会出现乱码的问题可以指定字符集，命令类似于上面对FAT32介绍的：
+
+mount /dev/sda1 /usb -o pagecode=936,iocharset=cp936
+
+4.加挂Linux系统通过samba共享出来的目录
+
+利用samba共享出来的目录其实很难说其原来是哪种文件系统，不过这一点不重要，只要它对用户是透明的就好啦。加挂时，我们指定类型为smbfs，在加挂samba共享的分区时，也会出现中文的文件名和目录名乱码情况，可以用以下命令加挂：
+
+mount -t smbfs -o 
+
+username=terry,password=terry,codepage=936,iocharset=cp936
+
+//terry-linux/terry /mp3/
+
+mount -t smbfs -o 
+
+username=terry,password=terry,codepage=936,iocharset=cp936
+
+//192.168.100.228/terry /mp3/
+
+注意：你可以不直接写password=terry这个参数，系统界时会要你输入密码，这样就可以防止有人直接看到你的密码。视具体情况而定，-o后面的参数可以对应增减。 
+5.加挂Window系统共享出来的目录
+
+在局域网中，常常需要去访问其它Windows系统共享出来的目录，在Linux下，安装了samba后就可以使用samba中带的命令来访问Windows机器的共享资源。
+
+用smbclient来列出Windows机器的共享资源 
+
+smbclient -L 192.168.100.111
+
+根据上面所列出Windows的共享资源后，可以选择需要加挂到本地Linux中去的Windows的共享资源，然后使用smbmount或mount来加挂，请参照下面几条命令：
+
+smbmount //192.168.100.111/public /public/
+
+mount //192.168.100.111/d /mnt/cdrom -o username=terry (这样要在命令行输入密码的)
+
+mount //192.168.100.111/d /mnt/cdrom -o username=terry$1234 (这样则不必在命令行输入密码)
+
+注：除了上面介绍的命令行方法之外，这时最好的方法就是使用其它的客户端，如LinNeighborhood、networkneighbours、ksmbshare等，请参考其它文章。
+
+以上介绍的都是命令行的方式，每次使用时都要输入一次，如果你常常要加挂一些文件系统，想在启动时自动加挂应该怎样做呢？下面介绍两种方法：
+
+方法1.
+
+把加挂的命令放在/etc/rc.d/rc.local中。
+
+方法2.
+
+修改分区配置文件/etc/fstab，在启动时加挂文件系统，下面是我的/etc/fstab文件：
+
+LABEL=//ext3defaults 
+
+1 1
+
+none　 /dev/pts devpts　gid=5,mode=620 
+
+0 0 
+
+LABEL=/home/homeext3defaults 
+
+1 2
+
+none　 /procprocdefaults 
+
+0 0
+
+none　 /dev/shm tmpfs　 defaults 
+
+0 0
+
+/dev/hda4　swap swapdefaults 
+
+0 0
+
+/dev/cdrom /mnt/cdrom　 iso9660
+
+noauto,owner,kudzu,ro 0 0
+
+/dev/hda2 /ntfs ntfsdefaults,iocharset=cp9360 0
+
+/dev/hda6 /win　vfatdefaults,codepage=936,iocharset=cp9360 0
+
+//192.168.100.228/terry /mp3smbfsusername=terry,password=terry,codepage=cp936,iocharset=cp936 0 0
+
+请注意最后三行：
+
+倒数第四行，加挂我的C盘，NTFS格式的
+
+倒数第三行，加挂我的D盘，FAT32格式的
+
+倒数第二行，加挂的是我的局域网中另一台安装samba的Linux文件服务器上的一个目录。
+
+本文总结了一下在Linux上不同情况下几种常见加挂文件系统的方法，包括如何加挂FAT/NTFS/smbfs/U盘，以及解决加挂中关于中文显示/用户密码等的问题。
+
+
+
+
+
+Linux 挂载文件系统
+1、挂载点必须是一个目录。
+
+2、一个分区挂载在一个已存在的目录上，这个目录可以不为空，但挂载后这个目录下以前的内容将不可用。
+对于其他操作系统建立的文件系统的挂载也是这样。但是需要理解的是：光盘、软盘、其他操作系统使用的文件系统的格式与linux使用的文件系统格式是不一样的。光盘是ISO9660；软盘是fat16或ext2；windows NT是fat16、NTFS；windows98是fat16、fat32；windows2000和windowsXP是fat16、fat32、 NTFS。挂载前要了解linux是否支持所要挂载的文件系统格式。
+
+
+挂载时使用mount命令：
+格式：mount [-参数] [设备名称] [挂载点]
+
+其中常用的参数有
+-t<文件系统类型> 指定设备的文件系统类型，常见的有：
+minix linux最早使用的文件系统
+ext2 linux目前常用的文件系统
+msdos MS-DOS的fat，就是fat16
+vfat windows98常用的fat32
+nfs 网络文件系统
+iso9660 CD-ROM光盘标准文件系统
+ntfs windows NT 2000的文件系统
+hpfs OS/2文件系统
+auto 自动检测文件系统
+-o<选项> 指定挂载文件系统时的选项。有些也可用在/etc/fstab中。常用的有
+codepage=XXX 代码页
+iocharset=XXX 字符集
+ro 以只读方式挂载
+rw 以读写方式挂载
+nouser 使一般用户无法挂载
+user 可以让一般用户挂载设备
+
+提醒一下，mount命令没有建立挂载点的功能，因此你应该确保执行mount命令时，挂载点已经存在。（不懂？说白了点就是你要把文件系统挂载到哪，首先要先建上个目录。这样OK？）
+
+例子：windows98装在hda1分区，同时计算机上还有软盘和光盘需要挂载。
+# mk /mnt/winc
+# mk /mnt/floppy
+# mk /mnt/cdrom
+# mount -t vfat /dev/hda1 /mnt/winc
+# mount -t msdos /dev/fd0 /mnt/floppy
+# mount -t iso9660 /dev/cdrom /mnt/cdrom
+现在就可以进入/mnt/winc等目录读写这些文件系统了。
+
+要保证最后两行的命令不出错，要确保软驱和光驱里有盘。（要是硬盘的磁盘片也可以经常随时更换的话，我想就不会犯这样的错误了 :-> ）
+如果你的windows98目录里有中文文件名，使用上面的命令挂载后，显示的是一堆乱码。这就要用到 -o 参数里的codepage iocharset选项。codepage指定文件系统的代码页，简体中文中文代码是936；iocharset指定字符集，简体中文一般用cp936或 gb2312。
+
+
+当挂载的文件系统linux不支持时，mount一定报错，如windows2000的ntfs文件系统。可以重新编译linux内核以获得对该文件系统的支持。关于重新编译linux内核，就不在这里说了。
+
+四 、自动挂载
+每次开机访问windows分区都要运行mount命令显然太烦琐，为什么访问其他的linux分区不用使用mount命令呢？
+其实，每次开机时，linux自动将需要挂载的linux分区挂载上了。那么我们是不是可以设定让linux在启动的时候也挂载我们希望挂载的分区，如windows分区，以实现文件系统的自动挂载呢？
+这是完全可以的。在/etc目录下有个fstab文件，它里面列出了linux开机时自动挂载的文件系统的列表。我的/etc/fstab文件如下：
+
+/dev/hda2 / ext3 defaults 1 1
+/dev/hda1 /boot ext3 defaults 1 2
+none /dev/pts devpts gid=5,mode=620 0 0
+none /proc proc defaults 0 0
+none /dev/shm tmpfs defaults 0 0
+/dev/hda3 swap swap defaults 0 0
+/dev/cdrom /mnt/cdrom iso9660 noauto,codepage=936,iocharset=gb2312 0 0
+/dev/fd0 /mnt/floppy auto noauto,owner,kudzu 0 0
+/dev/hdb1 /mnt/winc vfat defaults,codepage=936,iocharset=cp936 0 0
+/dev/hda5 /mnt/wind vfat defaults,codepage=936,iocharset=cp936 0 0
+
+
+在/etc/fstab文件里，第一列是挂载的文件系统的设备名，第二列是挂载点，第三列是挂载的文件系统类型，第四列是挂载的选项，选项间用逗号分隔。第五六列不知道是什么意思，还望高手指点。
+
+在最后两行是我手工添加的windows下的C；D盘，加了codepage=936和iocharset=cp936参数以支持中文文件名。参数defaults实际上包含了一组默认参数：
+
+rw 以可读写模式挂载
+suid 开启用户ID和群组ID设置位
+dev 可解读文件系统上的字符或区块设备
+exec 可执行二进制文件
+auto 自动挂载
+nouser 使一般用户无法挂载
+async 以非同步方式执行文件系统的输入输出操作
+
+大家可以看到在这个列表里，光驱和软驱是不自动挂载的，参数设置为noauto。（如果你非要设成自动挂载，你要确保每次开机时你的光驱和软驱里都要有盘，呵呵。）
+
+
+
+Linux 挂载文件系统1、挂载点必须是一个目录。 
+
+2、一个分区挂载在一个已存在的目录上，这个目录可以不为空，但挂载后这个目录下以前的内容将不可用。 
+对于其他操作系统建立的文件系统的挂载也是这样。但是需要理解的是：光盘、软盘、其他操作系统使用的文件系统的格式与linux使用的文件系统格式是不一样的。光盘是ISO9660；软盘是fat16或ext2；windows NT是fat16、NTFS；windows98是fat16、fat32；windows2000和windowsXP是fat16、fat32、NTFS。挂载前要了解linux是否支持所要挂载的文件系统格式。 
+
+
+挂载时使用mount命令： 
+格式：mount [-参数] [设备名称] [挂载点] 
+
+其中常用的参数有 
+-t<文件系统类型> 指定设备的文件系统类型，常见的有： 
+minix linux最早使用的文件系统 
+ext2 linux目前常用的文件系统 
+msdos MS-DOS的fat，就是fat16 
+vfat windows98常用的fat32 
+nfs 网络文件系统 
+iso9660 CD-ROM光盘标准文件系统 
+ntfs windows NT 2000的文件系统 
+hpfs OS/2文件系统 
+auto 自动检测文件系统 
+-o<选项> 指定挂载文件系统时的选项。有些也可用在/etc/fstab中。常用的有 
+codepage=XXX 代码页 
+iocharset=XXX 字符集 
+ro 以只读方式挂载 
+rw 以读写方式挂载 
+nouser 使一般用户无法挂载 
+user 可以让一般用户挂载设备 
+
+提醒一下，mount命令没有建立挂载点的功能，因此你应该确保执行mount命令时，挂载点已经存在。（不懂？说白了点就是你要把文件系统挂载到哪，首先要先建上个目录。这样OK？） 
+
+例子：windows98装在hda1分区，同时计算机上还有软盘和光盘需要挂载。 
+# mk /mnt/winc 
+# mk /mnt/floppy 
+# mk /mnt/cdrom 
+# mount -t vfat /dev/hda1 /mnt/winc 
+# mount -t msdos /dev/fd0 /mnt/floppy 
+# mount -t iso9660 /dev/cdrom /mnt/cdrom 
+现在就可以进入/mnt/winc等目录读写这些文件系统了。 
+
+要保证最后两行的命令不出错，要确保软驱和光驱里有盘。（要是硬盘的磁盘片也可以经常随时更换的话，我想就不会犯这样的错误了 :-> ） 
+如果你的windows98目录里有中文文件名，使用上面的命令挂载后，显示的是一堆乱码。这就要用到 -o 参数里的codepage iocharset选项。codepage指定文件系统的代码页，简体中文中文代码是936；iocharset指定字符集，简体中文一般用cp936或gb2312。 
+
+
+当挂载的文件系统linux不支持时，mount一定报错，如windows2000的ntfs文件系统。可以重新编译linux内核以获得对该文件系统的支持。关于重新编译linux内核，就不在这里说了。 
+
+四 、自动挂载 
+每次开机访问windows分区都要运行mount命令显然太烦琐，为什么访问其他的linux分区不用使用mount命令呢？ 
+其实，每次开机时，linux自动将需要挂载的linux分区挂载上了。那么我们是不是可以设定让linux在启动的时候也挂载我们希望挂载的分区，如windows分区，以实现文件系统的自动挂载呢？ 
+这是完全可以的。在/etc目录下有个fstab文件，它里面列出了linux开机时自动挂载的文件系统的列表。我的/etc/fstab文件如下： 
+
+/dev/hda2 / ext3 defaults 1 1 
+/dev/hda1 /boot ext3 defaults 1 2 
+none /dev/pts devpts gid=5,mode=620 0 0 
+none /proc proc defaults 0 0 
+none /dev/shm tmpfs defaults 0 0 
+/dev/hda3 swap swap defaults 0 0 
+/dev/cdrom /mnt/cdrom iso9660 noauto,codepage=936,iocharset=gb2312 0 0 
+/dev/fd0 /mnt/floppy auto noauto,owner,kudzu 0 0 
+/dev/hdb1 /mnt/winc vfat defaults,codepage=936,iocharset=cp936 0 0 
+/dev/hda5 /mnt/wind vfat defaults,codepage=936,iocharset=cp936 0 0 
+
+
+在/etc/fstab文件里，第一列是挂载的文件系统的设备名，第二列是挂载点，第三列是挂载的文件系统类型，第四列是挂载的选项，选项间用逗号分隔。第五六列不知道是什么意思，还望高手指点。 
+
+在最后两行是我手工添加的windows下的C；D盘，加了codepage=936和iocharset=cp936参数以支持中文文件名。参数defaults实际上包含了一组默认参数： 
+
+rw 以可读写模式挂载 
+suid 开启用户ID和群组ID设置位 
+dev 可解读文件系统上的字符或区块设备 
+exec 可执行二进制文件 
+auto 自动挂载 
+nouser 使一般用户无法挂载 
+async 以非同步方式执行文件系统的输入输出操作 
+
+大家可以看到在这个列表里，光驱和软驱是不自动挂载的，参数设置为noauto。（如果你非要设成自动挂载，你要确保每次开机时你的光驱和软驱里都要有盘，呵呵。）

@@ -1,0 +1,18 @@
+Fedra Core 移动硬盘自动挂载初探
+ 
+　　Fedra Core最大的特点是能够自动挂载优盘或移动硬盘之类的存储设备。在实现自动挂载的功能时，
+hotplug、udev、messagebus、haldaemon、gaimn几个服务必不可少。
+　　其中，hotplug是核心，当硬件设备接入系统后，首先由hotplug服务检测到并自动配置内核状态，调用
+添加相关的内核模块。
+　　udev 负责动态维护/dev目录，使/dev目录和当前的系统状态保持一致，创建/dev/sdax等设备文件。
+　　messagebus服务负责在各个系统进程之间传递消息。
+　　haldaemon接受由udev通过D-BUS传递来的消息后调fstab-sync修改 fstab文件，动态创建/media目录下的
+子目录作为挂载点。
+　　gamin检测到 fstab 发生变化之后，负责通知桌面系统。桌面系统在 “计算机” 项目中建立驱动器图标。
+　　因此实现自动加载移动存储设备时必须保证上述的几个服务正常启动。通常在进行系统优化时可能会无意
+中关闭haldaemon服务，这样就会导致无法动态更改/etc/fstab文件，从而导致移动设备接入系统后无法自动识
+别。此时可以通过mount命令进行手动挂载。
+
+　　另外，系统启动时如果HAL服务启动显示为失败，很可能是messagebus服务并未启动。
+
+　　注：HAL意为硬件抽象层（Hardware Abstrat Layer）

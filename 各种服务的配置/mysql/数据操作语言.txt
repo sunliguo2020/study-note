@@ -1,0 +1,32 @@
+select * from jokes;
+select id,jokedate from jokes;
+select id,left(joketext,20) jokedate from jokes;
+select count(*) from jokes;
+select count(*) from jokes where  jokedate >="2000-01-01";
+select joketxt from jokes where jobketxt like "%鞋%";
+select *from emp order by sal imit 0,5;
+select * from emp order by sal limit 5;
+
+insert into jokes (joketext,jokedate) values("das","2004");
+insert into jokes (joketext,jokedate) values("dd","2007"),("www","222");
+
+update table set 列-值,--- [where ]
+
+update jokes set jokedate="1999-01-01" where id=1;
+update jokes set jokedate="1000" where joketext like "鞋%";
+
+delete from table [where ]
+delete from jokes where joketext like "  ";
+delete from jokes;
+
+清除表全部数据
+truncate table 表
+相当于  delete from table ; commit
+
+truncate table jokes;
+
+
+加载数据
+  load data infile 文件 into table 表 [fields terminaed by '字符'];
+load data infile file into table ;
+

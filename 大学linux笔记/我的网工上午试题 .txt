@@ -1,0 +1,77 @@
+1-5   cbccc      cbccA    1    cbcca           //V             1分     (5)
+6-10  ddbad      CBACd    3    cbacd   CBACd   //异议          4分
+11-15 ddcdb       				0					           //V             0分
+16-20 dbaba      dbBba    1    dbbba           //V             1分     (18)
+21-25 bcaba      bcaba    0   bcaba   bcaaa   //24题异议      0分
+26-30 cabcd      Dabcd    1    dabcd           // V            1分     (26)
+31-35 cabdd      caCCd    2    bacbb   cabcd   //  V           2分     (34)
+36-40 bcbaa     					0				           //  V           0分
+41-45 cbcbd               0   cbcbd   cacbd   //  V           0分
+46-50 cddbd      cBdbd    1   cbdbd           // V            1分     (47)
+51-55 cdabc      cdaDc    1    ddadc   cdadc   //51题异议      2分     (54)
+56-60 dbccc      dCccc    1    daccc   dccca   // 57题 60题    2分
+61-65 dabbb      dabCb    1   dabcb   dabcd                   1分     (64)
+66-70 cabac      cBbac    1   cbbac                           1分     (67)
+71-75 bdcbc      bCcAD    3   bccad   bccbd                   3分
+1+3+1+1+2+1+1+1+1+1+3
+
+75-16=59
+
+
+下午:                          11+15+15+9+12=62
+试题一:      11分
+问题1: 3分
+4:B5:B 4分   -2分  
+6:     2分   -2分
+7:    2分
+8:     2分    
+9:     2分
+试题二:      15分
+1:   2分
+2:   2分
+3:   2分
+4: 1分
+5:  1分
+6: 1分
+7: 2分
+8: 2分
+9: 2分
+
+试题三:    15分
+1:   3分   异议
+2:   2分
+3:   2分
+4:   2分
+5:   2分
+6:   2分
+7:   2分
+试题四:  9分+(8.10 11题 6分)
+1:  1分
+2:  1分
+3:  1分
+4:  1分
+5:  1分  
+6:  1分
+7:  1分
+8:  2分
+9:  2分
+10: 2分
+11: 2分
+
+试题五:   12分
+1: 1分
+2: 1分
+3: 1分
+4: 1分
+5: 1分
+6: 2分
+7: 2分   -2分
+8: 2分
+9: 2分
+10: 1分  -1分
+11: 1分
+
+BCBBAA
+BAACAB
+CAC
+ABD
