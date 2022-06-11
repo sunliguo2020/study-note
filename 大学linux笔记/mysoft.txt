@@ -1,0 +1,31 @@
+文本编辑器：
+  vi 
+浏览器：
+   firefox
+      插件(扩展)Book Duplicate Detector
+                Split Browser
+		DictCN
+音频 
+    xmms
+音频编辑
+    audacity
+视频 
+   mplayer
+图片 
+    GQview
+    Gimp
+QQ
+  Lumaqq
+英汉辞典
+    stardict
+ 抓屏
+   import 
+   display
+   格式转换conver
+下载工具：
+     wget
+     axel
+思维导图
+    freemind
+XML 编辑器
+  XML Mind XML Edit

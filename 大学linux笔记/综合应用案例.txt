@@ -1,0 +1,39 @@
+/dev/sdb1 /dev/sdc1 /dev/sdd1
+fdisk 
+   t 转换分区类型
+    L fd Linux raid auto
+  cp /usr/share/doc/raidtools-1.00.3/raid5.conf.sample /etc/raidtab
+
+  vi /etc/raidtab 
+   创建
+    mkraid -f /dev/md0 
+    more /proc/mdstat
+    pvcreate /dev/md0
+    vgcreate vg /dev/md0
+    vgdisplay vg
+    lvcreate -n home -l 250  vg 
+    lvcreate -n var -l 250 vg
+
+mkfs.ext3 /dev/vg/home
+mkfs.ext3 /dev/vg/var
+
+
+mkdir /mnt/home
+mkdir /mnt/var
+
+mount /dev/vg/home /mnt/home
+mount /dev/vg/var /mnt/var
+cp -a /home/* /mnt/home
+cp -a /var/* /mnt/var
+
+vi /etc/fstab
+开机自动激活raid 
+vi /etc/rc.sysinit
+添加  raidstart /dev/md0
+mount /dev/sda1 /mnt
+rm -rf /mnt/var/*
+
+调解容量
+umount /home
+e2fsadm -l +250 /dev/vg/home
+mount /dev/vg/home /home
