@@ -1,0 +1,15 @@
+1: 把时间转换为 从1970 的秒数
+某个人发帖的时间戳
+date -d "  " +%s
+posttime=\date -d "$1" +%s`
+2：发帖时间的的前10分钟的时间戳
+$longintime=$(($posttime-$(($2*60))))
+
+获取cookie格式
+ curl -d "username=寒依&password=tongmingao" http://lvren.edu1000.net/bbs/auth.sh -D cookie.1
+
+3：sed 修改相应的cookie文件
+sed "s/time=[1-9]\{10\}/time=$logintime/"  cookie.1
+4:模拟相应的环境
+
+5：curl  测试

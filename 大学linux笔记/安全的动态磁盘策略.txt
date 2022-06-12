@@ -1,0 +1,42 @@
+RAID
+  
+    Redundant Array of Inexpensive/Independent Disks 
+    磁盘阵列
+  RAID 0 Striping  
+   速度最快 
+  RAID 1 Mirror Mirroring 镜像
+  RAID 5 
+  RAID 0+1 
+
+  Linux 软件RAID
+  raidtools 创建管理raid设备
+  RAID设备文件名:
+    /dev/mdN (N=0,1,2---)
+
+ mkfs.ext3 /dev/md1
+  mount /dev/md1 /
+  创建过程
+ 1>添加硬盘
+   分区
+ 2>安装raidtools
+ 配置文件:
+  /etc/raidtab
+cp /usr/share/doc/raidtools/raid0.conf.sample /etc/raidtab
+ 
+  mkraid /dev/md0
+  mkfs.ext3 /dev/md0
+  mount /dev/md0 /opt
+
+
+  lsraid -A -a /dev/md0
+  raidstop /dev/md0
+
+  RAID 5 
+
+
+  raidsetfaulty /dev/md0 /dev/hda1
+ 
+  raidhotadd /dev/md0 /dev/sdd1
+
+
+

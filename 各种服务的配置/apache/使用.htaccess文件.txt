@@ -1,0 +1,20 @@
+使用.htaccess文件
+  使用.htaccess文件改变主配置文件的配置，但只能设置对目录的访问控制，这个目录就是.htaccess文件所存放的目录.
+  两个步骤：
+   1>在主配置文件中启用并控制对.htaccess文件的使用.
+     1:设置文件名称
+        AccessFileName .htaccess
+	<Files ~"^\.htaccess">
+	  Order allow ,deny
+	  Deny form all
+	</Files>
+     2:控制在.htaccess文件中可以使用的指令组.要控制在.htaccess文件中可以使用的指令组，需要在主配置文件中
+     使用AllowOverride指令.
+     <Directory "/var/www/html/private">
+       AllowOverride Options
+     </Directory>
+
+    # service httpd restart 
+   2>在需要覆盖主配置文件的目录下生成.htaccess文件.
+     echo "Options -Indexes" >/var/www/html/private/.htaccess
+

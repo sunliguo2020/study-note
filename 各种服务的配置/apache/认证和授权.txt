@@ -1,0 +1,31 @@
+1:认证：
+  (1)两种认证类型
+    >基本(Basic)认证
+    >摘要(Digest)认证
+  (2)认证的配置指令
+    AuthName 领域名称 定义受保护领域的名称
+    Authtype Basic or Digest 定义使用的认证方式
+    AuthGroupFile 文件名     指定认证口令文件的位置
+    AuthUserFile   文件名    指定认证组文件的位置
+2:授权
+   Require user username
+   Require group groupname
+   requier valid-user
+3:管理认证口令文件和认证组文件
+  htpasswd -c 认证口令文件名 用户名
+  htpasswd 认证口令文件名 用户名
+ 
+ 举例:
+   <Directory "/var/www/html/private">    
+    AllowOverride None    //不使用.htaccess    
+    AuthType Basic        //基本认证   
+    AuthName "sunliguo"    //领域名称   显示在密码提问框内 
+    AuthUserFile /var/www/passwd/sunliguo //文件位置    
+    require user username  //授权给认证口令文件中的所有用户
+   </Directory>
+
+   #mkdir /var/www/passwd
+   #cd /var/www/passwd
+   #htpasswd -c sunliguo sun
+   #chown apache.apache sunliguo
+   #service httpd restart

@@ -1,0 +1,7 @@
+
+# find . \! -type d -exec md5sum '{}' ';' | sort | uniq -D -w 33
+
+这样的话排除目录只搜索文件，并且显示出所有重复的文件
+
+#time  find . \! -type d -exec md5sum '{}' ';' | sort | uniq -D -w 33
+加time可以看看运行花费多长时间
