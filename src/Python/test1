@@ -1,0 +1,4 @@
+a = int (raw_input())
+//b = abs(a)
+for i in range(0,22):
+    print 222

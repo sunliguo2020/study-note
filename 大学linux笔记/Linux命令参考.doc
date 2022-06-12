@@ -1,0 +1,966 @@
+{\rtf\ansi\deff0\ansicpg1252
+{\fonttbl
+{\f0\froman times new roman;}}
+{\colortbl\red0\green0\blue0;\red255\green255\blue255;}
+{\info{\author þþ}}
+\jexpand\viewkind1\viewscale100
+
+{\shp{\*\shpinst\shpleft693\shptop1160\shpright6120\shpbottom1426\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2155\shpz0\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 266}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,266);(5426,266);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 4868608}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop1160\shpright6120\shpbottom1426\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2156\shpz1\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 266}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,266);(5426,266);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 4868608}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop1706\shpright6120\shpbottom1986\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2157\shpz2\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop2253\shpright6120\shpbottom2533\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2158\shpz3\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop2813\shpright6120\shpbottom3093\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2159\shpz4\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop3373\shpright6120\shpbottom3653\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2160\shpz5\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop3933\shpright6120\shpbottom4213\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2161\shpz6\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop4493\shpright6120\shpbottom5026\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2162\shpz7\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 533}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,546);(5426,546);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop5586\shpright6120\shpbottom5866\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2163\shpz8\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop6146\shpright6120\shpbottom6426\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2164\shpz9\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop6706\shpright6120\shpbottom6986\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2165\shpz10\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop7266\shpright6120\shpbottom7546\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2166\shpz11\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop7680\shpright6120\shpbottom7946\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2167\shpz12\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 266}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,266);(5426,266);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 4868608}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop8226\shpright6120\shpbottom8506\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2168\shpz13\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop8786\shpright6120\shpbottom9066\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2169\shpz14\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop9333\shpright6120\shpbottom9613\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2170\shpz15\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5426,280);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop10040\shpright6120\shpbottom10306\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2171\shpz16\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 266}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,266);(5426,266);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 4868608}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop13053\shpright6120\shpbottom13280\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2172\shpz17\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 227}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,240);(5426,240);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 4868608}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop13560\shpright6120\shpbottom14120\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2173\shpz18\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 560}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,560);(5426,560);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop14800\shpright6120\shpbottom15066\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2174\shpz19\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 266}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,266);(5426,266);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 4868608}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft693\shptop15346\shpright6120\shpbottom15880\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2175\shpz20\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 534}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,546);(5426,546);(5426,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop1160\shpright11546\shpbottom1426\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2176\shpz21\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 266}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,266);(5320,266);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 4868608}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop1706\shpright11546\shpbottom1986\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2177\shpz22\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop2253\shpright11546\shpbottom2533\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2178\shpz23\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop2813\shpright11546\shpbottom3093\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2179\shpz24\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop3373\shpright11546\shpbottom3693\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2180\shpz25\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 320}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,320);(5320,320);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop3973\shpright11546\shpbottom4306\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2181\shpz26\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 333}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,320);(5320,320);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop4586\shpright11546\shpbottom4866\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2182\shpz27\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop5280\shpright11546\shpbottom5546\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2183\shpz28\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 266}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,266);(5320,266);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 4868608}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop6053\shpright11546\shpbottom6333\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2184\shpz29\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop6893\shpright11546\shpbottom7173\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2185\shpz30\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop7706\shpright11546\shpbottom7986\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2186\shpz31\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop7706\shpright11546\shpbottom7986\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2187\shpz32\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop8266\shpright11546\shpbottom8546\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2188\shpz33\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop8693\shpright11546\shpbottom8946\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2189\shpz34\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 253}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,266);(5320,266);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 4868608}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop9226\shpright11546\shpbottom9506\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2190\shpz35\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop9786\shpright11546\shpbottom10066\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2191\shpz36\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop10346\shpright11546\shpbottom10626\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2192\shpz37\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop10773\shpright11546\shpbottom11026\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2193\shpz38\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 253}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,266);(5320,266);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 4868608}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop12013\shpright11546\shpbottom12293\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2194\shpz39\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop12706\shpright11546\shpbottom12973\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2195\shpz40\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 267}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,266);(5320,266);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 4868608}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop13253\shpright11546\shpbottom13533\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2196\shpz41\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop13813\shpright11546\shpbottom14080\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2197\shpz42\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 267}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6226\shptop14360\shpright11546\shpbottom14640\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2198\shpz43\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5320}}
+{\sp{\sn geoBottom}{\sv 280}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;5;(0,0);(0,280);(5320,280);(5320,0);(0,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;12;16384;45824;1;45824;1;45824;1;45824;1;45824;24577;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 1}}
+{\sp{\sn fillColor}{\sv 16770790}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}{\shp
+{\*\shpinst
+\shpleft9186\shptop520\shpright11160\shpbottom1066
+\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2206\shpz44\shpbxpage\shpbypage
+\absh17280\absw12240{\sp{\sn shapeType}{\sv 75}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn pibFlags}{\sv 2}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn fEditedWrap}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn pib}{\sv {\pict
+\jpegblip
+FFD8FFE000104A46494600010100000100010000FFDB004300080606070605080707070909080A0C140D0C0B0B0C1912130F141D1A1F1E1D1A1C1C20242E2720222C231C1C2837292C30313434341F27393D38323C2E333432FFDB0043010909090C0B0C180D0D1832211C213232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232FFC0001108004200EF03012200021101031101FFC4001F0000010501010101010100000000000000000102030405060708090A0BFFC400B5100002010303020403050504040000017D01020300041105122131410613516107227114328191A1082342B1C11552D1F02433627282090A161718191A25262728292A3435363738393A434445464748494A535455565758595A636465666768696A737475767778797A838485868788898A92939495969798999AA2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFC4001F0100030101010101010101010000000000000102030405060708090A0BFFC400B51100020102040403040705040400010277000102031104052131061241510761711322328108144291A1B1C109233352F0156272D10A162434E125F11718191A262728292A35363738393A434445464748494A535455565758595A636465666768696A737475767778797A82838485868788898A92939495969798999AA2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9FAFFDA000C03010002110311003F00E4BC75E28F88FE11F145CD85F6BD7712BB34B018DC1468CB1DB8E3F4ACFD0BC5BF143C4D7725AE8DABEA7793C69BDD11D461738CF38AEABF69203FE125D18F7FB2BFFE8555BF672FF91D351FFAF2FF00D98500656B9ACFC5FF000DDA8B9D5EF358B5B7271E6B152A0FB91902BB7F805E26D6B5FD775B1AAEA5717616DE36512B6403B8F22BDB357D360D6347BCD36E515E1B985A260C33D462BC37F67FD22F349F14F88E1B9B59E2548963579232A1B0E47048E6803DAFC45E20B0F0BE8575ABEA326CB7B75C9C7563D028F7278AF982FF00C6DE37F8A9E265D2F4C9A4823989F26CE07D88883BBB753C7527F015D57ED1DE24925D434DF0E44F88A15FB54E3D5CE42FE4377E747ECD7A687D4F5CD4D80CC5147027AFCC493FFA08A00E5757B2F883F086FAD6E1F51758666F9248E4F362908C12AC1BFCFA57BE7C34F8896BE3ED11A428B06A76D85BAB707819E8CBFEC9C7E1D2A97C6ED29753F85FA8BE3E7B364B9438C9186C1FD09AF9E7E15789A4F0C7C40D3AE37916D72E2DAE17B1473807F0383F85007D90EEB1A33BB055519249C002BE6EF19FC58F1178C3C49FF08F782DA58AD5A43146F00FDEDC9E85B3FC2BDFB7A935EBFF0016352974AF865ADCF031595E110A91DB790A7F426BC4FF006755B46F1DDD9982FDA16CD8C19EBF786EC7E14011DECBF15FE18243A9DEDD4AD6923056DF20B88B24701FD3F4E9D6BBAF833F117C47E34F116A76FACDCC524315B896348E1540A4B63B73D2BD57C4BA2C1E22F0DEA1A4DC2074B9859003D9B1C1FCF15E07FB3A42F6FE31D720906248ED7630F421F06803E85D5753B4D174ABAD4AFA511DB5B4664918FA01FCEBE68D43C7BE3AF8A5E237D37C3626B5B4C931C1036DDA80FDE91FD7F4E71CD7A0FED15A9C96BE09B2B04C85BCBB1E67BAA02D8FCF1F9565FECD496DFD99AEC8027DABCE8D58FF0016CDA71F8673401C7DEF893E28FC2BB85B6D4AE59E2B853E51B82278C9EE55BB11C71FA57ABFC13F196B5E31D0B529F5BB949E5B7B858D196354E0AE79C7BD6AFC5FD0135FF871A9A6C2D3DA27DAA1C0E729C9FCC66B8BFD9AFF00E45AD6FF00EBF17FF40A00F6EA28A2800A28A2800A28A2800A2BE46F891E2AF1058FC46D7ADAD35ABF8608EE982471CEC154607419AFA37E195CCF79F0DF43B8B999E69A4B70CF248C4B31C9EA4D00759451450014514500145145007CDBFB497FC8C9A2FF00D7ABFF00E8555BF672FF0091D350FF00AF33FF00A10AB3FB497FC8C9A2FF00D7ABFF00E85589F033C41A47877C557D75AC5FC3670BDA6D5794E016DC381401F56D18AF98FE21FC487F117C47D2E1F0FEAB72BA5DB3C510682468D6572E0B1C7191D073E87D6BE9A0711827D2803E32F8A7A8B6A7F1335D9D9F72ADC1893D950051FCABD87F66C8B1E1BD6A6FEF5E2AFE480FF5AF01F114ED73E26D5267FBCF77293C63F88D7D17FB39DBF95E06BE97FE7ADF31FC9545007A078F2D45E78035F81B386B09BA7A84247F2AF88D1DA3915D0E1948208EC6BEE5F16FFC89BADFFD784FFF00A01AF862803EB6F8821FC43F036E2EADD599A4B186EB18C9206D63FA66BE64F08F896E7C25E27B2D66D46E681FE74FEFA1E197F119FC6BEB9F00797A8FC31D0D678C345369E88E8DC82A57047E55F2DFC46F02DDF817C492DA3AB3D84C4BD9CF8E1933D0FF00B43A1FCFBD007D7BA06BDA7F89745B6D5B4C984B6D3AE411D54F7523B107822AA691E0ED0342D5AEF54D374E8EDEF2EF3E748A4FCD9393C678E79AF95FE19FC47BCF016AF86DD369370C3ED56F9E9DB7AFFB43F5E95F5DE9BA8DA6AFA6DBEA16332CD6B708248E45E841A00F23FDA3AC259FC1FA6DEA0CC76D79893D832900FE63F5AF1DF85BE383E06F16A5D4DB9B4FBA5105DA8ECA4F0FF553CFD335F5A788F42B5F12F87AF747BC1986EA2299C72A7B30F70706BE2BF12F87350F0A6BB71A46A716C9E13C11D1D7B30F63401F6FA4969AAE9C1E368EE6CEEA2E083B964461FC88359FE1DF0AE8BE14B69ADF45B25B58A67DF22AB13B8E31DCD7CEBF083E2BBF85EE63D0B5A98B68D2BE23958E4DAB1FFD93D7D3AD7D428EB222BA3064600AB039047AD003A8AF997E36EA5E21F0F7C4093EC7ABDFC167770A4D1A24EC141FBAC00CF1D3F5AF48F80FE21B9D77C133C77B7535CDD5ADD32B493396621802393F8D007A9515F3CFC7EF15EA9A6F8AB4ED3F4CD4EE2D563B5F32458252992CDC671EC2BD13E0B6B973AF7C38B59AF6E1EE2E609A486491DB2C7072327E845007A1515F34FC72F18EB169F103FB3F4DD4EE6D21B5B58D59609594333658938F6207E15E81F015F55BDF07DDEA9AA5FDCDDB5CDC9587CF90B6D541838CFB93F95007A44DA2E95712B4B369B67248E72CEF02924FB922AD410456D0AC30449144A30A88A001F402BE4BF891E2BF1058FC46D7ADAD75ABF8608EE9824693B055181C019AF71D1350BC97E018BF92EA56BCFEC8964F3CB9DFB82B739F5A00F47A2BE29D2FC7DE21B3D5ECAEAE75AD4A6B786749258BED0DF3A86048E4E390315A9E2EF8BBE29F14DD49B2FA5D3EC73FBBB6B572981DB730E49A00FB0A8AE33E175D17F859A25D5CCECE7ECECF24B2B963C3364926BC3BE23FC69D5B5DD427D3FC3F75258E931B1412C4DB64B8FF00689EA07A01401F52515F0CDA78B7C456372B716DAE6A292A9C86FB4B9FD09C1AFA4BE10FC536F1A412695AB6C4D5EDD37875E04F1F00B63B104F3401C0FED25FF23268BFF5EAFF00FA1571BF0AFC0B65E3DD7EEB4FBEBBB8B68E1B7F343400649C81839078E6BB2FDA4BFE464D17FEBD5FFF0042AADFB397FC8E9A87FD799FFD08500735E2EF03B7807E22E9BA70B86B8B59658668267182577E083DB208FE55F5F0198B1FECD54BED1F4CD4E5865BFD3ED6EA480EE89A6895CA1F62471576803E0ED6C15D7B51523045D4A31FF0235F4E7ECFBFF24DBFEDF25FE95F3B78EECFFB3FC7BAEDB631B2F65FD5B3FD6BE86FD9EE457F872E80F2979203F903401DC78EA5587C03E2091CE1469D3E7F1422BE20AFB47E28C9E57C30F1137AD9B2FE781FD6BE2EA00FB57E1A2347F0D7C3C8E30C2C9323F0ABBE2DF0A69DE32D026D2B518FE57198A503E689FB32FBD27877C9D07C0DA50BF9E2B78ED6C6212C9230555F946724F039AD6B2BEB4D46D52EACAE61B9B77FBB2C2E194FD08A00F89BC5DE12D4BC19AF4BA56A51FCCBF3452A8F9264ECCBFE7835E9DF007C752586AEDE15BE97369764BDA6E3FEAE5EA547B30FD47BD7AEFC4EF035BF8DBC2B3422351A95B2992D25C72187257E8D8C7E55F22E97753E8FAF5A5D02629AD6E55CE78DA55B907F2A00FBC2B8AF891F0F2C7C7BA218DB6C3A9DB826D2E71D0FF75BD54FFF005EBA6BAD674FD3AC21BCD46FADAD21900C3CF2045248CE01357639126892589D5E37019594E4107A106803E0ED5B4ABDD1354B8D375181E0BA81CA3A30FD47A83D8D7D15F00BC76FAB69727862FE52D75629BED9D8F2F0E71B7FE0248FC08F4AB9F1D7C090EB9E1D7F115A46ABA969C999081CCD0F707D4AF51F8D7887C28D49F4BF89DA14A8C42CB702DDC03D438DBCFE241FC2803D63F692D2449A4E8FABAC64B432B5BBBE7A2B0C8FD45637ECDDAA98B5AD634A69142CD0ACE89DC95383FA1AF56F8BBA40D67E19EAF1004BC118B9403D50E7F966BE71F83FAB7F647C4CD2E56388E5DF0C87D8A9FEA05002FC63D4BFB4BE296B2C181481D6DD7FE02A01FD735E97FB35EA81AC75CD299C964912E1149E0020A9C7E42BCBBC3BA5B78E3E26DCC5321916EA5BAB89075ECEC3F5DB5AFF000675A6F0FF008AB54F3432E74D9F70F464F987EA280399F885A97F6BFC40D6EF049E623DD3AA3672368E063F015F59FC3DD23FB0FC01A2D81C6E4B656723BB37CC7F535F20F86AC26F1178CF4DB3E1A4BBBC5DF9EF96CB7E99AFB8D14222A28C2A8C01ED401F187C53FF0092A1E21FFAFB6FE42BE80D07FE4DCC7FD8166FFD05ABE7FF008A7FF2543C43FF005F6DFC857D01A0FF00C9B98FFB02CDFF00A0B5007CAB6B6F25DDDC36D1006499D63407D49C0AFB2BC1BF0EB42F09E876F66B636D71761419EE65883348FDCE4F41E83D2BE47F0AF3E2FD13FEBFE0FF00D18B5F74500721F121BFB37E17EBC6C9560D968C1446A14282707007D4D7CA1E04D32DB59F1D68BA7DE47E65B4F74AB221FE25EA47E38AFAB7E2AFFC92EF10FF00D7A9FE62BE39B0BDBBD3AFA1BBB19A486EA26DD14919C329F6A00FAB3E2EF85B4697E19EA32C7A75B432D8C62581E288294C11C6476238AF9BFC0B773D8F8A60B8B691A395637C303EAB8A7DF78CFC63A9D94B657BABEA33DB4CBB648DC92187A1E2A0F09C52C7AFC45A1971B1871193DBE9401E9BFB497FC8C9A2FF00D7ABFF00E8555BF672FF0091D350FF00AF33FF00A10AC0F8CDE3187C59E3264B681E3834D0F6A0BF5760C771F6191C556F849E318BC1DE348A7B885A5B6BC516D26CFBC9B986187AE0F6A00FB0E8A01C8068A00F95FE3FE8274CF1F0D4523221D4615937638DEBF2B0FAE003F8D771FB35DDC6DE1FD6EC830F323BA494AE79019300FF00E3A6BB9F8A5E051E3AF0A35B41B5751B56335A3B1C02D8C1427D08FD40AF9DFE1EF8B6EFE1778CE75D56C6748645F22F2DCAE1D70721803D707F306803DFFE355F2D8FC2BD5B76733F9702E3D4B8FE80D7CB7E0FD165F10F8BF4AD2A2524CF7081FD901CB1FC0035E85F17BE2B59F8DAD6D747D1239C58C7209659255DA647C60285F419FCEBB6F817F0E2E74485FC4DAC5B98AEEE1365A42E3E68E33D588EC4FA7A7D6803B3F8BA8B1FC26D7114615614007B6F5AE73F679D4D2EBC0135883FBCB3BB60C3D9FE61FD6BA4F8C1FF0024A75EFF00AE49FF00A316BE6CF86BE3F9BC03AFB5D989AE2C6E17CBB9854F24750573C645007D975F116BF6A979F10AFED2D943ACDA9346813BE64C715EE3E29FDA0F445D0664F0EC57336A32A14469A3D8B1123EF1F5C7615CA7C11F87D7BAC6BF178B3558996C6DD8C9079839B897FBDFEE83939F5A00EABF6898FC9F02E87174D97817F289ABB9F84DA9A6ABF0C744951F734307D9DF3D4321DBFD2B8AFDA4BFE44FD23FEBFF00FF0069B579C7C26F8A8BE0579F4FD4E2966D2AE1BCCCC7CB42FD3207704751ED401F4FEBDB3FE11DD4BCDFF57F659377D369AF8F7E19594B7FF12FC3F0C4A58ADE24A7D953E627F215E9BF127E38E9DACF86E7D1BC371DCEEBB5D93DCCABB36A77551D727A67D2B57E047C3ABAD243F8A35780C33CF1F97670B8C32A1EAE476CF007B7D6803DAEEEDD2F2CE7B69065268DA36C8EC460D7C2DA85ADCE81AF5DDA6E78EE2CE778B76304152466BEEFAF917E37E8FF00D93F13AFDD41F2EF512E978EE460FEAA7F3A00E87F672D2FED1E2ED475220E2D2D7603EEE7FC0579DF8C2D2E3C3DE39D72CA395A368EEA54CA1C651892071EC457BA7ECE1A6883C29A9EA257E6B9BA080E3F8517FC58D79AFC78D356C3E27DCCA88C05E411CE49E84E369C7FDF340137C02D1FFB4BE2325E3C61A3D3EDDE6C91D18FCABFCCFE55F56D786FECDDA3F93A2EB1ACBA106E265B78C9E855064E3F16FD2BDCA803E2FF008A7FF2543C43FF005F6DFC857D01A0FF00C9B98FFB02CDFF00A0B57CFF00F14FFE4A87887FEBEDBF90AFA0341FF93731FF006059BFF416A00F99FC2BFF00238689FF005FF07FE8C5AFBA2BE17F0AFF00C8E1A27FD7FC1FFA316BEE8A00E3FE2A296F85FE210A327EC84FE4457CB7F0D1E38FE24E80D2B2AA7DAD412DD39C81FAD7D95A95843AA69775A7DC0CC3731344FF004618AF8AFC5FE10D5BC15AE4961A842EAA18982E00F9255CF0CA7FA751401F62F88B58D23C2FA25C6AFAA2A25AC18DC55016249C00077249AE2EC7E34F81AFEED2DED96ECCAD923FD131D067AE6BE63D53C51AEEB76905AEA7AB5E5DC100C471CD29603DFDCFB9E6BD7BE057C389AEA77F146AF6E56CFCB31D9C720C1949EAF8FEEE381EB93E9401EBD77E17F0FCB772C92685A63C8EE5999AD232589E49271C9A6C1E16F0F47711BA683A5ABAB02ACB671820E7A8E28A2803AFA28A2800AF35F8C1A5E9F71A0ADCCF616B2DC2B604AF0AB38183C648CD14500717F08F48D364F12177D3AD19D149566854953C7238E2BDFA8A2802AEA36D05E69F35BDD411CF0BAE1A395032B0F707835E7FE3FF000EE871780E631E8DA7218B98F6DAA0D84F5238E28A2803C4BC17A6D8DCF8E2CE09ECADE588CC418DE25653CFA115F5A431470C291448A91A0015546001E8051450050D674DB1D4ED922BFB2B7BB8D5C1093C4B2007D7045799FC5AD0B478742B2923D2AC52453B432DBA0207CBC671D28A280388F837A5E9F73E2A8CCF616B294DC54C90AB6D38EA3238AFA568A2800AC2D7745D2B539E292FF4CB3BB755215A78164207A0245145005ED1AC6D34FD3D6DECAD61B6843122386308B93D781C551D7745D2B53B88A5BFD32CAEA455DAAF3DBAB9033D01228A2802F68F6569A7E9C96F656B0DB420922386308A093CF038ABF451401CB6A3E1BD0AEF509E7B9D174E9A676CBC925AA3331F5248C9ADA86C6D23D105925AC0B69E514F2046047B4F51B7A63DA8A280306D7C2DE1E8AEE2923D074B47460CACB6718208E841C575B451400565F882C6CF50D16E62BDB582E62F2D8EC9A30E3A7A1A28A00F20F08F87F457F13441F47D3D8073806D90E3AFB57B92AAA285550AA060003000A28A00FFD9}
+}}}}
+{\shp{\*\shpinst\shpleft6173\shptop1106\shpright11600\shpbottom1106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2199\shpz45\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 0}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;2;(0,0);(5426,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;5;16384;45824;1;45824;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn lineWidth}{\sv 0}}
+{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineDashing}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft640\shptop1106\shpright6173\shpbottom1106\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2200\shpz46\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5533}}
+{\sp{\sn geoBottom}{\sv 0}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;2;(0,0);(5533,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;5;16384;45824;1;45824;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn lineWidth}{\sv 0}}
+{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineDashing}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6173\shptop16493\shpright11600\shpbottom16493\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2201\shpz47\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5427}}
+{\sp{\sn geoBottom}{\sv 0}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;2;(0,0);(5426,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;5;16384;45824;1;45824;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn lineWidth}{\sv 0}}
+{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineDashing}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft640\shptop16493\shpright6173\shpbottom16493\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2202\shpz48\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 5533}}
+{\sp{\sn geoBottom}{\sv 0}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;2;(0,0);(5533,0);}}
+{\sp{\sn pSegmentInfo}{\sv 2;5;16384;45824;1;45824;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn lineWidth}{\sv 0}}
+{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineDashing}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft640\shptop1106\shpright640\shpbottom16493\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2203\shpz49\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 0}}
+{\sp{\sn geoBottom}{\sv 15387}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;2;(0,0);(0,15386);}}
+{\sp{\sn pSegmentInfo}{\sv 2;5;16384;45824;1;45824;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn lineWidth}{\sv 0}}
+{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineDashing}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft6173\shptop1106\shpright6173\shpbottom16493\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2204\shpz50\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 0}}
+{\sp{\sn geoBottom}{\sv 15387}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;2;(0,0);(0,15386);}}
+{\sp{\sn pSegmentInfo}{\sv 2;5;16384;45824;1;45824;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn lineWidth}{\sv 0}}
+{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineDashing}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}
+{\shp{\*\shpinst\shpleft11600\shptop1106\shpright11600\shpbottom16493\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2205\shpz51\shpbxpage\shpbypage
+{\sp{\sn shapeType}{\sv 0}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn rotation}{\sv 0}}
+{\sp{\sn geoRight}{\sv 0}}
+{\sp{\sn geoBottom}{\sv 15387}}
+{\sp{\sn shapePath}{\sv 4}}
+{\sp{\sn pVerticies}{\sv 8;2;(0,0);(0,15386);}}
+{\sp{\sn pSegmentInfo}{\sv 2;5;16384;45824;1;45824;32768}}
+{\sp{\sn fFillOK}{\sv 1}}
+{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn lineWidth}{\sv 0}}
+{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineDashing}{\sv 0}}
+{\sp{\sn fLine}{\sv 1}}{\sp{\sn lineColor}{\sv 0}}
+{\sp{\sn lineType}{\sv 0}}
+{\sp{\sn fArrowheadsOK}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn fLayoutInCell}{\sv 1}}}}{\shp
+{\*\shpinst
+\shpleft10240\shptop15840\shpright11440\shpbottom16066
+\shpfhdr0\shpwr3\shpwrk0\shpfblwtxt1\shplid2207\shpz52\shpbxpage\shpbypage
+\absh17280\absw12240{\sp{\sn shapeType}{\sv 75}}
+{\sp{\sn fFlipH}{\sv 0}}
+{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn pibFlags}{\sv 2}}
+{\sp{\sn fLine}{\sv 0}}{\sp{\sn fEditedWrap}{\sv 0}}
+{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn pib}{\sv {\pict
+\jpegblip
+FFD8FFE000104A46494600010100000100010000FFDB004300080606070605080707070909080A0C140D0C0B0B0C1912130F141D1A1F1E1D1A1C1C20242E2720222C231C1C2837292C30313434341F27393D38323C2E333432FFDB0043010909090C0B0C180D0D1832211C213232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232FFC0001108000F005003012200021101031101FFC4001F0000010501010101010100000000000000000102030405060708090A0BFFC400B5100002010303020403050504040000017D01020300041105122131410613516107227114328191A1082342B1C11552D1F02433627282090A161718191A25262728292A3435363738393A434445464748494A535455565758595A636465666768696A737475767778797A838485868788898A92939495969798999AA2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFC4001F0100030101010101010101010000000000000102030405060708090A0BFFC400B51100020102040403040705040400010277000102031104052131061241510761711322328108144291A1B1C109233352F0156272D10A162434E125F11718191A262728292A35363738393A434445464748494A535455565758595A636465666768696A737475767778797A82838485868788898A92939495969798999AA2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9FAFFDA000C03010002110311003F00BABA769163E03D16687C3FA24B7B736363144F3E9D0B969A648D43312849F99F273D79AE8E1B7F04595B3412783ADF526827FB00BC1A4DA28BBBA0E119140DA036E27A855E0E09C57149E34F075E782B4BD3A5F1243697B6F6368A0B5A5C3186789130788C83874EC79ADE87C75F09EEE17B8D4F5044BEB9225B816C2F8C6936431788EC5D8C5954EE50AC703340135C685A4C5E24974E6F0FE950417F67F6BB5F3B48B5135A1CEC74204641DA4A904E73920922BC9B4B8BC49ABF89356D16DA3F0F09B4C1234AC7C396F26E092AC676A456CEE4E581E070324F4AF417F1EF8346B73EA10F886C923B7B5FB269D6C60BB21501DD9918C39CB3633D7007735E5F6F20B5D5350D462F1AF86CCDA86E172B3D85CCF1C81A41210524B565FBCAA7A678A0053A86B8B6735D93E14FB3C1BD6791749B1711CAA4858BE584EE67C0285772B0C9DD8490A58B78FC693DD5DDA49A1E9569796F682EC5B5DF87ACE1926432AC4046AD08DCC59C003F8882065B00E5C96714D6F7704DE3CD1A54BCB85BAB832457ACD24AA1C072C6DB39FDE3F7E77739E2A3B7D2ED2D20BB860F1BE8691DDC4219C7917877A075900E6DB8F9914F1E9E99A00D8BA93C416561F6BB96F0A44AF124B6E8FA359837198239D9549830195268F218AEE276A6F3C557B6BAF164F79A6DBCDA3E9566BA9736B35D7872D11265C0394FDC664E08C040CCD901412C0192E6FEEEF45CFDABE2268D3BDCA0492592DAEDA4C08D623B5CDB6E52C88AAE5482E061B7565D8E9561A7DE47750F8C3C38F2267027B2BA990E411CA3DA953D7B8E3AF5A00E93FB3FC5B2596AD796D6DE1FB9B7D35E449644F0E40A19A340F28F9ED57CB28A7912ECDC721371E2B1F41D7AE759BCBBB2BDB2D19A06D32FDFF77A3DA44C192D6575219230C086507208E952493CD2B65FC7FA19C79E140B4BA0144D12C322A8FB2E157CB4540A3850A368155F47B4D2344B9BABD93C55A55CFF00C4BEF21486086EF7BBC96D246A06E8157EF38EA45007FFD9}
+}}}}\paperw12240\paperh17280\margl613\margr133\margt600\margb200
+\cols3\colno1\colw5613\colsr-0\colno2\colw4946\colsr-0\colno3\colw933\pard\li0\ri0\sl-480\slmult0 \fs48\cf0\f0\charscalex100 {Unix/Linux }\fs40\cf0\f0\charscalex100 {\uc1\u21629X\uc1\u20196X\uc1\u21442X\uc1\u32771X}\par\pard\li2360\ri0\sl-346\slmult0 \fs20\cf1\f0\charscalex100 {\uc1\u25991X\uc1\u20214X\uc1\u21629X \uc1\u20196X}\par\pard\li80\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100\b {ls}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21015X\uc1\u20986X\uc1\u30446X\uc1\u24405X}\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {ls -al}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20351X\uc1\u29992X\uc1\u26684X\uc1\u24335X\uc1\u21270X\uc1\u21015X\uc1\u20986X\uc1\u38544X\uc1\u34255X\uc1\u25991X\uc1\u20214X}\par\pard\li80\ri0\sl-280\slmult0 \*\tx440\fs20\cf0\f0\charscalex100\b {cd}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {dir}\b0 \i0 \fs20\cf0\f0\charscalex100 { - }\fs20\cf0\f0\charscalex100 {\uc1\u26356X\uc1\u25913X\uc1\u30446X\uc1\u24405X\uc1\u21040X}{ }\fs20\cf0\f0\charscalex100\i {dir}\i0 \par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {cd}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26356X\uc1\u25913X\uc1\u21040X}{ }\fs20\cf0\f0\charscalex100 {home}{ }\fs20\cf0\f0\charscalex100 {\uc1\u30446X\uc1\u24405X}\par\pard\li80\ri0\sl-280\slmult0 \*\tx560\fs20\cf0\f0\charscalex100\b {pwd}\b0 \tab \fs20\cf0\f0\charscalex100 {\uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X\uc1\u24403X\uc1\u21069X\uc1\u30446X\uc1\u24405X}\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {mkdir }\b0 \fs20\cf0\f0\charscalex100\b \i {dir}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21019X\uc1\u24314X\uc1\u30446X\uc1\u24405X}{ }\fs20\cf0\f0\charscalex100\i {dir}\i0 \par\pard\li80\ri0\sl-280\slmult0 \*\tx440\fs20\cf0\f0\charscalex100\b {rm}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21024X\uc1\u38500X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 \par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {rm -r }\b0 \fs20\cf0\f0\charscalex100\b \i {dir}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21024X\uc1\u38500X\uc1\u30446X\uc1\u24405X}{ }\fs20\cf0\f0\charscalex100\i {dir}\i0 \par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {rm -f }\b0 \fs20\cf0\f0\charscalex100\b \i {file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u24378X\uc1\u21046X\uc1\u21024X\uc1\u38500X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 \par\pard\li80\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100\b {rm -rf }\b0 \fs20\cf0\f0\charscalex100\b \i {dir}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u24378X\uc1\u21046X\uc1\u21024X\uc1\u38500X\uc1\u30446X\uc1\u24405X}{ }\fs20\cf0\f0\charscalex100\i {dir}\i0 \fs20\cf0\f0\charscalex100 { *}\par\pard\li80\ri0\sl-280\slmult0 \*\tx440\fs20\cf0\f0\charscalex100\b {cp}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {file1 file2}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u23558X}{ }\fs20\cf0\f0\charscalex100\i {file1}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u22797X\uc1\u21046X\uc1\u21040X}{ }\fs20\cf0\f0\charscalex100\i {file2}\i0 \par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {cp -r }\b0 \fs20\cf0\f0\charscalex100\b \i {dir1 dir2}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u23558X}{ }\fs20\cf0\f0\charscalex100\i {dir1}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u22797X\uc1\u21046X\uc1\u21040X}{ }\fs20\cf0\f0\charscalex100\i {dir2}\i0 \fs20\cf0\f0\charscalex100 {; }\fs20\cf0\f0\charscalex100 {\uc1\u22914X\uc1\u26524X}{ }\fs20\cf0\f0\charscalex100\i {dir2}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u19981X\uc1\u23384X}\par\pard\li80\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100 {\uc1\u22312X\uc1\u21017X\uc1\u21019X\uc1\u24314X\uc1\u23427X}\par\pard\li80\ri0\sl-280\slmult0 \*\tx440\fs20\cf0\f0\charscalex100\b {mv}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {file1 file2}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u23558X}{ }\fs20\cf0\f0\charscalex100\i {file1}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u37325X\uc1\u21629X\uc1\u21517X\uc1\u25110X\uc1\u31227X\uc1\u21160X\uc1\u21040X}{ }\fs20\cf0\f0\charscalex100\i {file2}\i0 \fs20\cf0\f0\charscalex100 {; }\fs20\cf0\f0\charscalex100 {\uc1\u22914X\uc1\u26524X }\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\i {file2}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u26159X\uc1\u19968X\uc1\u20010X\uc1\u23384X\uc1\u22312X\uc1\u30340X\uc1\u30446X\uc1\u24405X\uc1\u21017X\uc1\u23558X}{ }\fs20\cf0\f0\charscalex100\i {file1}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u31227X\uc1\u21160X\uc1\u21040X\uc1\u30446X\uc1\u24405X}{ }\fs20\cf0\f0\charscalex100\i {file2}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u20013X}\par\column\pard\li2226\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li2226\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li2226\ri0\sl-400\slmult0 \fs20\cf1\f0\charscalex100 {\uc1\u31995X\uc1\u32479X\uc1\u20449X \uc1\u24687X}\par\pard\li0\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100\b {date}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X\uc1\u24403X\uc1\u21069X\uc1\u26085X\uc1\u26399X\uc1\u21644X\uc1\u26102X\uc1\u38388X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {cal}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X\uc1\u24403X\uc1\u26376X\uc1\u30340X\uc1\u26085X\uc1\u21382X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {uptime}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X\uc1\u31995X\uc1\u32479X\uc1\u20174X\uc1\u24320X\uc1\u26426X\uc1\u21040X\uc1\u29616X\uc1\u22312X\uc1\u25152X\uc1\u36816X\uc1\u34892X\uc1\u30340X\uc1\u26102X\uc1\u38388X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {w}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X\uc1\u30331X\uc1\u24405X\uc1\u30340X\uc1\u29992X\uc1\u25143X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {whoami}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26597X\uc1\u30475X\uc1\u20320X\uc1\u30340X\uc1\u24403X\uc1\u21069X\uc1\u29992X\uc1\u25143X\uc1\u21517X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {finger }\b0 \fs20\cf0\f0\charscalex100\b \i {user}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X }\fs20\cf0\f0\charscalex100\i {user }\i0 \fs20\cf0\f0\charscalex100 {\uc1\u30340X\uc1\u30456X\uc1\u20851X\uc1\u20449X\uc1\u24687X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {uname -a}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X\uc1\u20869X\uc1\u26680X\uc1\u20449X\uc1\u24687X}\par\pard\li0\ri0\sl-320\slmult0 \fs20\cf0\f0\charscalex100\b {cat /proc/cpuinfo}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26597X\uc1\u30475X}{ }\fs20\cf0\f0\charscalex100 {cpu }\fs20\cf0\f0\charscalex100 {\uc1\u20449X\uc1\u24687X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {cat /proc/meminfo}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26597X\uc1\u30475X\uc1\u20869X\uc1\u23384X\uc1\u20449X\uc1\u24687X}\par\pard\li0\ri0\sl-320\slmult0 \*\tx480\fs20\cf0\f0\charscalex100\b {man}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {command}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X}{ }\fs20\cf0\f0\charscalex100\i {command }\i0 \fs20\cf0\f0\charscalex100 {\uc1\u30340X\uc1\u35828X\uc1\u26126X\uc1\u25163X\uc1\u20876X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {df}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X\uc1\u30913X\uc1\u30424X\uc1\u21344X\uc1\u29992X\uc1\u24773X\uc1\u20917X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {du}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X\uc1\u30446X\uc1\u24405X\uc1\u31354X\uc1\u38388X\uc1\u21344X\uc1\u29992X\uc1\u24773X\uc1\u20917X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {free}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X\uc1\u20869X\uc1\u23384X\uc1\u21450X\uc1\u20132X\uc1\u25442X\uc1\u21306X\uc1\u21344X\uc1\u29992X\uc1\u24773X\uc1\u20917X}\par\pard\li2440\ri0\sl-413\slmult0 \fs20\cf1\f0\charscalex100 {\uc1\u21387X\uc1\u32553X}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-293\slmult0 \fs20\cf0\f0\charscalex100 {.com}\par\pard\sect\sectd\sbknone\cols2\colno1\colw5613\colsr-0\colno2\colw5880\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {ln -s }\b0 \fs20\cf0\f0\charscalex100\b \i {file link}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21019X\uc1\u24314X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X\uc1\u31526X\uc1\u21495X\uc1\u36830X\uc1\u25509X}{ }\fs20\cf0\f0\charscalex100\i {link}\i0 \par\pard\li80\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100\b {touch }\b0 \fs20\cf0\f0\charscalex100\b \i {file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21019X\uc1\u24314X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 \par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {cat > }\b0 \fs20\cf0\f0\charscalex100\b \i {file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u23558X\uc1\u26631X\uc1\u20934X\uc1\u36755X\uc1\u20837X\uc1\u28155X\uc1\u21152X\uc1\u21040X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 \par\pard\li80\ri0\sl-280\slmult0 \*\tx680\fs20\cf0\f0\charscalex100\b {more}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26597X\uc1\u30475X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X\uc1\u20869X\uc1\u23481X}\par\pard\li80\ri0\sl-280\slmult0 \*\tx680\fs20\cf0\f0\charscalex100\b {head}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26597X\uc1\u30475X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X\uc1\u21069X}{ }\fs20\cf0\f0\charscalex100 {10}{ }\fs20\cf0\f0\charscalex100 {\uc1\u34892X}\par\pard\li80\ri0\sl-280\slmult0 \*\tx680\fs20\cf0\f0\charscalex100\b {tail}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26597X\uc1\u30475X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X\uc1\u21518X}{ }\fs20\cf0\f0\charscalex100 {10}{ }\fs20\cf0\f0\charscalex100 {\uc1\u34892X}\par\pard\li80\ri0\sl-280\slmult0 \*\tx1040\fs20\cf0\f0\charscalex100\b {tail -f}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20174X\uc1\u21518X}{ }\fs20\cf0\f0\charscalex100 {10 }\fs20\cf0\f0\charscalex100 {\uc1\u34892X\uc1\u24320X\uc1\u22987X\uc1\u26597X\uc1\u30475X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X\uc1\u20869X\uc1\u23481X}\par\pard\li2360\ri0\sl-413\slmult0 \fs20\cf1\f0\charscalex100 {\uc1\u36827X\uc1\u31243X\uc1\u31649X \uc1\u29702X}\par\pard\li80\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100\b {ps}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X\uc1\u24403X\uc1\u21069X\uc1\u30340X\uc1\u27963X\uc1\u21160X\uc1\u36827X\uc1\u31243X}\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {top}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26174X\uc1\u31034X\uc1\u25152X\uc1\u26377X\uc1\u27491X\uc1\u22312X\uc1\u36816X\uc1\u34892X\uc1\u30340X\uc1\u36827X\uc1\u31243X}\par\pard\li80\ri0\sl-280\slmult0 \*\tx680\fs20\cf0\f0\charscalex100\b {kill}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {pid}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26432X\uc1\u25481X\uc1\u36827X\uc1\u31243X}{ }\fs20\cf0\f0\charscalex100 {id}{ }\fs20\cf0\f0\charscalex100\i {pid}\i0 \par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {killall }\b0 \fs20\cf0\f0\charscalex100\b \i {proc}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26432X\uc1\u25481X\uc1\u25152X\uc1\u26377X\uc1\u21517X\uc1\u20026X}{ }\fs20\cf0\f0\charscalex100\i {proc}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X\uc1\u36827X\uc1\u31243X}{ }\fs20\cf0\f0\charscalex100 {*}\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {bg}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21015X\uc1\u20986X\uc1\u24050X\uc1\u20572X\uc1\u27490X\uc1\u25110X\uc1\u21518X\uc1\u21488X\uc1\u30340X\uc1\u20316X\uc1\u19994X}\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {fg}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u23558X\uc1\u26368X\uc1\u36817X\uc1\u30340X\uc1\u20316X\uc1\u19994X\uc1\u24102X\uc1\u21040X\uc1\u21069X\uc1\u21488X}\par\pard\li80\ri0\sl-280\slmult0 \*\tx440\fs20\cf0\f0\charscalex100\b {fg}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {n}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u23558X\uc1\u20316X\uc1\u19994X}{ }\fs20\cf0\f0\charscalex100\i {n}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u24102X\uc1\u21040X\uc1\u21069X\uc1\u21488X}\par\pard\li2360\ri0\sl-413\slmult0 \fs20\cf1\f0\charscalex100 {\uc1\u25991X\uc1\u20214X\uc1\u26435X \uc1\u38480X}\par\pard\li80\ri0\sl-320\slmult0 \fs20\cf0\f0\charscalex100\b {chmod }\b0 \fs20\cf0\f0\charscalex100\b \i {octal file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26356X\uc1\u25913X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X\uc1\u26435X\uc1\u38480X}\par\pard\li440\ri0\sl-266\slmult0 \*\tx800\fs18\cf0\f0\charscalex100 {\uc1\u9679X}\tab \fs20\cf0\f0\charscalex100 {4 \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u35835X}{ }\fs20\cf0\f0\charscalex100 {(r)}\par\pard\li440\ri0\sl-280\slmult0 \*\tx800\fs18\cf0\f0\charscalex100 {\uc1\u9679X}\tab \fs20\cf0\f0\charscalex100 {2 \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20889X}{ }\fs20\cf0\f0\charscalex100 {(w)}\par\pard\li440\ri0\sl-280\slmult0 \*\tx800\fs18\cf0\f0\charscalex100 {\uc1\u9679X}\tab \fs20\cf0\f0\charscalex100 {1 \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u25191X\uc1\u34892X}{ }\fs20\cf0\f0\charscalex100 {(x)}\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100 {\uc1\u31034X\uc1\u20363X}\fs20\cf0\f0\charscalex100 {:}\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {chmod 777}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20026X\uc1\u25152X\uc1\u26377X\uc1\u29992X\uc1\u25143X\uc1\u28155X\uc1\u21152X\uc1\u35835X\uc1\u12289X\uc1\u20889X\uc1\u12289X\uc1\u25191X\uc1\u34892X\uc1\u26435X\uc1\u38480X}\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {chmod 755}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20026X\uc1\u25152X\uc1\u26377X\uc1\u32773X\uc1\u28155X\uc1\u21152X}{ }\fs20\cf0\f0\charscalex100 {rwx }\fs20\cf0\f0\charscalex100 {\uc1\u26435X\uc1\u38480X}\fs20\cf0\f0\charscalex100 {,}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20026X\uc1\u32452X\uc1\u21644X\uc1\u20854X\uc1\u20182X\uc1\u29992X\uc1\u25143X\uc1\u28155X\uc1\u21152X}\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100 {rx}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26435X\uc1\u38480X}\par\pard\li80\ri0\sl-320\slmult0 \fs20\cf0\f0\charscalex100 {\uc1\u26356X\uc1\u22810X\uc1\u36873X\uc1\u39033X\uc1\u21442X\uc1\u38405X}{ }\fs20\cf0\f0\charscalex100\b {man chmod}\b0 \fs20\cf0\f0\charscalex100 {.}\par\pard\li2573\ri0\sl-386\slmult0 \fs20\cf1\f0\charscalex100\b {SSH}\b0 \par\pard\li80\ri0\sl-280\slmult0 \*\tx560\fs20\cf0\f0\charscalex100\b {ssh}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {user@host}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20197X}{ }\fs20\cf0\f0\charscalex100\i {user}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u29992X\uc1\u25143X\uc1\u36523X\uc1\u20221X\uc1\u36830X\uc1\u25509X\uc1\u21040X}{ }\fs20\cf0\f0\charscalex100\i {host}\i0 \par\pard\li80\ri0\sl-266\slmult0 \*\tx920\*\tx1520\fs20\cf0\f0\charscalex100\b {ssh -p}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {port}\b0 \i0 \tab \fs20\cf0\f0\charscalex100\b \i {user@host}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u22312X\uc1\u31471X\uc1\u21475X}{ }\fs20\cf0\f0\charscalex100\i {port}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u20197X}{ }\fs20\cf0\f0\charscalex100\i {user}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u29992X\uc1\u25143X\uc1\u36523X}\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100 {\uc1\u20221X\uc1\u36830X\uc1\u25509X\uc1\u21040X}{ }\fs20\cf0\f0\charscalex100\i {host}\i0 \par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {ssh-copy-id }\b0 \fs20\cf0\f0\charscalex100\b \i {user@host}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u23558X\uc1\u23494X\uc1\u38053X\uc1\u28155X\uc1\u21152X\uc1\u21040X}{ }\fs20\cf0\f0\charscalex100\i {host}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u20197X\uc1\u23454X\uc1\u29616X\uc1\u26080X}\par\pard\li80\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100 {\uc1\u23494X\uc1\u30721X\uc1\u30331X\uc1\u24405X}\par\pard\li2573\ri0\sl-413\slmult0 \fs20\cf1\f0\charscalex100 {\uc1\u25628X\uc1\u32034X}\par\column\pard\li0\ri0\sl-226\slmult0 \fs20\cf0\f0\charscalex100\b {tar cf }\b0 \fs20\cf0\f0\charscalex100\b \i {file.tar files}\b0 \i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21019X\uc1\u24314X\uc1\u21253X\uc1\u21547X}{ }\fs20\cf0\f0\charscalex100\i {files}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X}{ }\fs20\cf0\f0\charscalex100 {tar}{ }\fs20\cf0\f0\charscalex100 {\uc1\u25991X\uc1\u20214X }\par\pard\li0\ri0\sl-240\slmult0 \fs20\cf0\f0\charscalex100\i {file.tar}\i0 \par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {tar xf }\b0 \fs20\cf0\f0\charscalex100\b \i {file.tar}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20174X}{ }\fs20\cf0\f0\charscalex100\i {file.tar}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u25552X\uc1\u21462X\uc1\u25991X\uc1\u20214X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {tar czf }\b0 \fs20\cf0\f0\charscalex100\b \i {file.tar.gz files}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20351X\uc1\u29992X}{ }\fs20\cf0\f0\charscalex100 {Gzip}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21387X\uc1\u32553X\uc1\u21019X\uc1\u24314X }\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100 {tar}{ }\fs20\cf0\f0\charscalex100 {\uc1\u25991X\uc1\u20214X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {tar xzf }\b0 \fs20\cf0\f0\charscalex100\b \i {file.tar.gz}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20351X\uc1\u29992X}{ }\fs20\cf0\f0\charscalex100 {Gzip}{ }\fs20\cf0\f0\charscalex100 {\uc1\u25552X\uc1\u21462X}{ }\fs20\cf0\f0\charscalex100 {tar}{ }\fs20\cf0\f0\charscalex100 {\uc1\u25991X\uc1\u20214X}\par\pard\li0\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100\b {tar cjf }\b0 \fs20\cf0\f0\charscalex100\b \i {file.tar.bz2}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20351X\uc1\u29992X}{ }\fs20\cf0\f0\charscalex100 {Bzip2}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21387X\uc1\u32553X\uc1\u21019X\uc1\u24314X}{ }\fs20\cf0\f0\charscalex100 {tar}{ }\fs20\cf0\f0\charscalex100 {\uc1\u25991X}\par\pard\li0\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100 {\uc1\u20214X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {tar xjf }\b0 \fs20\cf0\f0\charscalex100\b \i {file.tar.bz2}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20351X\uc1\u29992X}{ }\fs20\cf0\f0\charscalex100 {Bzip2}{ }\fs20\cf0\f0\charscalex100 {\uc1\u25552X\uc1\u21462X}{ }\fs20\cf0\f0\charscalex100 {tar}{ }\fs20\cf0\f0\charscalex100 {\uc1\u25991X\uc1\u20214X}\par\pard\li0\ri0\sl-280\slmult0 \*\tx600\fs20\cf0\f0\charscalex100\b {gzip}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21387X\uc1\u32553X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u24182X\uc1\u37325X\uc1\u21629X\uc1\u21517X\uc1\u20026X}{ }\fs20\cf0\f0\charscalex100\i {file.gz}\i0 \par\pard\li0\ri0\sl-280\slmult0 \*\tx960\fs20\cf0\f0\charscalex100\b {gzip -d}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {file.gz}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u23558X}{ }\fs20\cf0\f0\charscalex100\i {file.gz}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u35299X\uc1\u21387X\uc1\u32553X\uc1\u20026X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 \par\pard\li2440\ri0\sl-400\slmult0 \fs20\cf1\f0\charscalex100 {\uc1\u32593X\uc1\u32476X}\par\pard\li0\ri0\sl-280\slmult0 \*\tx600\fs20\cf0\f0\charscalex100\b {ping}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {host}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X ping}{ }\fs20\cf0\f0\charscalex100\i {host}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u24182X\uc1\u36755X\uc1\u20986X\uc1\u32467X\uc1\u26524X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {whois }\b0 \fs20\cf0\f0\charscalex100\b \i {domain}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u33719X\uc1\u21462X}{ }\fs20\cf0\f0\charscalex100\i {domain}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X}{ }\fs20\cf0\f0\charscalex100 {whois }\fs20\cf0\f0\charscalex100 {\uc1\u20449X\uc1\u24687X}\par\pard\li0\ri0\sl-280\slmult0 \*\tx480\fs20\cf0\f0\charscalex100\b {dig}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {domain}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u33719X\uc1\u21462X}{ }\fs20\cf0\f0\charscalex100\i {domain }\i0 \fs20\cf0\f0\charscalex100 {\uc1\u30340X  }\fs20\cf0\f0\charscalex100 {DNS}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20449X\uc1\u24687X}\par\pard\li0\ri0\sl-280\slmult0 \*\tx840\fs20\cf0\f0\charscalex100\b {dig -x}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {host}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u36870X\uc1\u21521X\uc1\u26597X\uc1\u35810X}{ }\fs20\cf0\f0\charscalex100\i {host}\i0 \par\pard\li0\ri0\sl-280\slmult0 \*\tx600\fs20\cf0\f0\charscalex100\b {wget}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u19979X\uc1\u36733X}{ }\fs20\cf0\f0\charscalex100\i {file}\i0 \par\pard\li0\ri0\sl-280\slmult0 \*\tx960\fs20\cf0\f0\charscalex100\b {wget -c}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {file}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u26029X\uc1\u28857X\uc1\u32493X\uc1\u20256X}\par\pard\li2440\ri0\sl-400\slmult0 \fs20\cf1\f0\charscalex100 {\uc1\u23433X\uc1\u35013X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100 {\uc1\u20174X\uc1\u28304X\uc1\u20195X\uc1\u30721X\uc1\u23433X\uc1\u35013X}\fs20\cf0\f0\charscalex100 {:}\par\pard\li0\ri0\sl-226\slmult0 \fs20\cf0\f0\charscalex100\b {./configure}\b0 \par\pard\li0\ri0\sl-240\slmult0 \fs20\cf0\f0\charscalex100\b {make}\b0 \par\pard\li0\ri0\sl-226\slmult0 \fs20\cf0\f0\charscalex100\b {make install}\b0 \par\pard\li0\ri0\sl-280\slmult0 \*\tx960\fs20\cf0\f0\charscalex100\b {dpkg -i}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {pkg.deb}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u23433X\uc1\u35013X\uc1\u21253X}{ }\fs20\cf0\f0\charscalex100 {(Debian)}\par\pard\li0\ri0\sl-280\slmult0 \*\tx1080\fs20\cf0\f0\charscalex100\b {rpm -Uvh}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {pkg.rpm}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u23433X\uc1\u35013X\uc1\u21253X}{ }\fs20\cf0\f0\charscalex100 {(RPM)}\par\pard\li2333\ri0\sl-413\slmult0 \fs20\cf1\f0\charscalex100 {\uc1\u24555X\uc1\u25463X \uc1\u38190X}\par\pard\li0\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100\b {Ctrl+C}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20572X\uc1\u27490X\uc1\u24403X\uc1\u21069X\uc1\u21629X\uc1\u20196X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {Ctrl+Z}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u20572X\uc1\u27490X\uc1\u24403X\uc1\u21069X\uc1\u21629X\uc1\u20196X\uc1\u65292X\uc1\u24182X\uc1\u20351X\uc1\u29992X}{ }\fs20\cf0\f0\charscalex100\b {fg }\b0 \fs20\cf0\f0\charscalex100 {\uc1\u24674X\uc1\u22797X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {Ctrl+D}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u27880X\uc1\u38144X\uc1\u24403X\uc1\u21069X\uc1\u20250X\uc1\u35805X\uc1\u65292X\uc1\u19982X }\fs20\cf0\f0\charscalex100\b {exit }\b0 \fs20\cf0\f0\charscalex100 {\uc1\u30456X\uc1\u20284X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {Ctrl+W}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21024X\uc1\u38500X\uc1\u24403X\uc1\u21069X\uc1\u34892X\uc1\u20013X\uc1\u30340X\uc1\u23383X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {Ctrl+U}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u21024X\uc1\u38500X\uc1\u25972X\uc1\u34892X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {!!}\b0 \fs20\cf0\f0\charscalex100 { - }\fs20\cf0\f0\charscalex100 {\uc1\u37325X\uc1\u22797X\uc1\u19978X\uc1\u27425X\uc1\u30340X\uc1\u21629X\uc1\u20196X}\par\pard\li0\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\b {exit}\b0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u27880X\uc1\u38144X\uc1\u24403X\uc1\u21069X\uc1\u20250X\uc1\u35805X}\par\pard\sect\sectd\sbknone\cols2\colno1\colw7720\colsr-0\colno2\colw3773\pard\li80\ri0\sl-280\slmult0 \*\tx680\*\tx5613\fs20\cf0\f0\charscalex100\b {grep}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {pattern files}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u25628X\uc1\u32034X}{ }\fs20\cf0\f0\charscalex100\i {files}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u20013X\uc1\u21305X\uc1\u37197X}{ }\fs20\cf0\f0\charscalex100\i {pattern}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X\uc1\u20869X\uc1\u23481X}\tab \fs20\cf0\f0\charscalex100 {*}{ }\fs20\cf0\f0\charscalex100 {\uc1\u23567X\uc1\u24515X\uc1\u20351X\uc1\u29992X\uc1\u12290X}\par\pard\li80\ri0\sl-266\slmult0 \*\tx1040\fs20\cf0\f0\charscalex100\b {grep -r}\b0 \tab \fs20\cf0\f0\charscalex100\b \i {pattern dir}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u36882X\uc1\u24402X\uc1\u25628X\uc1\u32034X}{ }\fs20\cf0\f0\charscalex100\i {dir}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u20013X\uc1\u21305X\uc1\u37197X}{ }\fs20\cf0\f0\charscalex100\i {pattern}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X}\par\pard\li80\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100 {\uc1\u20869X\uc1\u23481X}\par\pard\li80\ri0\sl-266\slmult0 \fs20\cf0\f0\charscalex100\b \i {command}\b0 \i0 \fs20\cf0\f0\charscalex100\b { | grep }\b0 \fs20\cf0\f0\charscalex100\b \i {pattern}\b0 \i0 \fs20\cf0\f0\charscalex100 { \uc1\u8211X}{ }\fs20\cf0\f0\charscalex100 {\uc1\u25628X\uc1\u32034X}{ }\fs20\cf0\f0\charscalex100\i {command}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u36755X\uc1\u20986X\uc1\u20013X\uc1\u21305X\uc1\u37197X }\par\pard\li80\ri0\sl-280\slmult0 \fs20\cf0\f0\charscalex100\i {pattern}\i0 { }\fs20\cf0\f0\charscalex100 {\uc1\u30340X\uc1\u20869X\uc1\u23481X}\par\column\pard\li0\ri0\sl-213\slmult0 \fs18\cf0\par\pard\li0\ri0\sl-333\slmult0 \fs20\cf0\f0\charscalex100 {\uc1\u32763X\uc1\u35793X}\fs20\cf0\f0\charscalex100 {/Toy <http://LinuxTOY.org>}\par}

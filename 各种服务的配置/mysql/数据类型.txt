@@ -1,0 +1,23 @@
+数字类型
+
+numf decimal(del)
+ int smallit 
+ decimal(5,3) 数字总长度 5,小数位: 2
+日期和时间类型
+  datetime yyyy-mm-dd hh:mm:ss
+  date  yyyy-mm-dd
+  timesamp
+  time
+  year
+
+字符串类型
+ char varchar blob 
+  text
+    tinyblob ; text;mediumblob;longblob
+  
+  enum 
+  level enum ("a","b")
+int 
+unsigned
+float (2,3)
+double(2,4)

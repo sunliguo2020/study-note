@@ -1,0 +1,34 @@
+1:浏览器 当然是firefox 。还有几个有用的扩展。
+        例如：Google Browser Sysc 可以把收藏夹等一些东西先放到你的gmail邮箱中。
+当修改时，会自动上传。再别的机器上用时，可以自动下载。方便了在一台电脑上用windos 和linux ，
+收藏夹不同步的情况。可惜停止更新了。不过又找到一个 Foxmarks
+Bookmark Duplicate Detector 查找收藏夹是否有重复。
+2：图像
+   GpicView Image viewer 类似于windows下的图像查看器。
+   GQview
+   GIMP   类似于Photoshop
+3：影像
+   mplayer
+4:文本编辑器
+     vi
+5:英汉字典
+   stardict
+6:下载工具
+   wget axel
+   bt：Deluge
+7: 抓屏
+   import
+   display
+图像格式转化 conver
+8:英汉词典 stardict
+9:输入法 fcitx
+10:网页编辑
+    kompoZer
+    cssed
+    gphpedit
+11:Internet 
+    tcpdump
+    gsopcast : a gtk front-end of p2p TV sopcast
+    nload
+12:音乐：
+    audacious
