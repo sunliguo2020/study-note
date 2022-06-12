@@ -1,0 +1,9 @@
+start /commit /rollback
+
+set autocommit=0;
+自动提交语句
+ddl create drop database;
+    create drop alter table;
+
+    回滚点
+
