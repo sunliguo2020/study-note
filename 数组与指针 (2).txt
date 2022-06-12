@@ -1,0 +1,28 @@
+                      ^_^ 大家好，我是丁林松 ^_^
+                       ^_^  此教程由山东德州思蓝软件公司提供^_^
+   (谨此给拥有linux精神的人，为中国软件的崛起而奋斗！！！）
+
+                                      c 语言下的数组与指针
+
+   #include <string.h>  
+  char *strcpy(char dst[],const char src[])
+  {
+            int i;
+            for(i=0;src[i]='\0'; i++)
+                 dst[i]=src[i];
+                dst[i]='\0'; 
+              return dst[i];
+ }
+  char *strcpy(char *dst, const char *src)
+  {
+           char *s=dst;
+           while(*dst++=*src++)
+          ;
+       return s;
+}
+
+          
+
+  
+   
+           
