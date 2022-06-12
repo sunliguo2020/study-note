@@ -1,42 +1,42 @@
-linux³£ÓÃÐ¡¼¼ÇÉ
+linuxå¸¸ç”¨å°æŠ€å·§
 
-£±¡¢´¦ÀíÌØÊâµÄÎÄ¼þÃû
+ï¼‘ã€å¤„ç†ç‰¹æ®Šçš„æ–‡ä»¶å
 
-¼ÙÉèLinuxÏµÍ³ÖÐÓÐÒ»¸öÎÄ¼þÃû½Ð¡°-aaa¡±£¬Èç¹ûÎÒÃÇÏë¶ÔËü½øÐÐ²Ù×÷£¬ÀýÈçÏÖÔÚÒªÉ¾³ýËü£¬Èç¹ûÎÒÃÇ°´ÕÕÒ»°ãµÄÉ¾³ý·½·¨ÔÚÃüÁîÐÐÖÐÊäÈërm -aaaÃüÁî£¬½çÃæ½«»áÌáÊ¾ÎÒÃÇÊÇÎÞÐ§Ñ¡Ïî£¨invalid option£©£¬Ô­À´ÓÉÓÚÎÄ¼þÃûµÄµÚÒ»¸ö×Ö·ûÎª - £¬Linux°ÑÎÄ¼þÃûµ±×÷Ñ¡ÏîÁË£¬ÎÒÃÇ¿ÉÒÔÊ¹ÓÃ¡°--¡±·ûºÅÀ´½â¾öÕâ¸öÎÊÌâ£¬ÀýÈçÎÒÃÇ¿ÉÒÔÊäÈërm -- -aaaÃüÁîÀ´É¾³ý-aaaÎÄ¼þ¡£Èç¹ûÊÇÆäËûÌØÊâ×Ö·ûµÄ»°¿ÉÒÔÔÚÌØÊâ×Ö·ûÇ°¼ÓÒ»¸ö¡°¡±·ûºÅ£¬»òÕßÓÃË«ÒýºÅ°ÑÕû¸öÎÄ¼þÃûÀ¨ÆðÀ´¡£
+å‡è®¾Linuxç³»ç»Ÿä¸­æœ‰ä¸€ä¸ªæ–‡ä»¶åå«â€œ-aaaâ€ï¼Œå¦‚æžœæˆ‘ä»¬æƒ³å¯¹å®ƒè¿›è¡Œæ“ä½œï¼Œä¾‹å¦‚çŽ°åœ¨è¦åˆ é™¤å®ƒï¼Œå¦‚æžœæˆ‘ä»¬æŒ‰ç…§ä¸€èˆ¬çš„åˆ é™¤æ–¹æ³•åœ¨å‘½ä»¤è¡Œä¸­è¾“å…¥rm -aaaå‘½ä»¤ï¼Œç•Œé¢å°†ä¼šæç¤ºæˆ‘ä»¬æ˜¯æ— æ•ˆé€‰é¡¹ï¼ˆinvalid optionï¼‰ï¼ŒåŽŸæ¥ç”±äºŽæ–‡ä»¶åçš„ç¬¬ä¸€ä¸ªå­—ç¬¦ä¸º - ï¼ŒLinuxæŠŠæ–‡ä»¶åå½“ä½œé€‰é¡¹äº†ï¼Œæˆ‘ä»¬å¯ä»¥ä½¿ç”¨â€œ--â€ç¬¦å·æ¥è§£å†³è¿™ä¸ªé—®é¢˜ï¼Œä¾‹å¦‚æˆ‘ä»¬å¯ä»¥è¾“å…¥rm -- -aaaå‘½ä»¤æ¥åˆ é™¤-aaaæ–‡ä»¶ã€‚å¦‚æžœæ˜¯å…¶ä»–ç‰¹æ®Šå­—ç¬¦çš„è¯å¯ä»¥åœ¨ç‰¹æ®Šå­—ç¬¦å‰åŠ ä¸€ä¸ªâ€œâ€ç¬¦å·ï¼Œæˆ–è€…ç”¨åŒå¼•å·æŠŠæ•´ä¸ªæ–‡ä»¶åæ‹¬èµ·æ¥ã€‚
 
-£²¡¢ÐÞ¸´LinuxÏÂ³¬¼¶ÓÃ»§µÄÃÜÂë
+ï¼’ã€ä¿®å¤Linuxä¸‹è¶…çº§ç”¨æˆ·çš„å¯†ç 
 
-¡¡¡¡Èç¹û³¬¼¶ÓÃ»§½«ÃÜÂëÍü¼Ç£¬¾ÍÎÞ·¨½øÈëÏµÍ³£¬Ò²ÎÞ·¨¹ÜÀíºÍÊ¹ÓÃÏµÍ³¡£±¾À´ÕâÖÖÊÂ²»Ì«¿ÉÄÜ·¢Éú£¬µ«ÊÇÔÚÒ»Ð©Linuxµ¥»úÊ¹ÓÃÕß£¬ÓÈÆäÊÇ³õÑ§ÕßÖÐ£¬È´ÊÇ±È½ÏÈÝÒ×·¢Éú¡£Ò»°ãµÄ½â¾ö·½·¨¾ÍÊÇ¸ñÊ½»¯Ó²ÅÌÀ´ÖØÐÂ°²×°ÏµÍ³£¬µ«ÕâÓÐµã¶ùÐ¡Ìâ´ó×÷ÁË¡£×¼±¸ºÃbootdiskºÍrootdiskÁ½ÕÅÈíÅÌ£¬´ÓÈíÇýÆô¶¯£¬Æô¶¯µ½ rootÅÌ²¢³öÏÖshellÌáÊ¾·û¡£½«Linux¸ùÄ¿Â¼·ÖÇømountÖÁ/mntÄ¿Â¼£¬±ÈÈçÄãµÄLinuxÔÚÓ²ÅÌµÚÒ»·ÖÇø£¬¾ÍÔÚÃüÁîÐÐÖÐÊäÈëmount /dev/hda1 /mnt£¬È»ºó½øÈëmntÄ¿Â¼£¬½«ÆäÖÐµÄetc/passwdÎÄ¼þ¸ÄÃû£¬ÊäÈëmv /mnt/etc/passwd /mnt/etc/passwd.bak¾Í¿ÉÒÔÁË£»½Ó×ÅÊ¹ÓÃÃüÁîcp /etc/passwd /mnt/etc/passwd½«ÈíÅÌÉÏµÄ/etc/passwdÎÄ¼þ¸´ÖÆµ½Ó²ÅÌÖÐµÄetcÄ¿Â¼ÏÂ£¬ÕâÑùÖØÐÂÓÉÓ²ÅÌÆô¶¯£¬µÇÂ¼Ê±¾Í²»»áÑ¯ÎÊ³¬¼¶ÃÜÂë£»×îºóÊ¹ÓÃmv/etc/passwd.bak passwdÃüÁî½«passwdÎÄ¼þ¸Ä»Ø£¬ÔÙÔËÐÐpasswdÃüÁîÖØÐÂÉè¶¨ÃÜÂë¾Í¿ÉÒÔÁË¡£
+ã€€ã€€å¦‚æžœè¶…çº§ç”¨æˆ·å°†å¯†ç å¿˜è®°ï¼Œå°±æ— æ³•è¿›å…¥ç³»ç»Ÿï¼Œä¹Ÿæ— æ³•ç®¡ç†å’Œä½¿ç”¨ç³»ç»Ÿã€‚æœ¬æ¥è¿™ç§äº‹ä¸å¤ªå¯èƒ½å‘ç”Ÿï¼Œä½†æ˜¯åœ¨ä¸€äº›Linuxå•æœºä½¿ç”¨è€…ï¼Œå°¤å…¶æ˜¯åˆå­¦è€…ä¸­ï¼Œå´æ˜¯æ¯”è¾ƒå®¹æ˜“å‘ç”Ÿã€‚ä¸€èˆ¬çš„è§£å†³æ–¹æ³•å°±æ˜¯æ ¼å¼åŒ–ç¡¬ç›˜æ¥é‡æ–°å®‰è£…ç³»ç»Ÿï¼Œä½†è¿™æœ‰ç‚¹å„¿å°é¢˜å¤§ä½œäº†ã€‚å‡†å¤‡å¥½bootdiskå’Œrootdiskä¸¤å¼ è½¯ç›˜ï¼Œä»Žè½¯é©±å¯åŠ¨ï¼Œå¯åŠ¨åˆ° rootç›˜å¹¶å‡ºçŽ°shellæç¤ºç¬¦ã€‚å°†Linuxæ ¹ç›®å½•åˆ†åŒºmountè‡³/mntç›®å½•ï¼Œæ¯”å¦‚ä½ çš„Linuxåœ¨ç¡¬ç›˜ç¬¬ä¸€åˆ†åŒºï¼Œå°±åœ¨å‘½ä»¤è¡Œä¸­è¾“å…¥mount /dev/hda1 /mntï¼Œç„¶åŽè¿›å…¥mntç›®å½•ï¼Œå°†å…¶ä¸­çš„etc/passwdæ–‡ä»¶æ”¹åï¼Œè¾“å…¥mv /mnt/etc/passwd /mnt/etc/passwd.bakå°±å¯ä»¥äº†ï¼›æŽ¥ç€ä½¿ç”¨å‘½ä»¤cp /etc/passwd /mnt/etc/passwdå°†è½¯ç›˜ä¸Šçš„/etc/passwdæ–‡ä»¶å¤åˆ¶åˆ°ç¡¬ç›˜ä¸­çš„etcç›®å½•ä¸‹ï¼Œè¿™æ ·é‡æ–°ç”±ç¡¬ç›˜å¯åŠ¨ï¼Œç™»å½•æ—¶å°±ä¸ä¼šè¯¢é—®è¶…çº§å¯†ç ï¼›æœ€åŽä½¿ç”¨mv/etc/passwd.bak passwdå‘½ä»¤å°†passwdæ–‡ä»¶æ”¹å›žï¼Œå†è¿è¡Œpasswdå‘½ä»¤é‡æ–°è®¾å®šå¯†ç å°±å¯ä»¥äº†ã€‚
 
-£³¡¢Ö±½Ó½øÐÐLinuxµÄ°²×°¹¤×÷
+ï¼“ã€ç›´æŽ¥è¿›è¡ŒLinuxçš„å®‰è£…å·¥ä½œ
 
-Í¨³£ÎÒÃÇÔÚ°²×°Ä³¸ö²Ù×÷ÏµÍ³Èí¼þÊ±£¬ÐèÒª¸ÃÏµÍ³µÄÒýµ¼ÅÌÆô¶¯²ÅÄÜ°²×°¡£µ«ÎÒÃÇÔÚ°²×°Linux²Ù×÷ÏµÍ³Ê±£¬¿ÉÒÔÀûÓÃ¸ÃÏµÍ³¹âÅÌÖÐµÄÒ»¸öÃûÎª loadlin.exeµÄDOSÈí¼þ£¬½«LinuxºËÐÄÖ±½Óµ÷ÈëÄÚ´æ£¬²¢ÓÉLinuxºËÐÄ´úÌæµ±Ç°²Ù×÷ÏµÍ³À´½Ó¹Ü¼ÆËã»ú£¬²¢½øÈëLinuxµÄ°²×°½çÃæ¡£ÔÚ°²×°LinuxÊ±£¬ÎÒÃÇÖ»ÒªÔÚÔËÐÐ¶Ô»°¿òÖÐÊäÈëloadlin E:imagesvmlinuz root=/dev/ram initrd=E:imagesinitrd.imgÕâ¸öÃüÁî¾Í¿ÉÒÔÖ±½Ó°²×°LinuxÁË£»ÆäÖÐEÊÇ¹âÇýÅÌ·û£¬E:imagesvmlinuzÎª LinuxºËÐÄÃû¡£
+é€šå¸¸æˆ‘ä»¬åœ¨å®‰è£…æŸä¸ªæ“ä½œç³»ç»Ÿè½¯ä»¶æ—¶ï¼Œéœ€è¦è¯¥ç³»ç»Ÿçš„å¼•å¯¼ç›˜å¯åŠ¨æ‰èƒ½å®‰è£…ã€‚ä½†æˆ‘ä»¬åœ¨å®‰è£…Linuxæ“ä½œç³»ç»Ÿæ—¶ï¼Œå¯ä»¥åˆ©ç”¨è¯¥ç³»ç»Ÿå…‰ç›˜ä¸­çš„ä¸€ä¸ªåä¸º loadlin.exeçš„DOSè½¯ä»¶ï¼Œå°†Linuxæ ¸å¿ƒç›´æŽ¥è°ƒå…¥å†…å­˜ï¼Œå¹¶ç”±Linuxæ ¸å¿ƒä»£æ›¿å½“å‰æ“ä½œç³»ç»Ÿæ¥æŽ¥ç®¡è®¡ç®—æœºï¼Œå¹¶è¿›å…¥Linuxçš„å®‰è£…ç•Œé¢ã€‚åœ¨å®‰è£…Linuxæ—¶ï¼Œæˆ‘ä»¬åªè¦åœ¨è¿è¡Œå¯¹è¯æ¡†ä¸­è¾“å…¥loadlin E:imagesvmlinuz root=/dev/ram initrd=E:imagesinitrd.imgè¿™ä¸ªå‘½ä»¤å°±å¯ä»¥ç›´æŽ¥å®‰è£…Linuxäº†ï¼›å…¶ä¸­Eæ˜¯å…‰é©±ç›˜ç¬¦ï¼ŒE:imagesvmlinuzä¸º Linuxæ ¸å¿ƒåã€‚
 
-£´¡¢¿ìËÙÆô¶¯LinuxÏµÍ³
+ï¼”ã€å¿«é€Ÿå¯åŠ¨Linuxç³»ç»Ÿ
 
-Ëæ×Å¸öÈË¼ÆËã»úÅäÖÃµÄÈÕÒæÌá¸ß£¬ÔÚ×Ô¼ºµÄ¼ÆËã»úÉÏ°²×°LinuxÏµÍ³ÒÑ¾­²»ÊÇÊ²Ã´ÐÂÏÊµÄÊÂÁË¡£¼ÙÉèÎÒÃÇµÄ¼ÆËã»úÉÏÍ¬Ê±×°ÓÐwindowsºÍLinuxÁ½¸ö²Ù×÷ÏµÍ³£¬Ó¦¸ÃÈçºÎÆô¶¯LinuxÄØ£¿ÊÇ·ñÃ¿´Î¶¼ÐèÒªÖØÆô¼ÆËã»ú£¬Í¨¹ýLiLoÒýµ¼£¿ÆäÊµÈç¹ûÎÒÃÇÔÚdosÏÂ£¬ÓÐÒ»ÖÖ¼òµ¥¿ìËÙÆô¶¯LinuxµÄ·½·¨£¬ÄÇ¾ÍÊÇload Linux¡£loadlin.exeÊÇÔÚdosÏÂµÄ¿ÉÖ´ÐÐ³ÌÐò£¬Ëü¿ÉÒÔÔÚ´¿dos»·¾³ÏÂÑ¸ËÙÆô¶¯Linux£¬¶øÇÒÎÞÐèÖØÆô¼ÆËã»ú£¬Í¨³£ÎÒÃÇ¿ÉÒÔÔÚ¹âÅÌµÄ /kernelsÄ¿Â¼ÏÂ¿ÉÒÔÕÒµ½Õâ¸ö³ÌÐò¡£Èç¹û²»ÖªÕâ¸ö³ÌÐò±»·ÅÖÃÓÚ°²×°ÅÌµÄºÎ´¦£¬¿ÉÒÔÊ¹ÓÃ¡°find £­name loadlin£ª¡±ÃüÁîÀ´Ñ°ÕÒ¡£ÕÒµ½Ö®ºó½«Æä¸´ÖÆµ½dos·ÖÇøÖÐ£¬Í¬Ê±»¹ÐèÒª¸´ÖÆÒ»·ÝÄãËùÊ¹ÓÃµÄLinuxÄÚºËÎÄ¼þ¡£¿ÉÒÔÍ¨¹ýwindowsÖ±½Ó´Ó¹âÅÌ¸´ÖÆ£¬Ò²¿ÉÔÚLinux»·¾³ÏÂÊ¹ÓÃmcopyÃüÁî½«ÎÄ¼þcopyµ½dos·ÖÇø£»½Ó×ÅÔÙ±àÐ´Ò»¸öLinux.batµÄÅú´¦ÀíÎÄ¼þ£¬ÎÄ¼þÄÚÈÝÈçÏÂ£ºc: loadlin c:vmlinuz root=/dev/hda1 ro
+éšç€ä¸ªäººè®¡ç®—æœºé…ç½®çš„æ—¥ç›Šæé«˜ï¼Œåœ¨è‡ªå·±çš„è®¡ç®—æœºä¸Šå®‰è£…Linuxç³»ç»Ÿå·²ç»ä¸æ˜¯ä»€ä¹ˆæ–°é²œçš„äº‹äº†ã€‚å‡è®¾æˆ‘ä»¬çš„è®¡ç®—æœºä¸ŠåŒæ—¶è£…æœ‰windowså’ŒLinuxä¸¤ä¸ªæ“ä½œç³»ç»Ÿï¼Œåº”è¯¥å¦‚ä½•å¯åŠ¨Linuxå‘¢ï¼Ÿæ˜¯å¦æ¯æ¬¡éƒ½éœ€è¦é‡å¯è®¡ç®—æœºï¼Œé€šè¿‡LiLoå¼•å¯¼ï¼Ÿå…¶å®žå¦‚æžœæˆ‘ä»¬åœ¨dosä¸‹ï¼Œæœ‰ä¸€ç§ç®€å•å¿«é€Ÿå¯åŠ¨Linuxçš„æ–¹æ³•ï¼Œé‚£å°±æ˜¯load Linuxã€‚loadlin.exeæ˜¯åœ¨dosä¸‹çš„å¯æ‰§è¡Œç¨‹åºï¼Œå®ƒå¯ä»¥åœ¨çº¯dosçŽ¯å¢ƒä¸‹è¿…é€Ÿå¯åŠ¨Linuxï¼Œè€Œä¸”æ— éœ€é‡å¯è®¡ç®—æœºï¼Œé€šå¸¸æˆ‘ä»¬å¯ä»¥åœ¨å…‰ç›˜çš„ /kernelsç›®å½•ä¸‹å¯ä»¥æ‰¾åˆ°è¿™ä¸ªç¨‹åºã€‚å¦‚æžœä¸çŸ¥è¿™ä¸ªç¨‹åºè¢«æ”¾ç½®äºŽå®‰è£…ç›˜çš„ä½•å¤„ï¼Œå¯ä»¥ä½¿ç”¨â€œfind ï¼name loadlinï¼Šâ€å‘½ä»¤æ¥å¯»æ‰¾ã€‚æ‰¾åˆ°ä¹‹åŽå°†å…¶å¤åˆ¶åˆ°dosåˆ†åŒºä¸­ï¼ŒåŒæ—¶è¿˜éœ€è¦å¤åˆ¶ä¸€ä»½ä½ æ‰€ä½¿ç”¨çš„Linuxå†…æ ¸æ–‡ä»¶ã€‚å¯ä»¥é€šè¿‡windowsç›´æŽ¥ä»Žå…‰ç›˜å¤åˆ¶ï¼Œä¹Ÿå¯åœ¨LinuxçŽ¯å¢ƒä¸‹ä½¿ç”¨mcopyå‘½ä»¤å°†æ–‡ä»¶copyåˆ°dosåˆ†åŒºï¼›æŽ¥ç€å†ç¼–å†™ä¸€ä¸ªLinux.batçš„æ‰¹å¤„ç†æ–‡ä»¶ï¼Œæ–‡ä»¶å†…å®¹å¦‚ä¸‹ï¼šc: loadlin c:vmlinuz root=/dev/hda1 ro
 
-¡¡¡¡ÆäÖÐÎÒÃÇ¼ÙÉèloadlin.exeºÍvmlinuzÕâÁ½¸öÄÚºËÎÄ¼þ¶¼ÔÚcÅÌ¸ùÄ¿Â¼£¬¶ørootÎªLinux¸ùÉè±¸£¬¶øÇÒLinux´¦ÓÚÓ²ÅÌµÚÒ»·ÖÇø£¬ËùÒÔÉè±¸ÃûÎª/dev/hda1£¬roÒâÎªreadonly¡£ÒÔºóÔÚdosÏÂÒªÆô¶¯LinuxÊ±£¬ÔËÐÐLinux.bat¾Í¿ÉÒÔÁË¡£ÕâÑùÆô¶¯Linux¿ìËÙ¸ßÐ§£¬´ó´óµÄ¼õÉÙÁËÏµÍ³×Ô¼ìÊ±µÈ´ýµÄÊ±¼ä¡£
+ã€€ã€€å…¶ä¸­æˆ‘ä»¬å‡è®¾loadlin.exeå’Œvmlinuzè¿™ä¸¤ä¸ªå†…æ ¸æ–‡ä»¶éƒ½åœ¨cç›˜æ ¹ç›®å½•ï¼Œè€Œrootä¸ºLinuxæ ¹è®¾å¤‡ï¼Œè€Œä¸”Linuxå¤„äºŽç¡¬ç›˜ç¬¬ä¸€åˆ†åŒºï¼Œæ‰€ä»¥è®¾å¤‡åä¸º/dev/hda1ï¼Œroæ„ä¸ºreadonlyã€‚ä»¥åŽåœ¨dosä¸‹è¦å¯åŠ¨Linuxæ—¶ï¼Œè¿è¡ŒLinux.batå°±å¯ä»¥äº†ã€‚è¿™æ ·å¯åŠ¨Linuxå¿«é€Ÿé«˜æ•ˆï¼Œå¤§å¤§çš„å‡å°‘äº†ç³»ç»Ÿè‡ªæ£€æ—¶ç­‰å¾…çš„æ—¶é—´ã€‚
 
-£µ¡¢Ïû³ýXwindowsÏÂµÄËÀ»úÏÖÏó
+ï¼•ã€æ¶ˆé™¤Xwindowsä¸‹çš„æ­»æœºçŽ°è±¡
 
-¡¡¡¡Èç¹ûÎÒÃÇÔÚXwindows×´Ì¬ÏÂÔËÐÐLinuxÊ±£¬ÓÉÓÚÓ²¼þ±¾ÉíµÄÎÊÌâ»òÕß×Ô¼º²Ù×÷ÉÏµÄ²»µ±£¬ÓÐÊ±ºî¿ÉÄÜ»áµ¼ÖÂÏµÍ³Í»È»Ê§È¥ÏìÓ¦£¬Ò²¾ÍÊÇÎÒÃÇ³£¼ûµ½µÄÒ»ÖÖËÀ»úÏÖÏó£¬ÆäÊµ´ËÊ±ÏµÍ³²¢Ã»ÓÐËÀ»ú¡£ÎÒÃÇ¿ÉÒÔÓÃÁ½¸ö³£ÓÃµÄ·½·¨À´Ïû³ýÕâÖÖÏÖÏó£ºµÚÒ»£¬ÓÃ¼üÅÌÉÏµÄ¸´ºÏ¼üCtrl+Alt+BackspaceÀ´¹Ø±Õµ±Ç°ÕýÔÚÔËÐÐµÄÈÎÎñ£»µÚ¶þ£¬Ê×ÏÈ°´×¡¼üÅÌÉÏµÄCtrl+Alt+F2¸´ºÏ¼ü£¬ÈÃÏµÍ³ÇÐ»»µ½ÁíÒ»¸ö²Ù×÷Ì¨£¬È»ºóµÇÂ½µ½ÏµÍ³£¬ÔÙÖ´ÐÐ#ps -ax|grep startxÃüÁî£¬Õâ½«»áÁÐ³öÄãµÄXserverµÄ½ø³Ì±êÊ¶£¨PID£©£¬½Ó×ÅÔÚÃüÁîÐÐÖÐÊäÈëÈçÏÂÃüÁî¾ÍÄÜÏû³ýXwindowsÏÂµÄËÀ»úÏÖÏó£º#kill -9 PID_Number£¬×îºóÍ¨¹ýAlt+F1¸´ºÏ¼ü·µ»ØÔ­À´µÄÆ½Ì¨¡£
+ã€€ã€€å¦‚æžœæˆ‘ä»¬åœ¨XwindowsçŠ¶æ€ä¸‹è¿è¡ŒLinuxæ—¶ï¼Œç”±äºŽç¡¬ä»¶æœ¬èº«çš„é—®é¢˜æˆ–è€…è‡ªå·±æ“ä½œä¸Šçš„ä¸å½“ï¼Œæœ‰æ—¶ä¾¯å¯èƒ½ä¼šå¯¼è‡´ç³»ç»Ÿçªç„¶å¤±åŽ»å“åº”ï¼Œä¹Ÿå°±æ˜¯æˆ‘ä»¬å¸¸è§åˆ°çš„ä¸€ç§æ­»æœºçŽ°è±¡ï¼Œå…¶å®žæ­¤æ—¶ç³»ç»Ÿå¹¶æ²¡æœ‰æ­»æœºã€‚æˆ‘ä»¬å¯ä»¥ç”¨ä¸¤ä¸ªå¸¸ç”¨çš„æ–¹æ³•æ¥æ¶ˆé™¤è¿™ç§çŽ°è±¡ï¼šç¬¬ä¸€ï¼Œç”¨é”®ç›˜ä¸Šçš„å¤åˆé”®Ctrl+Alt+Backspaceæ¥å…³é—­å½“å‰æ­£åœ¨è¿è¡Œçš„ä»»åŠ¡ï¼›ç¬¬äºŒï¼Œé¦–å…ˆæŒ‰ä½é”®ç›˜ä¸Šçš„Ctrl+Alt+F2å¤åˆé”®ï¼Œè®©ç³»ç»Ÿåˆ‡æ¢åˆ°å¦ä¸€ä¸ªæ“ä½œå°ï¼Œç„¶åŽç™»é™†åˆ°ç³»ç»Ÿï¼Œå†æ‰§è¡Œ#ps -ax|grep startxå‘½ä»¤ï¼Œè¿™å°†ä¼šåˆ—å‡ºä½ çš„Xserverçš„è¿›ç¨‹æ ‡è¯†ï¼ˆPIDï¼‰ï¼ŒæŽ¥ç€åœ¨å‘½ä»¤è¡Œä¸­è¾“å…¥å¦‚ä¸‹å‘½ä»¤å°±èƒ½æ¶ˆé™¤Xwindowsä¸‹çš„æ­»æœºçŽ°è±¡ï¼š#kill -9 PID_Numberï¼Œæœ€åŽé€šè¿‡Alt+F1å¤åˆé”®è¿”å›žåŽŸæ¥çš„å¹³å°ã€‚
 
-£¶¡¢¿ìËÙ¹Ø±ÕLinuxÏµÍ³
+ï¼–ã€å¿«é€Ÿå…³é—­Linuxç³»ç»Ÿ
 
-¡¡¡¡¾É°æ±¾µÄµÄLinux/UNIXÏµÍ³±ØÐëÏÈÔËÐÐshutdownÃüÁî£¬È»ºó²ÅÄÜ¹Ø±ÕµçÔ´£¬µ«×îÐÂ°æ±¾µÄLinux/UNIXÏµÍ³ÒÑ¾­ÔÚÕâ¸ö·½Ãæ×÷ÁËºÜ´óµÄ¸Ä½ø£¬ÔÙÒ²Ã»ÓÐ±ØÒªÏóÒÔÇ°ÄÇÑù¹Ø»úÁË¡£ÒòÎªÐÂ°æ±¾µÄÏµÍ³½è¼øÁË´óÐÍ»úµÄ¼¼Êõ£¬²ÉÓÃÁË¿¹µôµçµÄÈÕÖ¾Ê½ÎÄ¼þÏµÍ³£¬¿ÉÒÔ×Ô¶¯¸ú×Ù±£´æÓÃ»§Êý¾Ý¡¢×Ô¶¯Í¬²½Ë¢ÐÂÎÄ¼þÏµÍ³£¬ÓÃ»§ÍêÈ«¿ÉÒÔËæÊÖ¹Ø±ÕµçÔ´£¬´Ó¶ø´ïµ½¿ìËÙ¹Ø±ÕÏµÍ³µÄÄ¿µÄÁË¡£
+ã€€ã€€æ—§ç‰ˆæœ¬çš„çš„Linux/UNIXç³»ç»Ÿå¿…é¡»å…ˆè¿è¡Œshutdownå‘½ä»¤ï¼Œç„¶åŽæ‰èƒ½å…³é—­ç”µæºï¼Œä½†æœ€æ–°ç‰ˆæœ¬çš„Linux/UNIXç³»ç»Ÿå·²ç»åœ¨è¿™ä¸ªæ–¹é¢ä½œäº†å¾ˆå¤§çš„æ”¹è¿›ï¼Œå†ä¹Ÿæ²¡æœ‰å¿…è¦è±¡ä»¥å‰é‚£æ ·å…³æœºäº†ã€‚å› ä¸ºæ–°ç‰ˆæœ¬çš„ç³»ç»Ÿå€Ÿé‰´äº†å¤§åž‹æœºçš„æŠ€æœ¯ï¼Œé‡‡ç”¨äº†æŠ—æŽ‰ç”µçš„æ—¥å¿—å¼æ–‡ä»¶ç³»ç»Ÿï¼Œå¯ä»¥è‡ªåŠ¨è·Ÿè¸ªä¿å­˜ç”¨æˆ·æ•°æ®ã€è‡ªåŠ¨åŒæ­¥åˆ·æ–°æ–‡ä»¶ç³»ç»Ÿï¼Œç”¨æˆ·å®Œå…¨å¯ä»¥éšæ‰‹å…³é—­ç”µæºï¼Œä»Žè€Œè¾¾åˆ°å¿«é€Ÿå…³é—­ç³»ç»Ÿçš„ç›®çš„äº†ã€‚
 
-£·¡¢ÇÉÃîÊ¹ÓÃrmÃüÁî
+ï¼—ã€å·§å¦™ä½¿ç”¨rmå‘½ä»¤
 
-ÎÒÃÇÖªµÀÔÚLinux×Ö·û½çÃæÖÐ£¬ÒªÉ¾³ýÒ»¸öÎÄ¼þµÄ»°¿ÉÒÔÊ¹ÓÃrmÃüÁî£¬É¾³ýÒ»¸öÄ¿Â¼¿ÉÒÔÊ¹ÓÃrmdirÃüÁî¡£µ«ÓÉÓÚrmdirÃüÁîÖ»ÄÜÉ¾³ý¿Õ°×µÄÄ¿Â¼£¬¼ÙÊ¹Ä³¸öÄ¿Â¼ÏÂÃæÓÐÎÄ¼þ£¬¾ÍÖ»ÄÜÏÈÓÃrmÃüÁîÀ´°ÑÄ¿Â¼ÖÐµÄÎÄ¼þÉ¾³ýµô²Å¿ÉÒÔ£¬ËùÒÔÍ¨³£ÐèÒªrmdirÓërmÕâÁ½¸öÃüÁîÅäºÏÊ¹ÓÃ²ÅÄÜ³¹µ×É¾³ýÒ»¸öÍêÕûµÄÄ¿Â¼¡£µ«ÓÃÕâÖÖ·½·¨À´¶Ô¸¶¼¸¼¶×ÓÄ¿Â¼»¹ÄÜ´ÕºÏ£¬Èç¹ûÒ»¸öÄ¿Â¼ÖÐº¬ÓÐÈô¸É¸ö×ÓÄ¿Â¼£¬¶øÇÒÕâÈô¸É×ÓÄ¿Â¼ÖÐÓÖ°üº¬ÁËÈô¸É¼¶×ÓÄ¿Â¼£¬ÔÙÊ¹ÓÃÕâÖÖ·½·¨²»°ÑÄãÀÛËÀ²Å¹Ö¡£ÏÖÔÚÎÒÃÇ¿ÉÒÔÊ¹ÓÃ´ø-r²ÎÊýµÄrmÃüÁîÀ´É¾³ýÒ»¸ö·Ç¿ÕÄ¿Â¼£¬ÀýÈçÎÒÃÇÔÚÃüÁîÐÐÖÐÊäÈërm -r bbbÕâÑùµÄÃüÁî£¬±íÊ¾ÏµÍ³½«°ÑbbbÄ¿Â¼ÖÐ°üº¬µÄËùÓÐÎÄ¼þºÍ×ÓÄ¿Â¼È«²¿É¾³ýµô¡£
+æˆ‘ä»¬çŸ¥é“åœ¨Linuxå­—ç¬¦ç•Œé¢ä¸­ï¼Œè¦åˆ é™¤ä¸€ä¸ªæ–‡ä»¶çš„è¯å¯ä»¥ä½¿ç”¨rmå‘½ä»¤ï¼Œåˆ é™¤ä¸€ä¸ªç›®å½•å¯ä»¥ä½¿ç”¨rmdirå‘½ä»¤ã€‚ä½†ç”±äºŽrmdirå‘½ä»¤åªèƒ½åˆ é™¤ç©ºç™½çš„ç›®å½•ï¼Œå‡ä½¿æŸä¸ªç›®å½•ä¸‹é¢æœ‰æ–‡ä»¶ï¼Œå°±åªèƒ½å…ˆç”¨rmå‘½ä»¤æ¥æŠŠç›®å½•ä¸­çš„æ–‡ä»¶åˆ é™¤æŽ‰æ‰å¯ä»¥ï¼Œæ‰€ä»¥é€šå¸¸éœ€è¦rmdirä¸Žrmè¿™ä¸¤ä¸ªå‘½ä»¤é…åˆä½¿ç”¨æ‰èƒ½å½»åº•åˆ é™¤ä¸€ä¸ªå®Œæ•´çš„ç›®å½•ã€‚ä½†ç”¨è¿™ç§æ–¹æ³•æ¥å¯¹ä»˜å‡ çº§å­ç›®å½•è¿˜èƒ½å‡‘åˆï¼Œå¦‚æžœä¸€ä¸ªç›®å½•ä¸­å«æœ‰è‹¥å¹²ä¸ªå­ç›®å½•ï¼Œè€Œä¸”è¿™è‹¥å¹²å­ç›®å½•ä¸­åˆåŒ…å«äº†è‹¥å¹²çº§å­ç›®å½•ï¼Œå†ä½¿ç”¨è¿™ç§æ–¹æ³•ä¸æŠŠä½ ç´¯æ­»æ‰æ€ªã€‚çŽ°åœ¨æˆ‘ä»¬å¯ä»¥ä½¿ç”¨å¸¦-rå‚æ•°çš„rmå‘½ä»¤æ¥åˆ é™¤ä¸€ä¸ªéžç©ºç›®å½•ï¼Œä¾‹å¦‚æˆ‘ä»¬åœ¨å‘½ä»¤è¡Œä¸­è¾“å…¥rm -r bbbè¿™æ ·çš„å‘½ä»¤ï¼Œè¡¨ç¤ºç³»ç»Ÿå°†æŠŠbbbç›®å½•ä¸­åŒ…å«çš„æ‰€æœ‰æ–‡ä»¶å’Œå­ç›®å½•å…¨éƒ¨åˆ é™¤æŽ‰ã€‚
 
-£¸¡¢ÉÆÓÃÐéÄâ²Ù×÷Ì¨
+ï¼˜ã€å–„ç”¨è™šæ‹Ÿæ“ä½œå°
 
-µ±ÎÒÃÇµÇÂ¼½øLinuxÏµÍ³ºó£¬Èç¹ûÔÙ°´Ò»ÏÂ¼üÅÌÉÏµÄAlt+F2¼ü£¬ÕâÊ±ÎÒÃÇÓÖ¿ÉÒÔ¿´µ½Ò»¸öShellÌáÊ¾·û,ÆäÊµÕâ¸ö¾ÍÊÇµÚ¶þ¸öÐéÄâ²Ù×÷Ì¨¡£Í¨³££¬ÐÂ°²×°µÄLinuxÏµÍ³¹²ÓÐËÄ¸öÐéÄâ²Ù×÷Ì¨,ÎÒÃÇ¿ÉÒÔ·Ö±ðÓÃ¸´ºÏ¼üAlt+F1¡¢Alt+F2¡¢Alt+F3¡¢Alt+F4À´·ÃÎÊËüÃÇ¡£Ê¹ÓÃÐéÄâ²Ù×÷Ì¨ÆµÂÊ×î¶àµÄµØ·½¾ÍÊÇ£¬µ±Ä³Ò»¸ö³ÌÐò³ö´íËø×¡ÊäÈëÊ±»òÕßLinuxÏµÍ³Í»È»Ê§È¥ÏìÓ¦Ê±£¬¾Í¿ÉÒÔÇÐ»»µ½ÆäËûÐéÄâ²Ù×÷Ì¨µÇÂ¼½øÈëºóÉ±µôÕâ¸ö³ö´íµÄ½ø³ÌÈÎÎñ¡£
+å½“æˆ‘ä»¬ç™»å½•è¿›Linuxç³»ç»ŸåŽï¼Œå¦‚æžœå†æŒ‰ä¸€ä¸‹é”®ç›˜ä¸Šçš„Alt+F2é”®ï¼Œè¿™æ—¶æˆ‘ä»¬åˆå¯ä»¥çœ‹åˆ°ä¸€ä¸ªShellæç¤ºç¬¦,å…¶å®žè¿™ä¸ªå°±æ˜¯ç¬¬äºŒä¸ªè™šæ‹Ÿæ“ä½œå°ã€‚é€šå¸¸ï¼Œæ–°å®‰è£…çš„Linuxç³»ç»Ÿå…±æœ‰å››ä¸ªè™šæ‹Ÿæ“ä½œå°,æˆ‘ä»¬å¯ä»¥åˆ†åˆ«ç”¨å¤åˆé”®Alt+F1ã€Alt+F2ã€Alt+F3ã€Alt+F4æ¥è®¿é—®å®ƒä»¬ã€‚ä½¿ç”¨è™šæ‹Ÿæ“ä½œå°é¢‘çŽ‡æœ€å¤šçš„åœ°æ–¹å°±æ˜¯ï¼Œå½“æŸä¸€ä¸ªç¨‹åºå‡ºé”™é”ä½è¾“å…¥æ—¶æˆ–è€…Linuxç³»ç»Ÿçªç„¶å¤±åŽ»å“åº”æ—¶ï¼Œå°±å¯ä»¥åˆ‡æ¢åˆ°å…¶ä»–è™šæ‹Ÿæ“ä½œå°ç™»å½•è¿›å…¥åŽæ€æŽ‰è¿™ä¸ªå‡ºé”™çš„è¿›ç¨‹ä»»åŠ¡ã€‚
 
-£¹¡¢Ôö¼ÓÐéÄâ»º´æ
+ï¼™ã€å¢žåŠ è™šæ‹Ÿç¼“å­˜
 
-Èç¹û¼ÆËã»úÉÏµÄSWAP£¨½»»»¿Õ¼ä£©²»¹»ÁË£¬Ö»ÒªÎÒÃÇµÄÓ²ÅÌÉÏ»¹ÓÐ¿ÕÓàµÄ¿Õ¼ä£¬ÎÒÃÇ¾Í¿ÉÒÔ°ÑÕâÐ©Ê£Óà¿Õ¼äÀûÓÃÆðÀ´£¬ÎÒÃÇ¿ÉÒÔÖ±½ÓÊ¹ÓÃÃüÁî£ºmkswap /dev/hda£¨¼ÙÉèLinuxµÄÇý¶¯Æ÷ÊÇ/dev/hda£©£¬swapon /dev/hda£»Òª×Ô¶¯Æô¶¯Swap£¬¿ÉÒÔ°ÑÐÂµÄ·ÖÇø¼ÓÈëµ½/etc/fstabÖÐÈ¥£¬ÕÕ×ÅÔ­À´swapµÄÐ´¾ÍÐÐÁË¡£ÓÃ"free"¼ì²éswapµÄ´óÐ¡£¬ LinuxÖ§³Ö×î¶à16¸ö½»»»·ÖÇø£¬Ã¿¸ö½»»»·ÖÇø×î´ó128M£¬Ã»ÓÐ¿ÕÏÐ·ÖÇøµÄÊ±ºò£¬¿ÉÒÔÓÃ¸ö´óÎÄ¼þÀ´½¨Á¢¡£ÏÂÃæÊÇÖ´ÐÐµÄÒ»ÏµÁÐÃüÁî£º
+å¦‚æžœè®¡ç®—æœºä¸Šçš„SWAPï¼ˆäº¤æ¢ç©ºé—´ï¼‰ä¸å¤Ÿäº†ï¼Œåªè¦æˆ‘ä»¬çš„ç¡¬ç›˜ä¸Šè¿˜æœ‰ç©ºä½™çš„ç©ºé—´ï¼Œæˆ‘ä»¬å°±å¯ä»¥æŠŠè¿™äº›å‰©ä½™ç©ºé—´åˆ©ç”¨èµ·æ¥ï¼Œæˆ‘ä»¬å¯ä»¥ç›´æŽ¥ä½¿ç”¨å‘½ä»¤ï¼šmkswap /dev/hdaï¼ˆå‡è®¾Linuxçš„é©±åŠ¨å™¨æ˜¯/dev/hdaï¼‰ï¼Œswapon /dev/hdaï¼›è¦è‡ªåŠ¨å¯åŠ¨Swapï¼Œå¯ä»¥æŠŠæ–°çš„åˆ†åŒºåŠ å…¥åˆ°/etc/fstabä¸­åŽ»ï¼Œç…§ç€åŽŸæ¥swapçš„å†™å°±è¡Œäº†ã€‚ç”¨"free"æ£€æŸ¥swapçš„å¤§å°ï¼Œ Linuxæ”¯æŒæœ€å¤š16ä¸ªäº¤æ¢åˆ†åŒºï¼Œæ¯ä¸ªäº¤æ¢åˆ†åŒºæœ€å¤§128Mï¼Œæ²¡æœ‰ç©ºé—²åˆ†åŒºçš„æ—¶å€™ï¼Œå¯ä»¥ç”¨ä¸ªå¤§æ–‡ä»¶æ¥å»ºç«‹ã€‚ä¸‹é¢æ˜¯æ‰§è¡Œçš„ä¸€ç³»åˆ—å‘½ä»¤ï¼š
 
 #dd if=/dev/zero of=swapfile bs=1024 count=8192 
 
@@ -46,14 +46,14 @@ linux³£ÓÃÐ¡¼¼ÇÉ
 
 #swapon swapfile
 
-£±£°¡¢ÇÉÃîÊ¹ÓÃTab¼ü
+ï¼‘ï¼ã€å·§å¦™ä½¿ç”¨Tabé”®
 
-´ó¼ÒÖªµÀÔÚLinux×Ö·û½çÃæÖÐÊäÈëÃüÁîÊ±£¬ÓÐÊ±ÐèÒªÊäÈëºÜ¶à×Ö·û£¬Èç¹û¾­³£ÕâÑùÖð¸öÖð¸öµØÊäÈë×Ö·û£¬±È½Ï·³Ëö¡£¼ÙÉè¼üÈëµÄ×Ö·û×ãÒÔÈ·¶¨Ä¿Â¼ÏÂÒ»¸öÎ¨Ò»µÄÎÄ¼þÊ±£¬ÎÒÃÇÖ»Ðë°´¼üÅÌÉÏµÄ Tab ¼ü¾Í¿ÉÒÔ×Ô¶¯²¹Æë¸ÃÎÄ¼þÃûµÄÊ£ÏÂ²¿·Ö£¬ÀýÈçÒª°ÑÄ¿Â¼ /ccc ÏÂµÄÎÄ¼þ ddddddd-1.2.3.tar.gz ½â°üÊ±£¬µ±ÎÒÃÇÔÚÃüÁîÐÐÖÐ¼üÈëµ½tar xvfz /ccc/dÊ±£¬Èç¹û¸ÃÎÄ¼þÊÇ¸ÃÄ¿Â¼ÏÂÎ¨Ò»ÒÔdÆðÍ·µÄÎÄ¼þµÄ»°¾Í¿ÉÒÔÖ±½Ó°´ÏÂ¼üÅÌÉÏµÄTab¼ü£¬ÕâÊ±ÃüÁî»á±»×Ô¶¯²¹ÆëÎª£ºtar xvfz /ccc/ddddddd-1.2.3.tar.gz £¬´Ó¶øÌá¸ßÁËÊäÈëÐ§ÂÊ¡£
+å¤§å®¶çŸ¥é“åœ¨Linuxå­—ç¬¦ç•Œé¢ä¸­è¾“å…¥å‘½ä»¤æ—¶ï¼Œæœ‰æ—¶éœ€è¦è¾“å…¥å¾ˆå¤šå­—ç¬¦ï¼Œå¦‚æžœç»å¸¸è¿™æ ·é€ä¸ªé€ä¸ªåœ°è¾“å…¥å­—ç¬¦ï¼Œæ¯”è¾ƒçƒ¦çã€‚å‡è®¾é”®å…¥çš„å­—ç¬¦è¶³ä»¥ç¡®å®šç›®å½•ä¸‹ä¸€ä¸ªå”¯ä¸€çš„æ–‡ä»¶æ—¶ï¼Œæˆ‘ä»¬åªé¡»æŒ‰é”®ç›˜ä¸Šçš„ Tab é”®å°±å¯ä»¥è‡ªåŠ¨è¡¥é½è¯¥æ–‡ä»¶åçš„å‰©ä¸‹éƒ¨åˆ†ï¼Œä¾‹å¦‚è¦æŠŠç›®å½• /ccc ä¸‹çš„æ–‡ä»¶ ddddddd-1.2.3.tar.gz è§£åŒ…æ—¶ï¼Œå½“æˆ‘ä»¬åœ¨å‘½ä»¤è¡Œä¸­é”®å…¥åˆ°tar xvfz /ccc/dæ—¶ï¼Œå¦‚æžœè¯¥æ–‡ä»¶æ˜¯è¯¥ç›®å½•ä¸‹å”¯ä¸€ä»¥dèµ·å¤´çš„æ–‡ä»¶çš„è¯å°±å¯ä»¥ç›´æŽ¥æŒ‰ä¸‹é”®ç›˜ä¸Šçš„Tabé”®ï¼Œè¿™æ—¶å‘½ä»¤ä¼šè¢«è‡ªåŠ¨è¡¥é½ä¸ºï¼štar xvfz /ccc/ddddddd-1.2.3.tar.gz ï¼Œä»Žè€Œæé«˜äº†è¾“å…¥æ•ˆçŽ‡ã€‚
 
-£±£±¡¢¶àÓÃ¿½±´ÓëÕ³ÌùÀ´Ìá¸ß²Ù×÷ËÙ¶È
+ï¼‘ï¼‘ã€å¤šç”¨æ‹·è´ä¸Žç²˜è´´æ¥æé«˜æ“ä½œé€Ÿåº¦
 
-LinuxÏµÍ³°²×°ºó£¬Ã¿´ÎÆô¶¯µ½×Ö·û½çÃæÊ±¶¼»á×Ô¶¯ÔËÐÐÒ»¸ö½ÐgpmµÄ³ÌÐò, ¸Ã³ÌÐòÔËÐÐºó¾Í¿ÉÒÔÓÃÊó±êÀ´¿½±´ÓëÕ³ÌùÁË¡£¾ßÌå×ö·¨ÊÇ°´×¡Êó±ê×ó¼üÍÏ¶¯ÈÃÒª¿½±´µÄµØ·½Í»³öÏÔÊ¾, ÕâÊ±Í»³öÏÔÊ¾µÄÇøÓòÒÑ¾­±»¿½±´, ÔÙ°´Êó±êÓÒ¼ü¿½±´µÄÄÚÈÝ¾Í»á±»Õ³ÌùÔÚ¹â±êËùÔÚÎ»ÖÃÁË¡£Èç¹ûÎÒÃÇÔÚXwindowÏÂÔËÐÐLinuxÏµÍ³£¬¿½±´ÓëÕ³ÌùµÄ²Ù×÷ÓëÔÚÆÕÍ¨µÄWin9xÏµÍ³ÏÂÒ»Ñù¡£
+Linuxç³»ç»Ÿå®‰è£…åŽï¼Œæ¯æ¬¡å¯åŠ¨åˆ°å­—ç¬¦ç•Œé¢æ—¶éƒ½ä¼šè‡ªåŠ¨è¿è¡Œä¸€ä¸ªå«gpmçš„ç¨‹åº, è¯¥ç¨‹åºè¿è¡ŒåŽå°±å¯ä»¥ç”¨é¼ æ ‡æ¥æ‹·è´ä¸Žç²˜è´´äº†ã€‚å…·ä½“åšæ³•æ˜¯æŒ‰ä½é¼ æ ‡å·¦é”®æ‹–åŠ¨è®©è¦æ‹·è´çš„åœ°æ–¹çªå‡ºæ˜¾ç¤º, è¿™æ—¶çªå‡ºæ˜¾ç¤ºçš„åŒºåŸŸå·²ç»è¢«æ‹·è´, å†æŒ‰é¼ æ ‡å³é”®æ‹·è´çš„å†…å®¹å°±ä¼šè¢«ç²˜è´´åœ¨å…‰æ ‡æ‰€åœ¨ä½ç½®äº†ã€‚å¦‚æžœæˆ‘ä»¬åœ¨Xwindowä¸‹è¿è¡ŒLinuxç³»ç»Ÿï¼Œæ‹·è´ä¸Žç²˜è´´çš„æ“ä½œä¸Žåœ¨æ™®é€šçš„Win9xç³»ç»Ÿä¸‹ä¸€æ ·ã€‚
 
-£±£²¡¢¼Ó¿ìLinux´æÈ¡Êý¾Ý
+ï¼‘ï¼’ã€åŠ å¿«Linuxå­˜å–æ•°æ®
 
-Èç¹ûÎÒÃÇÏë¿ìËÙÌá¸ßLinuxÏÂµÄÓ²ÅÌ¶ÁÈ¡Êý¾Ý£¬¿ÉÒÔÔÚLinuxÏÂ½øÐÐÒ»Ð©ÉèÖÃ£¬ÈÃLinuxÔÚ32Î»ÊäÈëÊä³ö·½Ê½ºÍDMAÍ¨µÀ·½Ê½ÏÂ½øÐÐ¹¤×÷¡£ÉèÖÃÊ±£¬ÔÚLinuxÃüÁî½çÃæÖÐÊäÈëÃüÁî/sbin/hdparm -cl /dev/hdaÀ´´ò¿ª32bit´«Êä·½Ê½£¬ÊäÈëÃüÁî/sbin/hdparm -dl /dev/hdaÀ´´ò¿ªDMA´«Êä·½Ê½£¬½Ó×ÅÔÙÊäÈëÃüÁî/sbin/hdparm -kl /dev/hdaÀ´Ê¹Ó²ÅÌÔÚResetÖ®ºóÈÔÈ»±£³ÖÉÏÊöµÄÉèÖÃ£¬Í¨¹ýÕâÐ©ÉèÖÃ£¬ÎÒÃÇ¾ÍÄÜÌá¸ßLinuxµÄ¶ÁÅÌËÙ¶Èµ½1±¶ÒÔÉÏ¡£ 
+å¦‚æžœæˆ‘ä»¬æƒ³å¿«é€Ÿæé«˜Linuxä¸‹çš„ç¡¬ç›˜è¯»å–æ•°æ®ï¼Œå¯ä»¥åœ¨Linuxä¸‹è¿›è¡Œä¸€äº›è®¾ç½®ï¼Œè®©Linuxåœ¨32ä½è¾“å…¥è¾“å‡ºæ–¹å¼å’ŒDMAé€šé“æ–¹å¼ä¸‹è¿›è¡Œå·¥ä½œã€‚è®¾ç½®æ—¶ï¼Œåœ¨Linuxå‘½ä»¤ç•Œé¢ä¸­è¾“å…¥å‘½ä»¤/sbin/hdparm -cl /dev/hdaæ¥æ‰“å¼€32bitä¼ è¾“æ–¹å¼ï¼Œè¾“å…¥å‘½ä»¤/sbin/hdparm -dl /dev/hdaæ¥æ‰“å¼€DMAä¼ è¾“æ–¹å¼ï¼ŒæŽ¥ç€å†è¾“å…¥å‘½ä»¤/sbin/hdparm -kl /dev/hdaæ¥ä½¿ç¡¬ç›˜åœ¨Resetä¹‹åŽä»ç„¶ä¿æŒä¸Šè¿°çš„è®¾ç½®ï¼Œé€šè¿‡è¿™äº›è®¾ç½®ï¼Œæˆ‘ä»¬å°±èƒ½æé«˜Linuxçš„è¯»ç›˜é€Ÿåº¦åˆ°1å€ä»¥ä¸Šã€‚ 
