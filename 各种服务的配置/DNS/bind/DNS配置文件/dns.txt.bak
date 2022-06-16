@@ -1,0 +1,10 @@
+master 主dns服务器
+slave 次dns服务器
+named.ca根域名服务器配置文件放在/var/named/chroot/var/named/目录下
+1 默认是把named.conf放在/etc/目录下
+2 如有安装chroot,要把配置文件放在/var/named/chroot/etc/目录下
+3 把主区域文件与反向解析文件放在/var/named/chroot/var/named/目录下
+4 指定ftp的负载均衡，在主区域文件添加相关ftp 对应主机地址；
+5 service named restart 重启dns服务；
+
+ 

@@ -1,0 +1,13 @@
+$ttl 36000
+200.168.192.in-addr.arpa.	IN	SOA	dns.example.com. admin.example.com. (
+			2005090503
+			10800 
+			3600 
+			604800 
+			36000 )
+200.168.192.in-addr.arpa.	     IN	NS	 dns.example.com.
+177.200.168.192.in-addr.arpa.  IN	PTR	 dns.example.com.
+9                        IN	PTR	 www.example.com.
+178                      IN	PTR	 mail1.example.com.
+179                      IN	PTR	 mail2.example.com.
+180                      IN	PTR	 mail3.example.com. 
