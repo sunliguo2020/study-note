@@ -1,0 +1,12 @@
+/etc/named.caching-nameserver.conf
+/etc/named.rfc1912.zones
+/usr/share/doc/caching-nameserver-9.3.3
+/usr/share/doc/caching-nameserver-9.3.3/Copyright
+/usr/share/doc/caching-nameserver-9.3.3/rfc1912.txt
+/var/named/localdomain.zone
+/var/named/localhost.zone
+/var/named/named.broadcast
+/var/named/named.ca
+/var/named/named.ip6.local
+/var/named/named.local
+/var/named/named.zero
