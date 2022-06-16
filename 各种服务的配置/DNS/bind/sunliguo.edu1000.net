@@ -1,0 +1,23 @@
+$TTL 86400 
+;$ORIGIN sunliguo.edu1000.net.
+@          1D IN SOA   sunliguo.edu1000.net.  root.localhost. (
+                       20061123 ;serial
+                       1H       ;refresh
+                       15M      ;retry
+                       1W       ;expire
+                       1D )     ;TTL
+              IN NS  @
+              IN A   59.81.183.29
+
+             ;IN NS  ns
+;ns           IN A   59.81.183.29
+
+             ;IN NS    sunliguo.edu1000.net.  
+              IN MX 10  mail.sunliguo.edu1000.net.
+;sunliguo.edu1000.net.  IN A      59.81.183.29
+mail          IN A      59.81.183.29
+www           IN A      59.81.183.29
+linux         IN A      192.168.1.30
+news          IN CNAME  www
+slg           IN NS     slg
+              IN A      59.81.183.29
