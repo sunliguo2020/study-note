@@ -25,4 +25,3 @@ for i in fileList:
         Total = Total + count
 
 print("Total:\t%r" % Total)
-
