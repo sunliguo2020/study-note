@@ -1,0 +1,41 @@
+（原创）端口限速配置独享，共享。
+因为华为IOS版本极多配置不尽相同。
+3500系列
+line-rate x     x单位为M
+
+6500系列
+全局
+acl name acl1 link
+rule 0 permit ingress any egress any
+端口下
+qos
+traffic-limit inbound link-group acl1 rule 0 xxx
+traffic-limit outbound link-group acl1 rule 0 xxx  xxx单位为K 好像有最小颗粒
+
+8016
+没用过
+
+8500系列
+全局
+acl name acl1 link
+rule 0 permit ingress any egress any
+端口下
+traffic-limit inbound link-group acl1 rule 0 system-index aaa tc-index bbb  xxx yyy zzz   aaa,bbb是一个序号按顺序累加就可以。xxx 代表保证速率 yyy爆发流量 zzz 不知道，忘了。三个值设置成一个就行了，就是你限制的带宽。
+interface Ethernet 0/1/10
+traffic-shape 3900 16000
+由配置可知，将端口流量的突发尺寸设置成了16000kbyte。这样在一开始下载的时候，有一小段时间因为突发尺寸的漏桶比较大，所以会导致下载速率比3900大，随着时间的推移，漏桶的空间被用完，那么后续下载报文的速率自然接近设定的下载值。
+将端口的突发尺寸改小为16kbyte后，用户的下载从一开始就基本是设定的速率，这样用户对下载速率也不会产生歧异了。
+
+
+
+ne40
+全局
+traffic rate100M cdr 100000（这里是限速100兆） cbs 120000
+端口下
+diffserv output-queue ef rate100M
+diffserv enable
+好像能只限制下行
+
+以上就是限制独享
+共享还有问题。不过有一个解决方法。就是让几个共享的用户地址连续，然后用一个IP-group限制几个用户的聚合路由。
+华为有的设备只能限制下行，或者上行这种问题，需要在上行口做相应配置（因为一般端口的下行就是上行口的上行，上行类似）。

@@ -1,0 +1,302 @@
+#!/bin/bash
+#
+# named           This shell script takes care of starting and stopping
+#                 named (BIND DNS server).
+#
+# chkconfig: - 13 87
+# description: named (BIND) is a Domain Name Server (DNS) \
+# that is used to resolve host names to IP addresses.
+# probe: true
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+# Source networking configuration.
+[ -r /etc/sysconfig/network ] && . /etc/sysconfig/network
+
+# Check that networking is up.
+[ "${NETWORKING}" = "no" ] && exit 1
+
+[ -r /etc/sysconfig/named ] && . /etc/sysconfig/named
+
+# Don't kill named dunring clean-up
+NAMED_SHUTDOWN_TIMEOUT=${NAMED_SHUTDOWN_TIMEOUT:-100}
+
+if [ -n "$ROOTDIR" ]; then
+   ROOTDIR=`echo $ROOTDIR | sed 's#//*#/#g;s#/$##'`;
+   rdl=`/usr/bin/readlink $ROOTDIR`;
+   if [ -n "$rdl" ]; then
+      ROOTDIR="$rdl";
+   fi;
+fi
+
+RETVAL=0
+named='named'
+if [[ "$ENABLE_SDB" = [yY1]* ]] && [ -x /usr/sbin/named_sdb ]; then
+    named='named_sdb';
+fi;
+prog=$named
+
+[ -x /usr/sbin/$named ] || exit 1
+
+nmdcOption()
+{ let i=0; 
+  for a in $*; 
+  do ((++i)); 
+     if [ $a = -c ]; then 
+	 ((++i)); 
+	 eval 'echo $'$i;
+     elif [[ $a = -c* ]]; then 
+	 echo ${a#-c}; 
+     fi; 
+  done; 
+}
+
+named_c_option=`nmdcOption $OPTIONS`;
+named_conf=${named_c_option:-/etc/named.conf};
+
+if [ ! -r ${ROOTDIR}${named_conf} ] ; then
+   if [ -z "$named_c_option" ] && [ -r ${ROOTDIR}/etc/named.caching-nameserver.conf ]; then
+       named_conf='/etc/named.caching-nameserver.conf';
+       OPTIONS="$OPTIONS -c ${named_conf}";
+   else
+       echo Locating $ROOTDIR/${named_conf} failed:
+       failure
+       echo;
+       exit 1;
+   fi;
+fi;
+
+dbusEnabled=0;
+for a in $OPTIONS; do
+    if [ $a  = "-D" ]; then
+	dbusEnabled=1;
+    fi;
+done
+
+if [ $dbusEnabled -eq 0 ] && [ -z "$DISABLE_NAMED_DBUS" ] ; then
+    NetworkManagerEnabled=0
+    for l in 0 1 2 3 4 5 6; do 
+	if /sbin/chkconfig --level=$l NetworkManager >/dev/null 2>&1; then 
+	    NetworkManagerEnabled=1; 
+	fi; 
+    done
+    if [ $NetworkManagerEnabled -eq 1 ]; then
+	OPTIONS="$OPTIONS -D";
+    fi;
+    dbusEnabled=1;
+fi
+
+start() {
+        # Start daemons.
+        echo -n $"Starting $named: "
+	if [ -n "`/sbin/pidof -o %PPID $named`" ]; then
+		echo -n $"$named: already running"
+		failure
+		echo
+		return 1
+	fi
+	ckcf_options='-z'; # enable named-checkzone for each zone (9.3.1+) !
+	if [ -n "${ROOTDIR}" -a "x${ROOTDIR}" != "x/" ]; then
+		OPTIONS="${OPTIONS} -t ${ROOTDIR}"
+		ckcf_options="$ckcf_options -t ${ROOTDIR}";
+		if [ -s /etc/localtime ]; then
+		    cp -fp /etc/localtime ${ROOTDIR}/etc/localtime
+		fi;
+		if [ ! -d ${ROOTDIR}/proc ]; then
+		    mkdir -p ${ROOTDIR}/proc
+		fi
+		if ! egrep -q '^/proc[[:space:]]+'${ROOTDIR}'/proc' /proc/mounts; then
+		    mount --bind /proc ${ROOTDIR}/proc >/dev/null 2>&1 
+		fi
+		if [ $dbusEnabled -eq 1 ]; then
+		    if ! egrep -q '^/[^[:space:]]+[[:space:]]+'${ROOTDIR}'/var/run/dbus' /proc/mounts; then
+			mkdir -p ${ROOTDIR}/var/run/dbus
+			if [ ! -d  /var/run/dbus ] ; then
+			    mkdir -p /var/run/dbus ;
+			fi;
+			mount --bind /var/run/dbus ${ROOTDIR}/var/run/dbus > /dev/null 2>&1;
+		    fi;		    
+		fi;		
+	fi
+	no_write_master_zones=0
+	if [ -e /etc/selinux/config ]; then
+           .  /etc/selinux/config
+           if [[ ( "$SELINUX" != 'disabled') && ("$SELINUXTYPE" != "") && (-d /etc/selinux/${SELINUXTYPE}) && (-e /etc/selinux/${SELINUXTYPE}/booleans || (-e /etc/selinux/${SELINUXTYPE}/booleans.local)) ]]; then
+	       if [ -e /etc/selinux/${SELINUXTYPE}/booleans.local ]; then
+		   . /etc/selinux/${SELINUXTYPE}/booleans.local;
+	       else
+		   . /etc/selinux/${SELINUXTYPE}/booleans;
+               fi;
+	       if echo "$named_write_master_zones" | /bin/egrep -q '^[0-9]+$'; then
+		   if [ "$named_write_master_zones" -eq 1 ] ; then
+		       /bin/chown -f --from=root:named named:named $ROOTDIR/var/named
+		   elif [ "$named_write_master_zones" -eq 0 ] ; then
+		       /bin/chown -f --from=named:named root:named $ROOTDIR/var/named
+		   fi;
+               fi;
+	   else
+	       no_write_master_zones=1
+	   fi;
+	else
+	    no_write_master_zones=1
+        fi;
+	if [ "$no_write_master_zones" -eq 1 ]; then
+	    if [[ "$ENABLE_ZONE_WRITE" =  [yY1]* ]]; then
+		/bin/chown -f --from=root:named named:named $ROOTDIR/var/named
+	    elif [[ "$ENABLE_ZONE_WRITE" =  [nN0]* ]]; then	        
+		/bin/chown -f --from=named:named root:named $ROOTDIR/var/named
+	    fi;
+	fi
+        conf_ok=0;
+	if [ -x /usr/sbin/named-checkconf ] && [ -x /usr/sbin/named-checkzone ] && /usr/sbin/named-checkconf $ckcf_options ${named_conf} >/dev/null 2>&1; then
+           conf_ok=1;
+        else
+	   RETVAL=$?;
+	fi
+	if [ $conf_ok -eq 1 ]; then	   
+	   daemon /usr/sbin/$named -u named ${OPTIONS};
+	   RETVAL=$?;
+	   if [ $RETVAL -eq 0 ]; then
+	       rm -f /var/run/named.pid
+	       rm -f /var/run/named_sdb.pid 2>/dev/null
+	       ln -s $ROOTDIR/var/run/named/named.pid /var/run/named.pid;
+	       if [ "$named" = "named_sdb" ]; then
+		   ln -s $ROOTDIR/var/run/named/named.pid /var/run/named_sdb.pid;
+	       fi;
+	   fi;
+	   if [ -n "`/sbin/pidof -o %PPID $named`" ]; then
+	       # Verify that named actually started (JM 2006-10-04)
+	       if [ ! -e $ROOTDIR/var/run/named/named.pid ]; then
+		  # If there is not a file containing the PID of the now running named daemon then create it (JM 2006-10-04)
+		  echo `/sbin/pidof -o %PPID $named` > $ROOTDIR/var/run/named/named.pid;
+		  if [ "$named" = "named_sdb" ]; then
+		     echo `/sbin/pidof -o %PPID $named` > $ROOTDIR/var/run/named/named_sdb.pid;
+		  fi;
+	       fi;
+	   fi;
+	else
+	   named_err="`/usr/sbin/named-checkconf $ckcf_options $named_conf 2>&1`";	   
+	   echo
+	   echo $"Error in named configuration"':';
+	   echo "$named_err";
+	   failure
+	   echo
+	   if [ -x /usr/bin/logger ]; then
+	       echo "$named_err" | /usr/bin/logger -pdaemon.error -tnamed 
+           fi;
+           return $RETVAL;
+        fi;
+ 	[ $RETVAL -eq 0 ] && touch /var/lock/subsys/named 
+        echo
+	return $RETVAL
+}
+stop() {
+        # Stop daemons.
+        echo -n $"Stopping $named: "
+	/usr/sbin/rndc stop >/dev/null 2>&1 
+	RETVAL=$?
+	if [ $RETVAL -eq 0 ]; then
+            timeout=0
+            while : ; do
+		if /sbin/pidof -o %PPID $named >/dev/null; then
+         	   if [ $timeout -ge $NAMED_SHUTDOWN_TIMEOUT ]; then
+		   	killproc $named -TERM >/dev/null 2>&1
+	           	RETVAL=$?
+			break
+        	   else
+			sleep 2 && echo -n "."
+			timeout=$((timeout+2))
+		   fi;
+		else
+		   break
+                fi;
+            done
+	fi;
+	if [ $RETVAL -eq 0 ]; then
+	    rm -f /var/lock/subsys/named
+	    rm -f /var/run/named.pid
+	    rm -f /var/run/named_sdb.pid 2>/dev/null	    
+	fi;
+	if [ $RETVAL -eq 0 ]; then
+	    success
+	else
+	    failure
+        fi;
+	echo
+	return $RETVAL
+}
+rhstatus() {
+	/usr/sbin/rndc status
+	return $?
+}	
+restart() {
+	stop
+# wait a couple of seconds for the named to finish closing down
+	sleep 2
+	start
+}	
+reload() {
+        echo -n $"Reloading $named: "
+	p=`/sbin/pidof -o %PPID $named`	
+	RETVAL=$?
+	if [ "$RETVAL" -eq 0 ]; then 
+	    /usr/sbin/rndc reload >/dev/null 2>&1 || /bin/kill -HUP $p;
+	    RETVAL=$?
+        fi
+	[ "$RETVAL" -eq 0 ] && success $"$named reload" || failure $"$named reload"
+        echo
+	return $?
+}
+probe() {
+	# named knows how to reload intelligently; we don't want linuxconf
+	# to offer to restart every time
+	/usr/sbin/rndc reload >/dev/null 2>&1 || echo start
+	return $?
+}
+checkconfig() {
+        ckcf_options='-z'; # enable named-checkzone for each zone (9.3.1+) !
+	if [ -n "${ROOTDIR}" -a "x${ROOTDIR}" != "x/" ]; then
+		OPTIONS="${OPTIONS} -t ${ROOTDIR}"
+		ckcf_options="$ckcf_options -t ${ROOTDIR}";  
+	fi;
+	if [ -x /usr/sbin/named-checkconf ] && [ -x /usr/sbin/named-checkzone ] && /usr/sbin/named-checkconf $ckcf_options ${named_conf} | cat ; then
+	    return 0;
+	else
+	    return 1;
+	fi
+}
+
+# See how we were called.
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+	status)
+		rhstatus
+		;;
+	restart)
+		restart
+		;;
+	condrestart)
+		if [ -e /var/lock/subsys/named ]; then restart; fi
+		;;
+	reload)
+		reload
+		;;
+	probe)
+		probe
+		;;
+        checkconfig|configtest|check|test)
+	        checkconfig
+		;;
+	*)
+        	echo $"Usage: $0 {start|stop|status|restart|condrestart|reload|probe}"
+		exit 1
+esac
+
+exit $?
+

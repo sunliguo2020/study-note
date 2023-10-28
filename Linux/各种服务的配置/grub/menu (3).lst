@@ -1,0 +1,68 @@
+#
+# Grub 0.95 中文版配置文件样例, by Gandalf(f22_storm@163.com)
+#  2004 -  07 - 15 
+#
+
+# 默认延迟时间(秒)
+timeout 30
+
+# 第一项为默认值
+default 0
+
+# Fallback to the second entry.
+fallback 1
+
+# 设置中文支持的字体文件
+fontfile (hd0,0)/boot/grub/fonts
+
+# 设置图形背景文件
+splashimage (hd0,0)/boot/grub/bj2008.xpm.gz
+
+
+# 使用 TFTP 协议从网络启动一个软盘镜像
+# 手工设置
+#    address = ip 地址
+#    mask = 子网掩码
+#    gateway = 网关
+#  
+#  tftpserver  tftp 服务器地址
+#  你可以修改 win99.img 为你的软盘镜像，注意：
+#  可以使用 gzip 压缩，原始大小必须是 1.44/2.88MB
+title 从网络软盘镜像文件启动
+ifconfig --address=192.168.200.1
+ifconfig --mask=255.255.255.192
+ifconfig --gateway=192.168.200.5
+tftpserver 192.168.200.5
+kernel (nd)/memdisk.gz
+initrd (nd)/win99.img
+
+# 启动另一个功能强大的引导器。注意：
+#   在它里面界面里，不要做任何保存！！！！！
+title 运行 Smart BootManager
+root    (hd0,0)
+kernel (hd0,0)/boot/grub/memdisk.gz
+initrd (hd0,0)/boot/grub/sbm.bin
+
+
+# 本地软盘镜像的使用方法之一。还可使用 4DOS 的功能
+#   即 map (xxx)/win98.img (fd0) 的方法。本版本支持。
+title 启动本地 Win98 软盘镜像文件
+root    (hd0,0)
+kernel (hd0,0)/boot/grub/memdisk.gz
+initrd (hd0,0)/boot/grub/win99.zip
+
+# 转到光盘启动
+title 从光盘启动系统
+scdrom --bootcd
+
+# 从本地磁盘的主分区启动
+title 从硬盘第一分区启动
+rootnoverify (hd0,0)
+makeactive
+chainloader  +1
+
+# Change the colors.
+title 改变菜单颜色
+color light-green/brown blink-red/blue
+
+

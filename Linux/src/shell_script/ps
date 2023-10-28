@@ -1,0 +1,20 @@
+#!/bin/bash
+PASSWORDFILE=$HOME/.password
+
+
+
+while [ "1" == "1" ]
+do
+#  main_menu
+echo -n "Enter your answer:"
+
+read answer
+case $answer in
+  l|list) list;;
+  a|A)    appand;;
+  E|e)    edit;;
+  q|Q)    quit;;
+  *)      printf "\n\n\nWrong!\n\n";;
+esac
+
+done

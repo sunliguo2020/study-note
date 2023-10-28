@@ -1,0 +1,13 @@
+访问控制:
+例：
+  <Location /server-info>
+   //由mod_info 生成服务器配置信息
+   SetHandler server-info
+   Order deny,allow
+   Deny from all
+   Allow from 127.0.0.1
+  </Location>
+ #service httpd restart
+
+
+ 访问控制可以在Location Directory Files 容器中。

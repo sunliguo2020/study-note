@@ -1,0 +1,7 @@
+2010-11-12 17:34:08 345 INFO [com.chinacache.main.Main] - <program start......................!>
+2010-11-12 17:34:10 195 INFO [com.chinacache.main.Main] - <program end........ok..............!>
+2010-12-06 11:40:40 334 INFO [com.chinacache.main.Main] - <program start......................!>
+2010-12-06 11:40:43 272 INFO [com.chinacache.utils.MyFileUtils] - <Warning: can't find channel name by channel id 12482 (20101202.txt)>
+2010-12-06 11:40:43 830 INFO [com.chinacache.utils.MyFileUtils] - <Warning: can't find channel name by channel id 12482 (20101201.txt)>
+2010-12-06 11:40:46 624 INFO [com.chinacache.main.Main] - <=====send taomee email is ok====>
+2010-12-06 11:40:46 625 INFO [com.chinacache.main.Main] - <program end........ok..............!>

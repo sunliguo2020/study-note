@@ -1,0 +1,10 @@
+/var/named/chroot
+/var/named/chroot/dev
+/var/named/chroot/etc
+/var/named/chroot/var
+/var/named/chroot/var/named
+/var/named/chroot/var/named/data
+/var/named/chroot/var/named/slaves
+/var/named/chroot/var/run
+/var/named/chroot/var/run/named
+/var/named/chroot/var/tmp
