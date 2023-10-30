@@ -33,6 +33,3 @@ WARNING: Ref 'refs/remotes/origin/master' is unchanged
 
 ````
 看来是需要加路径才可以来
-
-
-
