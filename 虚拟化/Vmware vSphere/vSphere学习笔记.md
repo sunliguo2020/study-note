@@ -15,3 +15,13 @@ vCenter Server可包含多个数据中心。大公司可能使用多个数据中
 群集启用vSphere High Availability（HA）和vSphere Distributed Resource Scheduler（DRS）解决方案。
 
 ![](vSphere学习笔记.assets/2023-10-25_181155.png)
+
+### 什么是数据存储？
+
+数据存储是用于保存虚拟机文件以及虚拟机操作所必须的其他文件的逻辑容器。数据存储存在不同类型的物理存储，包括本地存储、iSCSI、光纤通道SAN或NFS。数据存储可以基于VMFS，也可以基于NFS。
+
+你可以通过格式化LUN或装在NFS卷到现有主机的方式来创建新的数据存储。此外，您也可以将具有现有数据存储的主机添加到清单中。
+
+### 什么是主机？
+
+主机是使用虚拟化软件（例如ESX
