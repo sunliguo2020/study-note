@@ -1,15 +1,15 @@
-1: °ÑÊ±¼ä×ª»»Îª ´Ó1970 µÄÃëÊı
-Ä³¸öÈË·¢ÌûµÄÊ±¼ä´Á
+1: æŠŠæ—¶é—´è½¬æ¢ä¸º ä»1970 çš„ç§’æ•°
+æŸä¸ªäººå‘å¸–çš„æ—¶é—´æˆ³
 date -d "  " +%s
 posttime=\date -d "$1" +%s`
-2£º·¢ÌûÊ±¼äµÄµÄÇ°10·ÖÖÓµÄÊ±¼ä´Á
+2ï¼šå‘å¸–æ—¶é—´çš„çš„å‰10åˆ†é’Ÿçš„æ—¶é—´æˆ³
 $longintime=$(($posttime-$(($2*60))))
 
-»ñÈ¡cookie¸ñÊ½
- curl -d "username=º®ÒÀ&password=tongmingao" http://lvren.edu1000.net/bbs/auth.sh -D cookie.1
+è·å–cookieæ ¼å¼
+ curl -d "username=å¯’ä¾&password=tongmingao" http://lvren.edu1000.net/bbs/auth.sh -D cookie.1
 
-3£ºsed ĞŞ¸ÄÏàÓ¦µÄcookieÎÄ¼ş
+3ï¼šsed ä¿®æ”¹ç›¸åº”çš„cookieæ–‡ä»¶
 sed "s/time=[1-9]\{10\}/time=$logintime/"  cookie.1
-4:Ä£ÄâÏàÓ¦µÄ»·¾³
+4:æ¨¡æ‹Ÿç›¸åº”çš„ç¯å¢ƒ
 
-5£ºcurl  ²âÊÔ
+5ï¼šcurl  æµ‹è¯•
