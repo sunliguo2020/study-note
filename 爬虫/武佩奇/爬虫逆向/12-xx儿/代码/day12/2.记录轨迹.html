@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div onmousedown="doDown(event)">武沛齐爬虫开发教程</div>
+
+<script>
+    t = {
+        state: {},
+        sliderInfo: {
+            track: [],
+            deviceMotion:[]
+        }
+    }
+
+    function doDown(e) {
+        // n = e   n.clientX是点击的x坐标
+        // var n = (e.changedTouches || e.touches || [e])[0];
+        var n = e;
+        t.state.downX = n.clientX;
+        console.log("开始x坐标：", n.clientX);
+
+        console.log("doDown", e);
+        document.addEventListener("mousemove", doMove);
+        document.addEventListener("mouseup", doUp)
+
+    }
+
+    function doMove(e) {
+        // var o = (e.changedTouches || e.touches || [e])[0];
+        var o = e;
+        var n = t.state.downX;
+        // var u = (e = e || window.event, o.clientX - n);
+        var u =  o.clientX - n;   // 滑动距离
+		var n = u;
+
+
+        var i = Date.now() % 1e5
+          , s = (e.changedTouches || e.touches || [e])[0]
+          , o = s.clientX.toFixed(2)
+          , u = s.clientY.toFixed(2)
+          , a = n.toFixed(2)
+          , f = "".concat(i, ";").concat(o, ";").concat(u, ";").concat(a);
+
+        // "时间戳;横坐标;纵坐标;滑动距离"
+        t.sliderInfo.track.push(f);
+
+		window.addEventListener("deviceorientation", function(e) {
+            t.sliderInfo.deviceMotion.push(e)
+        }, !1)
+
+        console.log("滑动过程u：", u)
+        console.log("doMove", e)
+    }
+
+    function doUp(e) {
+        console.log("doUp", e)
+        document.removeEventListener("mousemove", doMove);
+        document.removeEventListener("mouseup", doUp);
+
+        console.log(t.sliderInfo.track)
+        console.log(t.sliderInfo.deviceMotion)
+    }
+</script>
+</body>
+</html>
