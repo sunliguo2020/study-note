@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div onmousedown="doDown(event)">武沛齐爬虫开发教程</div>
+
+<script>
+    function doDown(e) {
+        console.log("doDown", e);
+
+        //添加事件
+        document.addEventListener("mousemove", doMove);
+        document.addEventListener("mouseup", doUp)
+    }
+    function doMove(e) {
+        console.log("doMove", e)
+    }
+    function doUp(e) {
+        console.log("doUp", e)
+        document.removeEventListener("mousemove", doMove);
+        document.removeEventListener("mouseup", doUp);
+    }
+</script>
+</body>
+</html>
