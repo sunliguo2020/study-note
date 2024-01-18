@@ -129,3 +129,11 @@ var {age,wife,name} = obj;
 
 ```
 
+#### 三元表达式
+
+一个条件后跟一个问号（`?`），如果条件为[真值](https://developer.mozilla.org/zh-CN/docs/Glossary/Truthy)，则执行冒号（`:`）前的表达式；若条件为[假值](https://developer.mozilla.org/zh-CN/docs/Glossary/Falsy)，则执行最后的表达式。
+
+```javascript
+condition ? exprIfTrue : exprIfFalse
+```
+
