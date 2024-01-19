@@ -1,12 +1,44 @@
+### 一、简介
+
+Selenium可以“控制”浏览器，在浏览器页面上实现：点击、输入、滑动等操作。
+
+Selenium VS 逆向
+
+【优点】简单不需要逆向，只需要控制浏览器
+
+【缺点】
+
+### Selenium必备操作
+
+- 定位
+- 操作
+- 执行JavaScript
+- 源码读取和提取
+- 携带Cookie
+- 请求代理
+- 特征检测
+- 无头模式
+- 标签截图
+
+### 二、必备操作
+
+
+
 ### 1、安装
-```pip install selenium```
+
+```python
+pip install selenium
+```
+
+
+
 ### 2、下载浏览器驱动
 - google chrome 驱动地址
 谷歌驱动的下载：
 114及之前版本： http://chromedriver.storage.googleapis.com/index.html
 117/118/119版本： https://googlechromelabs.github.io/chrome-for-testing/
 
-### 框架代码：
+### 快速上手-框架代码：
 ```python
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -18,22 +50,13 @@ driver = webdriver.Chrome(service=service)
 # 打开网页
 # driver.get('https://passport.bilibili.com/login')
 driver.get('http://www.sunliguo.com')
+time.sleep(10)
 
+driver.close()
 ```
-#### 元素定位
-```
-find_element_by_id()
-find_element_by_name()
-find_element_by_class_name()
-find_element_by_tag_name()
-find_element_by_link_text()
-find_element_by_partial_link_text()
-find_element_by_xpath()
-find_element_by_css_selector()
-```
-在element变成elements就是找所有满足的条件，返回数组。
 
-### 寻找
+
+### 2.2 寻找标签
 ```python
 import time
 from selenium import webdriver
@@ -88,3 +111,59 @@ time.sleep(5)
 driver.close()
 
 ```
+
+#### 2.3 执行操作
+
+常见的执行操作：点击、输入
+
+tag.click()
+
+tag.send_keys()
+
+### 2.4 执行JavaScript
+
+driver.execute_script("")
+
+### 2.5 等待执行
+
+如果页面加载比较慢，需要等待某个元素加载成功后，再执行某些操作。
+
+#### 示例1 基于lambda表达式
+
+```python
+sms_btn = webDriverWait(driver,30,0.5).until(lambda dv:dv.find_element(BY.XPATH,''))
+sms_btn.click()
+```
+
+#### 自定义函数
+
+#### 全局配置
+
+```
+# 后续找元素时，没有找到时则等待10秒去寻找（一旦找到则继续）
+driver.implicityly_wai(10)
+```
+
+
+
+### 2.6获取值
+
+#### 示例一：文本和属性
+
+```
+<a id='x1' class='info mine' href='5xclass.cn'>武佩奇</a>
+```
+
+tag.text
+
+tag.get_attribute('target')
+
+tag.get_attribute('data-toggle')
+
+#### 实例二：值
+
+tag.value
+
+tag.get_attribute('value')
+
+tag.get_attribute('placeholder')
