@@ -167,3 +167,16 @@ tag.value
 tag.get_attribute('value')
 
 tag.get_attribute('placeholder')
+
+#### 2.12 截图
+
+```
+# 截图&保存
+tag.screenshot('demo.png')
+# 截图&图片内容
+body = tag.screenshaot_as_png
+# 截图&Base64编码格式图片内容
+b64_body = tag.screenshot_as_base64
+print(b64_body)
+```
+
