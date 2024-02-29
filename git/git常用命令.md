@@ -44,3 +44,10 @@ git remote add origin http://git.xxx.com/test.git
 6、拉取分支内容到本地分支
 命令：git pull origin <远程分支名称>
 例如：git pull origin fast
+
+### 终端乱码
+
+```
+git config --global core.quotepath false
+```
+
