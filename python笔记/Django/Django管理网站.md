@@ -1,6 +1,6 @@
 # 自动后台管理应用
 
-#### 设置admin
+### 1、settings.py中设置 admin
 
 ```python
 INSTALLED_APPS = [
@@ -14,13 +14,10 @@ INSTALLED_APPS = [
 ]
 ```
 
-
-
-#### 创建超级用户
+### 创建超级用户
 
 ```python
 python manage.py createsuperuser
-
 ```
 
 数据库中添加 auth_user 添加一条记录
@@ -30,9 +27,16 @@ python manage.py createsuperuser
 ```python
 from django.contrib import admin
 from . import models
+from .models import HisInformation
 
 # Register your models here.
 admin.site.register(models.Shoujihao)
+
+
+@admin.register(HisInformation)
+class HisInformationAdmin(admin.ModelAdmin):
+    list_display = ('id', 'idcard', 'year') 
+
 ```
 
 #### url.py
