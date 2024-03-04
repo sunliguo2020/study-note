@@ -92,18 +92,57 @@ INSTALLED_APPS = {
 ### 2.2.2 使用序列化器的步骤
 
 - 1、创建模型类文件
+
+  ```python
+  class Goods(models.Model):
+      pass
+  ```
+
+  
+
 - 2、创建序列化文件 app/serializers.py
 
 ```python
 from rest_framework import serializers
-class GoodsCategorySerializer(serializers.Serializer):
+class GoodsSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField()
+    
+class GoodsModelSerializer(serializers.ModelSerializer):
+      class Meta:
+        model = models.Goods
+        fields = '__all__'
+    
 ```
 
 - 3、 编写视图函数或者创建视图类
 
+注意事项：
+
+- serializer.data 是序列化后的值
+
+- Serializer的参数
+
+  - ```python
+    class BaseSerializer(Field):
+    	def __init__(self, instance=None, data=empty, **kwargs):
+    ```
+
+  - data
+
+    - ```
+      When a serializer is passed a `data` keyword argument you must call `.is_valid()` before attempting to access the serialized `.data` representation.
+      You should either call `.is_valid()` first, or access `.initial_data` instead.
+      ```
+
+    - 
+
+  - instance
+
+  - many
+
 ```python
+from rest_framework.response import Response
 @api_view(['GET'])
 def goodsListView(request)：
 	goods = Goods.objects.all()[:10]
@@ -114,11 +153,16 @@ def goodsListView(request)：
         print(goods_json.data)
 
         return Response(goods_json.data)
+    	# 自定义返回的格式
+    	#data = {"code": 200, "data": serializer.data}
+        #return Response(data)
 ```
 
 
 
 ```python
+from rest_framework.response import Response
+
 class GoodsView(APIView):
     def get(self, request, *args, **kwargs):
         # 获取queryset
