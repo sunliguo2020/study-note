@@ -1356,7 +1356,7 @@ INSTALLED_APPS = [
 
 ```
 3. 在settings.py 中 Midddleware 中，添加对应的中间件
-```
+```python
 MIDDLEWARE = [ 
     ...
     'corsheaders.middleware.CorsMiddleware',
