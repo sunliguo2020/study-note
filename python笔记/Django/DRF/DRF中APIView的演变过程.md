@@ -86,24 +86,41 @@ class UserSerializer(serializers.Serializer):
 
 ## GenericAPIView 
 
+#### 作用：
+
+它在APIView的基础上增加了操作序列化器和数据库查询的方法，作用是为Mixin扩展类提供方法支持。
+
 实现的功能：
 
 类属性：
 
-- queryset
-- serializer_class
-- lookup_field
-- lookup_url_kwarg
+- queryset			指明使用的数据查询集
+- serializer_class     指明视图使用的序列化器类
+- lookup_field          模型主键
+- lookup_url_kwarg    
 - pagination_class
-- paginator pagination_class的实例
+- paginator pagination_class的实例   分页器
 
 方法：
 
 - get_queryset()
-- get_object()
-- get_serialzizer()
+- get_object()     获取单条记录
+- get_serialzizer()    获取序列化后的数据
 - get_serializer_class
 - get_serializer_context
 - filter_queryset()
 - paginate_queryset 调用paginator的paginate_queryset方法
 - get_paginated_response 调用paginator的get_paginated_response方法
+
+## ViewSetMixin 
+
+作用：重写了as_view()方法，可以更方便地绑定动作行为actions
+
+```python
+class ViewSetMixin:
+	@classonlymethod
+    def as_view(cls, actions=None, **initkwargs):
+    	pass
+	
+```
+
