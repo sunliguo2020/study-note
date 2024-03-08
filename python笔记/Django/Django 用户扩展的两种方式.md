@@ -1,4 +1,4 @@
-#  1，继承AbstractUser 
+#  1、继承AbstractUser 
 
 models.py
 
@@ -35,7 +35,7 @@ manage.py makemigrations blog
 manage.py migrate
 ```
 
-#  2,profile扩展 
+#  2、profile扩展 
 
 models.py
 
