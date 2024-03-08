@@ -1,3 +1,48 @@
+Django RestFramework 中只有继承以下类的情况下才可以使用分页
+
+- viewsets.ModelViewSet
+- generics.ListAPIView
+- generic.ListCreateAPIView
+
+RestFramework默认提供了三种分页方式
+
+- PageNumberPagination普通分页器
+  - ?page=3&size=10
+- LimitOffsetPagination偏移分页器
+  - ?limit=20&offset=100
+- CursorPagination游标分页器
+  - 
+
+## 1、新建自定义分页类
+
+```python
+from rest_framework.pagination import PageNumberPagination
+
+
+class MyPage(PageNumberPagination):
+    page_size = 1  # 每页显示的数量
+    max_page_size = 5  # 最多设置的每页显示的数量
+    page_size_query_param = 'size'  # 每页显示数量的参数名称
+    page_query_param = 'page'  # 页码的参数名称
+```
+
+## 2、改造视图类
+
+```python
+from rest_framework import viewsets
+from .mypage import MyPage
+from .models import Goods
+from .serializers import GoodsSerializer
+
+
+class GoodsView(viewsets.ModelViewSet):
+    queryset = Goods.objects.all()
+    serializer_class = GoodsSerializer
+    pagination_class = MyPage
+```
+
+
+
 DRF（Django REST framework）的分页功能是为了处理大量数据的展示问题。当数据库中有大量数据时，如果一次性将所有数据加载到内存中，会给服务器带来巨大的压力，甚至可能导致内存溢出。因此，分页功能允许用户每次只加载和显示一小部分数据，这样可以有效地减轻服务器的压力，并提高应用程序的性能。
 
 在DRF中，分页可以通过两种方式实现：全局分页和局部分页。
