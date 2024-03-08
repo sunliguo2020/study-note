@@ -18,12 +18,23 @@ RestFramework默认提供了三种分页方式
 ```python
 from rest_framework.pagination import PageNumberPagination
 
-
-class MyPage(PageNumberPagination):
-    page_size = 1  # 每页显示的数量
+class CustomPagination(PageNumberPagination):
+    page_size = 10# 每页显示的数量
     max_page_size = 5  # 最多设置的每页显示的数量
     page_size_query_param = 'size'  # 每页显示数量的参数名称
     page_query_param = 'page'  # 页码的参数名称
+
+    def get_paginated_response(self, data):
+        return Response({
+            'code': 200,
+            'msg': 'success',
+            'data': {
+                'current_page': self.page.number,
+                'total_pages': self.page.paginator.num_pages,
+                'total_count': self.page.paginator.count,
+                'result': data
+            }
+        })
 ```
 
 ## 2、改造视图类
@@ -38,7 +49,18 @@ from .serializers import GoodsSerializer
 class GoodsView(viewsets.ModelViewSet):
     queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
-    pagination_class = MyPage
+    pagination_class = CustomPagination
+```
+
+或者在settings.py中配置
+
+```
+# drf 分页
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'utils.CustomPagination.CustomPagination',
+    'PAGE_SIZE': 10
+}
+
 ```
 
 
