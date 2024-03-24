@@ -40,6 +40,7 @@ pip install selenium
 
 ### 快速上手-框架代码：
 ```python
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
@@ -55,8 +56,23 @@ time.sleep(10)
 driver.close()
 ```
 
-
 ### 2.2 寻找标签
+
+```
+selenium中find_element定位方式
+            find_element(By.XPATH)
+            find_element(By.CSS_SELECTOR)
+            find_element(By.ID)
+            find_element(By.TAG_NAME)
+            find_element(By.class_name,)
+            find_element(By.PARTIAL_LINK_TEXT)
+            find_element(By.LINK_TEXT)
+            find_element(By.name)
+
+```
+
+
+
 ```python
 import time
 from selenium import webdriver
