@@ -8,18 +8,15 @@
 
 ### 	2.1 RESTFul特点：
 
-​		1、每个URI代表1中子源
+- 1、每个URI代表1种资源；
+- 2、客户端使用GET、POST、PUT、DELETE 4个标识操作方式的动词对服务器资源进行操作
+  - GET 用来获取资源	
+  - POST 用来新建资源
+  - PUT 用来更新资源（整体更新）
+  - PATCH 用来更新资源（局部更新）
+  - DELETE 用来删除资源
 
-​		2、客户端使用GET、POST、PUT、DELETE 4个标识操作方式的动词对服务器资源进行操作
-
-- GET 用来获取资源	
-- POST 用来新建资源
-- PUT 用来更新资源（整体更新）
-- PATCH 用来更新资源（局部更新）
-- DELETE 用来删除资源
-
-
-3、通过操作医院的表现形式来操作资源
+3、通过操作资源的表现形式来操作资源
 
 4、资源的形式是XML或者JSON
 
@@ -28,6 +25,13 @@
 ## 3、RESTful API设计风格
 
 ### 1、HTTP动词
+
+对于资源的具体操作类型，由HTTP动词表示。常用的HTTP动词有下面四个（括号里是对应的SQL命令）。
+
+- GET(SELECT)
+- POST(CREATE)
+- PUT(UPDATE)
+- DELETE(DELETE)
 
 ### 2、url路径
 
@@ -40,6 +44,19 @@
 
 
 ### 3、过滤参数
+
+如果接口需要通过条件过滤返回结果，那么过滤的条件参数，应作为查询字符串参数传递。
+
+- 例如：
+
+```
+?limit=10   返回指定记录的数量
+?offset=10
+?page=2&size=10
+?sortby=name&order=asc
+```
+
+
 
 ### 4、返回状态码
 
@@ -1332,6 +1349,19 @@ class StudentView(ListAPIView):
 #### 5、分页
 
 #### 6、异常处理
+
+REST framework提供了异常处理，如果没有自定义默认会采用默认的处理方法方式
+
+```python
+REST_FRAMEWORK = {
+    # REST_FRAMEWORK 默认的异常处理方法
+    'EXCEPTION_HANDLER':'rest_framework.views.exception_handler'
+}
+```
+
+### 1、自定义异常处理的方法
+
+- 定义异常处理的方法
 
 #### 7、文件上传
 
