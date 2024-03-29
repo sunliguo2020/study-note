@@ -1,70 +1,5 @@
-### Django启用时区支持时，在数据库中以UTC为单位存储时间信息。
-
-```PYTHON
-USE_TZ = True
-TIME_ZONE = 'Asia/Shanghai'
-```
-
-在代码和数据库中统一使用UTC时间，仅在最终用户进行交互时使用本地时间。
-
-
-
-# Python - string转datetime并设置时区
-
-
-
-\#先把字符串转成不带时区的datetime
-
-dt = datetime.datetime.strptime('2018-02-03 15:37:12' , '%Y-%m-%d %H:%M:%S')
-
-\#把不带时区的datetime转成timestamp再转成秒
-
-ts = int(dt.timestamp())
-
-\#把秒转成带时区的datetime
-
-t = datetime.datetime.fromtimestamp(ts, pytz.timezone('Asia/Shanghai'))
-
-
-
-**Naive 和 Aware 类型的 datetime 对象**
-
-> Python 的 datatime.datetime对象有一个 tzinfo 属性，该属性是 datetime.tzinfo 子类的一个实例，他被用来存储时区信息。当某个 datetime 对象的 tzinfo 属性被设置并给出一个时间偏移量时，我们称该 datetime 对象是 aware (已知) 的。否则称其为 naive (原生) 的。 可以使用 is_aware() 和 is_naive() 函数来判断某个 datetime 对象是 aware 类型或 naive 类型
-
-当关闭时区时，django 使用原生的 datetime 对象保存本地时间：
-
-```python
-import datetime
-now = datetime.datetime.now()
-```
-
-当开启时区时，django 使用已知 (aware) 的 datetime 对象存储本地时间：
-
-```python
-from django.utils import timezone
-now = timezone.now()
-```
-
-**Django 和 Python 中的 Timezone 处理**
-Django 中的 timezone
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
-```
-from django.utils import timezone
->>> now = timezone.now()
->>> now
-datetime.datetime(2018, 2, 22, 3, 13, 2, 383795, tzinfo=<UTC>)
->>>new = timezone.localtime(now)
->>>new
-datetime.datetime(2018, 2, 22, 11, 13, 2, 383795, tzinfo=<DstTzInfo 'Asia/Shanghai' CST+8:00:00 STD>)
-```
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
 Python 中的 datetime
 
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
 
 ```
 >>>import datetime,pytz
@@ -76,7 +11,6 @@ datetime.datetime(2018, 2, 22, 11, 18, 15, 623160)
 datetime.datetime(2018, 2, 22, 11, 18, 15, 623160, tzinfo=<DstTzInfo 'Asia/Shanghai' LMT+8:06:00 STD>)
 ```
 
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
 
 **Python 中的 time/datetime**
 **time 模块**
@@ -139,7 +73,7 @@ datetime.datetime(2018, 2, 22, 11, 18, 15, 623160)
 
 datetime类型与字符串类型相互转换
 
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
 
 ```
 >>> today = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -150,7 +84,7 @@ datetime类型与字符串类型相互转换
 datetime.datetime(2018, 2, 22, 0, 0)
 ```
 
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
 
 对时间间隔操作
 
@@ -187,4 +121,4 @@ datetime.datetime(2018, 2, 22, 14, 44, 847842)
 | %w      | 十进制表示的星期几（值从0到6，星期天为0）     |      | %W   | 每年的第几周，把星期一做为第一天（值从0到53）        |
 | %x      | 标准的日期串                                  |      | %X   | 标准的时间串                                         |
 | %y      | 不带世纪的十进制年份（值从0到99）             |      | %Y   | 带世纪部分的十制年份                                 |
-| %z ，%Z | 时区名称，如果不能得到时区名称则返回空字符    |      | %%   | 百分号                                               |
+| %z ，%Z | 时区名称，如果不能得到时区名称则返回空字符    |      |      |                                                      |

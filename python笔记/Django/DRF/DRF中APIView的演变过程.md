@@ -88,7 +88,7 @@ class UserSerializer(serializers.Serializer):
 
 #### 作用：
 
-它在APIView的基础上增加了操作序列化器和数据库查询的方法，作用是为Mixin扩展类提供方法支持。
+它在APIView的基础上增加了**操作序列化器和数据库查询**的方法，作用是为Mixin扩展类提供方法支持。
 
 实现的功能：
 
@@ -98,7 +98,7 @@ class UserSerializer(serializers.Serializer):
 - serializer_class     指明视图使用的序列化器类
 - lookup_field          模型主键
 - lookup_url_kwarg    
-- pagination_class
+- pagination_class      分页类
 - paginator pagination_class的实例   分页器
 
 方法：
@@ -111,6 +111,90 @@ class UserSerializer(serializers.Serializer):
 - filter_queryset()
 - paginate_queryset 调用paginator的paginate_queryset方法
 - get_paginated_response 调用paginator的get_paginated_response方法
+
+## mixin类
+
+```python
+"""
+Basic building blocks for generic class based views.
+
+We don't bind behaviour to http method handlers yet,
+which allows mixin classes to be composed in interesting ways.
+"""
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.settings import api_settings
+
+
+class CreateModelMixin:
+    """
+    Create a model instance.
+    """
+    def create(self, request, *args, **kwargs):
+        pass
+
+    def perform_create(self, serializer):
+        serializer.save()
+
+    def get_success_headers(self, data):
+        pass
+
+
+class ListModelMixin:
+    """
+    List a queryset.
+    """
+    def list(self, request, *args, **kwargs):
+        pass
+
+
+class RetrieveModelMixin:
+    """
+    Retrieve a model instance.
+    """
+    def retrieve(self, request, *args, **kwargs):
+        pass
+
+
+class UpdateModelMixin:
+    """
+    Update a model instance.
+    """
+    def update(self, request, *args, **kwargs):
+        pass
+
+    def perform_update(self, serializer):
+        pass
+
+    def partial_update(self, request, *args, **kwargs):
+        pass
+
+
+class DestroyModelMixin:
+    """
+    Destroy a model instance.
+    """
+    def destroy(self, request, *args, **kwargs):
+       pass
+
+    def perform_destroy(self, instance):
+        pass
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## ViewSetMixin 
 

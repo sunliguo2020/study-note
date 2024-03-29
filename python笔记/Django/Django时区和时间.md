@@ -1,4 +1,20 @@
-### Django启用时区支持时，在数据库中以UTC为单位存储时间信息。
+**Django 和 Python 中的 Timezone 处理**
+
+Django 中的 timezone
+
+```
+from django.utils import timezone
+>>> now = timezone.now()
+>>> now
+datetime.datetime(2018, 2, 22, 3, 13, 2, 383795, tzinfo=<UTC>)
+>>>new = timezone.localtime(now)
+>>>new
+datetime.datetime(2018, 2, 22, 11, 13, 2, 383795, tzinfo=<DstTzInfo 'Asia/Shanghai' CST+8:00:00 STD>)
+```
+
+### Django启用时区
+
+Django启用时区支持时，在数据库中以UTC为单位存储时间信息。
 
 ```PYTHON
 USE_TZ = True
@@ -9,21 +25,21 @@ TIME_ZONE = 'Asia/Shanghai'
 
 
 
-# Python - string转datetime并设置时区
+### Python - string转datetime并设置时区
 
-
-
-\#先把字符串转成不带时区的datetime
+```python
+#先把字符串转成不带时区的datetime
 
 dt = datetime.datetime.strptime('2018-02-03 15:37:12' , '%Y-%m-%d %H:%M:%S')
 
-\#把不带时区的datetime转成timestamp再转成秒
+#把不带时区的datetime转成timestamp再转成秒
 
 ts = int(dt.timestamp())
 
-\#把秒转成带时区的datetime
+#把秒转成带时区的datetime
 
 t = datetime.datetime.fromtimestamp(ts, pytz.timezone('Asia/Shanghai'))
+```
 
 
 
@@ -48,8 +64,6 @@ now = timezone.now()
 **Django 和 Python 中的 Timezone 处理**
 Django 中的 timezone
 
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
 ```
 from django.utils import timezone
 >>> now = timezone.now()
@@ -60,11 +74,9 @@ datetime.datetime(2018, 2, 22, 3, 13, 2, 383795, tzinfo=<UTC>)
 datetime.datetime(2018, 2, 22, 11, 13, 2, 383795, tzinfo=<DstTzInfo 'Asia/Shanghai' CST+8:00:00 STD>)
 ```
 
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
 
 Python 中的 datetime
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
 
 ```
 >>>import datetime,pytz
@@ -75,8 +87,6 @@ datetime.datetime(2018, 2, 22, 11, 18, 15, 623160)
 >>>new_t
 datetime.datetime(2018, 2, 22, 11, 18, 15, 623160, tzinfo=<DstTzInfo 'Asia/Shanghai' LMT+8:06:00 STD>)
 ```
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
 
 **Python 中的 time/datetime**
 **time 模块**
@@ -189,7 +199,7 @@ datetime.datetime(2018, 2, 22, 14, 44, 847842)
 | %y      | 不带世纪的十进制年份（值从0到99）             |      | %Y   | 带世纪部分的十制年份                                 |
 | %z ，%Z | 时区名称，如果不能得到时区名称则返回空字符    |      | %%   | 百分号                                               |
 
-#### Django Admin面板日期时间格式
+### Django Admin面板日期时间格式
 
 在Django Admin 面板中，对于一些model里面的时间类型的字段，不希望显示默认的时间格式，例如下图：默认是 年-月-日 时:分:秒，有些字段我只希望显示日期，不需要具体的时间，该怎么办？
 
@@ -213,5 +223,11 @@ simple_published_at.short_description="发文时间"
 ```python
 DATETIME_FORMAT = "Y-m-d h:m:s"
 DATE_FORMAT = 'Y-m-d'
-
 ```
+
+```python
+DATE_FORMAT = 'Y/m/d'  # 设置日期格式为年/月/日
+TIME_FORMAT = 'H:i'    # 设置时间格式为小时:分钟
+DATETIME_FORMAT = 'Y/m/d H:i'  # 设置日期时间格式为年/月/日 小时:分钟
+```
+
