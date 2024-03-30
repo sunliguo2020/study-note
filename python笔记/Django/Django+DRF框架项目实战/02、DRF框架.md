@@ -1309,7 +1309,7 @@ GenericViewSet：ViewSetMixin(魔法类)  + GenericAPIView
 
 #### 3、过滤
 
-对于列表数据可能需要根据字段进行过滤，我们可以通过田间django-filter扩展来增强支持
+对于列表数据可能需要根据字段进行过滤，我们可以通过添加django-filter扩展来增强支持。
 
 ```python
 pip install django-filter
@@ -1322,7 +1322,6 @@ pip install django-filter
 INSTALLED_APPS = [
    ...
     'django_filters',
-
 ]
 
 # 配置DRF过滤器
@@ -1346,6 +1345,27 @@ class StudentView(ListAPIView):
 
 #### 4、排序
 
+对于列表数据，REST framework提供了OrderingFilter过滤器来帮助我们快速指明数据按照指定字段进行排序。
+
+- filter_backends:指定排序过滤器。
+- ordering_fields:指定排序的可选字段。
+
+REST framework会在请求的查询字符串参数中检查是否包含了ordering参数，如果包含了ordering参数，则按照ordering参数指明的排序字段对数据集进行排序。
+
+要实现排序，则需要配置filters.OrderingFilter和ordering_fields排序字段。其中，ordering_fields排序字段等于要排序的字段元组。
+
+```python
+class UsersListCreateAPIView(ListCreateAPIView):
+    queryset = models.Users.objects.all()
+    serializer_class = UserSerializer
+    
+    # 排序
+    filter_backends = (DjangoFilterBackend, filters.OrderingFilter)
+    ordering_fields = ('id', 'nickname')
+```
+
+
+
 #### 5、分页
 
 #### 6、异常处理
@@ -1359,13 +1379,46 @@ REST_FRAMEWORK = {
 }
 ```
 
-### 1、自定义异常处理的方法
+##### 1、自定义异常处理的方法
 
 - 定义异常处理的方法
 
 #### 7、文件上传
 
 #### 8、接口文档
+
+REST framework通过第三方库可以帮助我们生成网页版的接口文档，自动接口文档生成的继承自APIView及其子类的视图。
+
+##### 1、安装依赖
+
+REST framework生成接口文档需要coreapi库的支持。
+
+```python
+pip install coreapi
+```
+
+##### 2、设置接口文档访问路径
+
+- 在项目路由中添加接口文档的路由，配置如下：
+
+```python
+from rest_framework.documentation import include_docs_urls
+
+urlpatterns = [
+    re_path(r'^docs/', include_docs_urls(title='接口文档')),]
+```
+
+- 加上配置
+
+```python
+REST_FRAMEWORK = {
+ 
+    #  添加coreapi框架 否则会提示：AttributeError: 'AutoSchema' object has no attribute 'get_link'
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+}
+```
+
+
 
 
 
