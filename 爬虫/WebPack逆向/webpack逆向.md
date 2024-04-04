@@ -9,10 +9,42 @@ webpack组成
 - 自执行函数
 - 模块加载器
 
-#### webpack打包简介
+### webpack打包简介
 自执行函数
+
 !function("形参"){"加载器";}(["模块"])
+
 模块以数组形式存储，数组中的每个元素都是函数。
+
+```javascript
+!function(e){
+    var t = {};
+    //加载器 所有的模块都是从这个函数加载执行
+    function n(r){
+        if (t[r])
+            return t[r].exports;
+        var o = t[r] = {
+            i:r,
+            l:!1,
+            exports:{}
+        };
+        return e[r].call(o.exports,o,o.exports,n),
+        o.l = !0,
+        o.exports
+    }
+    // n加载器，0下标，模块是数组
+    n(0)
+}([
+    function(){
+        console.log('12345')
+    },
+    function(){
+        console.log('模块2')
+    }
+])
+```
+
+
 
 #### 多个JS文件打包
 ```javascript
