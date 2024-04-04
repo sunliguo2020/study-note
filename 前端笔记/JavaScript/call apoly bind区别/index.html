@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var str = '你好';
+        var obj = {
+            str:'这是obj对象内的str'
+        }
+        function fun(){
+            console.log(this,this.str);
+        }
+        //call 会立即执行
+        fun.call(obj)
+        //apply 会立即执行
+        fun.apply(obj)
+        fun();
+
+    </script>
+</body>
+</html>
