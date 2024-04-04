@@ -610,7 +610,7 @@ DRF支持自定义序列化器的校验方法：
 ## 1、DRF定义视图函数
 
 案例：
-```
+```python
 
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
@@ -630,7 +630,7 @@ params = request.body.decode()
 import json
 params = json.loads(params)
 
-DEF中的request对象：
+DRF中的request对象：
 1、对应查询参数（拼接在url后面的参数）的获取：
 	request.query_params
  2、表单参数、json
@@ -642,9 +642,23 @@ DEF中的request对象：
 
 REST framework传入视图的request对象不再是Django默认的HttpRequest对象，而是REST framework提供的扩展了HttpRequest类的Request类的对象。无论前端发送的哪种格式的数据，我们都可以以统一的方式读取数据。
 
-​	1、request.data属性
+##### 	1、request.data属性
+
+- request.data获取请求体数据。
+  - 支持POST PUT PATCH方法传递的请求体参数
+  - 不仅支持表单类型数据，也支持JSON数据，还支持文件数据的获取
+
+##### 2、request.query_params属性
+
+request.query_params获取查询字符串参数的，Django的request.GET的作用一样
+
+
 
 ## 3、DRF的Response对象
+
+rest_framework.response.Response
+
+REST framework提供了相应类Response，使用该类构造相应对象时，相应的具体数据内容会被转换（render渲染）成符合前端需求的类型。
 
 ## 4、响应状态码
 
@@ -1367,6 +1381,64 @@ class UsersListCreateAPIView(ListCreateAPIView):
 
 
 #### 5、分页
+
+REST framework提供了分页的支持。
+
+##### 1、全局配置
+
+在配置文件中配置全局的分页方式：
+
+```python
+REST_FRAMEWORK = {
+   
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination', 
+    'PAGE_SIZE': 10,   
+}
+```
+
+##### 2、局部配置
+
+在不同的视图中可以通过pagination_class属性来指定不同的分页器。
+
+- 自定义分页器
+
+  自定义个继承PageNumberPagination的类型，在子类中通过属性定义分页器的数据：
+
+  - page_size 每页默认的数据条数
+  - page_query_param 前端发送的页数的关键字名，默认为“page”
+  - page_size_query_param 前端发送的每页数目的关键字名，默认为None
+  - max_page_size 每页最多的数据条数
+
+  ```python
+  class CustomPagination(PageNumberPagination):
+      """
+      自定义分页类
+      """
+      page_size = 10  # 每页显示的数目
+      page_query_param = 'page'  # 页码的参数名称
+      page_size_query_param = 'size'  # 每页显示数量的参数名称
+      max_page_size = 50  # 每页最多显示的数目
+  
+      def get_paginated_response(self, data):
+          """
+          自定义分页返回格式
+          """
+          return Response({
+              'code': 200,
+              'msg': 'success',
+              'data': data,
+              'current_page': self.page.number,
+              'next_page': self.get_next_link(),
+              'previous_page': self.get_previous_link(),
+              'page_size': self.page_size,
+              'total_pages': self.page.paginator.num_pages,
+              'total_count': self.page.paginator.count,
+  
+          }, status=status.HTTP_200_OK)
+  
+  ```
+
+  
 
 #### 6、异常处理
 
