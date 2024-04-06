@@ -54,6 +54,26 @@ webpack组成
 window.webpackJsonp.push()接受三个参数，第一个参数是模块的ID，第二个参数是一个数组或对象，里面定义大量的函数，第三个参数是要调用的函数（可选）。
 
 ```javascript
+(window.webpackJsonp = window.webpackJsonp || []).push([[36],{
+    't1':function(x){
+        console.log(x)
+    },
+    520:function(x){
+        console.log('520' + x)
+    },
+    't2':function(x){
+    }
+}]) 
+
+```
+
+
+
+
+
+
+
+```javascript
 //1.传入的参数是一个数组
 var _xxx;
 ！function(x){
@@ -194,3 +214,82 @@ _xxx("obj2")//和数组相比只是调用方式不同而已，原理基本一致
 - 构造一个自执行方法
 - 导出加密方法
 - 编写自定义方法 按照流程加密
+
+#### 三种解决方案：
+
+1、扣代码补参数
+
+2、加载器导出补模块
+
+3、全局导出加密函数
+
+
+
+### 例：中烟新商盟
+
+```javascript
+const jsdom = require("jsdom");
+const {JSDOM} = jsdom;
+const $ = require("jquery")(new JSDOM(`<!DOCTYPE html><p>Hello world</p>`).window);
+window = global;
+
+!function a(b, c, d) {
+    // b:模块
+    // c:{}
+    // d:[20]
+
+    //e 是 a 函数内部的一个闭包函数，它负责加载和执行模块。
+    // g 是要加载的模块名，h 是一个可选参数。
+    function e(g, h) {
+        /*
+        * * 如果 `c[g]`（即缓存中）不存在该模块，则继续查找。
+        * 首先检查 `b[g]`（可能是模块定义数组）是否存在。
+        * 如果不存在，则尝试使用 `require`（如果可用）来加载模块。
+        * 如果 `require` 不可用，并且 `f`（可能是另一个加载器或自定义函数）存在，则使用 `f` 来加载模块。
+        * 如果两者都不可用，则抛出一个错误，表示找不到模块。
+        * 如果 `b[g]` 存在，则创建一个新的模块对象 `k`，并将其添加到缓存 `c[g]` 中。
+        * 执行模块定义中的代码（`b[g][0]`），并传入一个回调函数和其他相关参数。
+        * 如果模块定义中有依赖（`b[g][1]`），则递归地加载这些依赖。
+        *
+        * */
+        if (!c[g]) {
+            if (!b[g]) {
+                var i = "function" == typeof require && require;
+                if (!h && i)
+                    return i(g, !0);
+                if (f)
+                    return f(g, !0);
+                var j = new Error("Cannot find module '" + g + "'");
+                throw j.code = "MODULE_NOT_FOUND",
+                    j
+            }
+            var k = c[g] = {
+                exports: {}
+            };
+            b[g][0].call(k.exports, function (a) {
+                var c = b[g][1][a];
+                return e(c || a)
+            }, k, k.exports, a, b, c, d)
+        }
+        return c[g].exports
+    }
+
+    window.loader = e;
+    // 遍历d d[0] ... d[d.length-1]  执行e(d[0])
+    //这部分代码遍历 d 数组（包含模块定义），并使用加载器 e 来加载和执行每个模块。
+    for (var f = "function" == typeof require && require, g = 0; g < d.length; g++)
+        e(d[g]);
+
+    return e
+}({
+	1:[],
+	2:[],
+	3:[],
+	...
+   }, {}, [20]);
+
+// d 为标准md5
+console.log(d(d(123456)+''));
+
+```
+
