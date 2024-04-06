@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function fn(num1, num2) {
+            console.log(this)
+            return num1, num2;
+        }
+
+        let obj = { name: '马路' }
+
+
+        let res = fn.call(obj, 1, 2)
+        console.log(res)
+    </script>
+
+</body>
+
+</html>
