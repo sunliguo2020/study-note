@@ -660,7 +660,30 @@ rest_framework.response.Response
 
 REST framework提供了相应类Response，使用该类构造相应对象时，相应的具体数据内容会被转换（render渲染）成符合前端需求的类型。
 
+```python
+Response(data,status=None,template_name=None,headers=None,content_type=None)
+```
+
+data不能是复杂结构的数据，如Django的模型类对象，对于这样的数据我们可以使用Serializer序列化器序列化处理后（转为Python字典类型）再传递给data参数。
+
+##### 1、Response参数说明
+
+- data:为响应准备的序列化处理后的数据；
+- status：状态码，默认为200；
+- template_name:模板名称，如果使用HTMLRenderer时需指明。
+- headers：用于存放响应头信息的字典；
+- content_type:响应数据的Content-Type，通常此参数无需传递，REST framework会根据前端所需类型数据来设置该参数
+
 ## 4、响应状态码
+
+在视图中使用数字HTTP状态代码并不总是能带来明显的阅读效果，而且如果您输入了错误代码，很容易察觉不到。REST框架为每个状态代码（如模块中）提供更明确的标识符。HTTP_400_BAD_REQUEST
+
+```python
+from rest_framework import status
+status.HTTP_200_OK
+```
+
+
 
 ## 5、API视图的装饰器
 
@@ -679,6 +702,8 @@ Decorator that converts a function-based view into an APIView subclass.Takes a l
 - 用于处理基于类的视图的类 。APIView
 
 下面我们通过@api_view这个装饰器来实现增删改查接口
+
+##### 1、使用DRF视图函数完成增删查改
 
 ```python
 from rest_framework import status
