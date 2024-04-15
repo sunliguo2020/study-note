@@ -5,11 +5,10 @@ pip install django-filter
 ```
 ### 2、加入到INSTALLED_APPS中
 
-```
+```python
 INSTALL_APPS = [
     ...
     'django_filters'
-
 ]
 ```
 
@@ -48,7 +47,7 @@ def article_search(request):
 <h3>搜索文章</h3>
 {% block content %}
     <form action="" method="get">
-{{ filter.form.as_p }}
+		{{ filter.form.as_p }}
         <input type="submit" />
     </form>
 <ul>
@@ -80,13 +79,31 @@ class ArticleFilter(django_filters.FilterSet):
 class ArticleFilter(django_filters.FilterSet):
     q = django_filters.CharFilter(field_name='title',
 									lookup_expr='icontains', label="关键词")
-    category = django_filters.ModelChoiceFilter(field_name='category', queryset=Category.objects.all(),
-	)
+    category = django_filters.ModelChoiceFilter(field_name='category', 													queryset=Category.objects.all(),)
     pub_date__gte = django_filters.NumberFilter(field_name='pub_date',
 										lookup_expr='year__gte', label="发表年份>=")
 
     class Meta:
         model = Article
         fields = {}
+```
+
+### 6、JSONField过滤
+
+```python
+class HisInformationFilter(django_filters.FilterSet):
+    idcard = django_filters.CharFilter(field_name='idcard', label='身份证号', lookup_expr='icontains')
+
+    class Meta:
+        model = models.HisInformation
+        fields = ['idcard', 'year', 'data']
+        filter_overrides = {
+            JSONField: {
+                'filter_class': django_filters.CharFilter,  # 或者其他合适的过滤器类
+                'extra': lambda f: {
+                    'lookup_expr': 'icontains',  # 或者其他合适的查找表达式
+                },
+            },
+        }
 ```
 
