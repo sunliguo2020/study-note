@@ -1,12 +1,12 @@
-在一个项目中，怎么统一配置logger？
+### 在一个项目中，怎么统一配置logger？
 
-ChatGPT
+
 
 在 Django 项目中，你可以使用 Django 的配置文件和 Python 的 logging 模块来统一配置 logger。以下是一个示例：
 
 1. **在 settings.py 中设置 logger 配置**：
 
-```
+```python
 pythonCopy codeLOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
