@@ -5,7 +5,7 @@ npm install crypto-js
 ### MD5
 ```javascript
 
-CryptoJS = require('crypto-js')
+const CryptoJS = require('crypto-js')
 // 使用CryptoJS计算数字1（转换为字符串后）的MD5哈希
 var numStr = "1"; // 数字1转换为字符串
 var md5HashNumStr = CryptoJS.MD5(numStr).toString();
@@ -14,7 +14,7 @@ console.log(md5HashNumStr); // 输出MD5哈希值
 ### AES加密
 ```javascript
 
-var CryptoJS = require("crypto-js");  
+const CryptoJS = require("crypto-js");  
   
 var v = function(data) {  
     // 假设您已经有了一个AES加密的密钥和初始化向量（IV）  
