@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>点击获取用户</button>
+    <script>
+        function callback(resp) {
+            console.log(resp)
+        }
+        function request(url) {
+            console.log(url);
+            const script = document.createElement('script');
+            script.src = url;
+            console.log(script)
+            // script.onload = function () {
+            //     script.remove();
+            // }
+            document.body.appendChild(script)
+        }
+        document.querySelector('button').onclick = function () {
+            request('https://httpbin.org/get');
+        }
+    </script>
+</body>
+
+</html>
