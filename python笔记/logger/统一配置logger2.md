@@ -43,8 +43,8 @@ pythonCopy codeLOGGING = {
 
 在你的 Django 应用程序中，在需要记录日志的地方，通过以下方式使用 logger：
 
-```
-pythonCopy codeimport logging
+```python
+import logging
 
 logger = logging.getLogger(__name__)
 
