@@ -15,11 +15,33 @@ git branch feature-A
 git chekcout feature-A
 ```
 
+分支上传
 
+```
+git push orgin feature-A
+```
 
+### 获取远程的分支
 
+```bash
+git checkout -b feature-D origin/feature-D
+```
 
+-b 参数的后面是本地仓库中新建分支的名称。为了便于理解，我们仍将器命名为feature-D,让它与远程仓库的对应分支保持同名。
 
+如果你想要下载（检出）一个远程分支并在本地开始工作，你可以使用 `git checkout` 命令。这将在本地创建一个与远程分支对应的跟踪分支。
+
+```bash
+git checkout -b <local-branch-name> origin/<remote-branch-name>
+```
+
+这里<local-branch-name> `` 是你想要在本地创建的分支的名称，``<remote-branch-name> 是你想要下载的远程分支的名称。
+
+例如，如果你想要下载名为 `feature-branch` 的远程分支，并在本地创建一个名为 `my-feature-branch` 的跟踪分支，你可以执行：
+
+```bash
+git checkout -b my-feature-branch origin/feature-branch
+```
 
 ### 合并分支
 
