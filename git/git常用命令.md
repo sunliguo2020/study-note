@@ -27,7 +27,7 @@ git push orgin feature-A
 git checkout -b feature-D origin/feature-D
 ```
 
--b 参数的后面是本地仓库中新建分支的名称。为了便于理解，我们仍将器命名为feature-D,让它与远程仓库的对应分支保持同名。
+-b 参数的后面是本地仓库中新建分支的名称。为了便于理解，我们仍将器命名为feature-D,让它与远程仓库的对应分支保持同名。新建分支名称后面是获取来源的分支名称。
 
 如果你想要下载（检出）一个远程分支并在本地开始工作，你可以使用 `git checkout` 命令。这将在本地创建一个与远程分支对应的跟踪分支。
 
@@ -176,3 +176,38 @@ git remote add origin http://git.xxx.com/test.git
 git config --global core.quotepath false
 ```
 
+### git checkout的作用
+
+1、切换分支
+
+2、恢复工作区文件
+
+当你想丢弃工作区中对某些文件的修改时，可以使用 `git checkout` 命令。它会用仓库中最后一次提交的状态来覆盖工作区中的文件。例如：
+
+```bash
+git checkout -- filename.txt
+```
+
+这条命令会恢复 `filename.txt` 到其最后提交的状态，丢弃你对这个文件的所有本地修改。
+
+****
+
+3、检出特定提交的文件：
+你可以使用 `git checkout` 来检出特定提交中的文件版本，而不必切换分支。这对于查看或临时使用某个旧版本的文件很有用。例如：
+
+```bash
+git checkout commit-hash -- filename.txt
+```
+
+这条命令会将 `filename.txt` 恢复到 `commit-hash` 提交时的状态。
+
+4、创建新分支并切换：
+通过带 `-b` 选项的 `git checkout` 命令，你可以创建一个新的分支并立即切换到这个新分支。例如：
+
+```bash
+git checkout -b new-branch
+```
+
+这条命令会创建一个名为 `new-branch` 的新分支，并立即切换到这个新分支。
+
+****
