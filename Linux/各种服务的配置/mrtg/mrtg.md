@@ -16,7 +16,16 @@ cfgmaker -output /var/www/mrtg/172.22.0.254.mrtg.cfg ruijie@172.22.0.254
 /usr/bin/cfgmaker --subdirs=HOSTNAME --snmp-option=:::::2 --no-down sggt@10.14.100.171
 ```
 
+重要参数说明：
 
+- --no-down 采集时，接口不通也显示。
+- --subdirs=HOSTNAME   按照HOSTAME 生成目录
+
+```
+give each router its own subdirectory, naming each per "format", in which HOSTNAME and SNMPNAME will be replaced by the values of those items -- for instance, --subdirs=HOSTNAME or --subdirs="HOSTNAME (SNMPNAME)"
+```
+
+- 
 
 以下内容为解决，MRTG监控端口流量大于100M的交换机，数据不准确的问题所用的参考。
 
@@ -52,6 +61,7 @@ EnableIPv6: no
 WorkDir: c:\www\mrtg    //修改后面的工作目录和实际相符
 RunAsDaemon:yes        //让命令每五分钟（默认值）运行一次，如果要改变时间则可以用下面的命令。
 Interval:5                       //可以自由设置时间的长度，是分钟数。
+Options[_]: growright, bits
 
 ```
 
