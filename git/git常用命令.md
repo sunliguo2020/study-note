@@ -1,3 +1,57 @@
+```
+git -v 
+```
+
+### 初始化配置
+
+```
+git config --global user.name "Jasper Yang"
+git config --global user.email sunliguo2006@qq.com
+git config --global credential.helper store
+git config --glboal --list
+--global:全局配置，所有仓库生效
+--system：系统配置，对所有用户生效
+```
+
+### 创建仓库
+
+```
+git init 
+git clone
+```
+
+### 回退版本
+
+```
+git reset --soft
+git reset --hard
+git reset --mixed
+```
+
+### 查看差异
+
+```
+git diff
+```
+
+### 删除文件
+
+```
+rm file;git add file 先从工作区删除文件，然后再暂存删除内容
+
+git rm file 把文件从工作区和暂存区同时删除
+git rm --cached file 把文件从暂存区删除，但保留再当前工作区
+git rm -r * 递归删除某个目录
+删除后提交
+```
+
+ ```
+ git remote add <shortname> <url>
+ git remote -v # 查看当前仓库所对应的远程仓库的别名和地址
+ ```
+
+
+
 ### 查看项目分支
 
 ```
@@ -76,6 +130,12 @@ git pull origin dev
 ```
 
 之后我们就可以使用push命令把本地的master分支合并到远程仓库啦
+
+```
+git pull <远程仓库名> <远程仓库分支名>:<本地分支名>
+```
+
+
 
 ### 删除分支
 
