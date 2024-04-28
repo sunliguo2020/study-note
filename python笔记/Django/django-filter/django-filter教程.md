@@ -58,6 +58,85 @@ def article_search(request):
 {% endblock %}
 ```
 
+#### 3.2 ListView使用
+
+定义filter类：
+
+```
+class HisSummaryFilter(django_filters.FilterSet):
+    """
+    自定义过滤器，根据年份进行过滤
+    """
+
+    class Meta:
+        model = models.HisSummary
+        fields = ['idcard', 'year']
+```
+
+ListView
+
+重写get_queryset 和get_context_data
+
+
+
+```python
+class HistSummaryListView(MyBaseListView):
+    model = models.HisSummary
+    filter_class = HisSummaryFilter
+    paginate_by = 10
+    template_name = "get/hissummary_list.html"
+
+    def get_queryset(self):
+
+        if not self.filter_class or not self.model:
+            raise NotImplementedError('必须设置model和filter_class属性')
+
+        # 检查模型中是否存在is_delete字段
+        logger.debug(f"检查{self.model}是否有is_delete字段{[field.name for field in self.model._meta.get_fields()]}")
+        # if 'is_delete' in [field.name for field in self.model._meta.get_fields()]:
+        if any(field.name == 'is_delete' for field in self.model._meta.get_fields()):
+            logger.debug(f'{self.model}有is_delete字段')
+            # 查找所有的删除标志不为真的记录
+            # select_related() 是一种查询优化方法，它用于减少数据库查询的数量。
+            # logger.debug(f"只筛选is_delete为假的记录")
+            queryset = self.model.objects.filter(is_delete=False).select_related()
+        else:
+            # 没有is_delete字段则选择所有对象
+            logger.debug(f"{self.model}没有is_delete字段,筛选全部")
+            queryset = self.model.objects.all().select_related()
+
+        # 创建了一个过滤器实例，并通过调用filter.qs获取了过滤后的查询结果。
+        self.filter = self.filter_class(self.request.GET, queryset=queryset)
+        return self.filter.qs
+
+    # 还重写了get_context_data方法，将过滤器实例添加到上下文中，以便在模板中使用。
+    # 这样，我们就可以在模板中直接使用过滤器的属性和方法来展示搜索结果。
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        # 实现过滤  filter.form 展示查询的表单
+        context['filter'] = self.filter
+
+        # 实现分页  当前页前后几页显示
+        context['max_left_item_count'] = 10
+
+        return context
+```
+
+模板中使用：
+
+filter.form 过滤条件的form
+
+```html
+            <form method="GET" action="" class="bg-info text-center">
+                {{ filter.form }}
+                <button class="btn btn-primary" type="submit">查询</button>
+                <button class="btn btn-primary" type="submit" id="cancelQueryBtn">清空查询</button>
+            </form>
+
+{% for item in page_obj %}
+```
+
 ### 4、精确查询 or 模糊查询
 
 默认为精确查询，改为模糊查询
