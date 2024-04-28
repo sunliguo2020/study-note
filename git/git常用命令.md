@@ -2,7 +2,7 @@
 git -v 
 ```
 
-### 初始化配置
+### 1.1初始化配置
 
 ```
 git config --global user.name "Jasper Yang"
@@ -12,6 +12,24 @@ git config --glboal --list
 --global:全局配置，所有仓库生效
 --system：系统配置，对所有用户生效
 ```
+
+#### 1.1.1 列出所有的全局配置
+
+```
+git config --global -l
+```
+
+
+
+#### 1.1.2 删除错误的配置
+
+要删除 Git 的全局配置中错误的项目，你可以使用 `git config --global --unset` 命令。
+
+```
+git config --global --unset
+```
+
+
 
 ### 创建仓库
 
