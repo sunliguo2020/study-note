@@ -2,7 +2,9 @@
 git -v 
 ```
 
-### 1.1初始化配置
+### 一、基本配置
+
+#### 1.1初始化配置
 
 ```
 git config --global user.name "Jasper Yang"
@@ -13,15 +15,13 @@ git config --glboal --list
 --system：系统配置，对所有用户生效
 ```
 
-#### 1.1.1 列出所有的全局配置
+##### 1.1.1 列出所有的全局配置
 
 ```
 git config --global -l
 ```
 
-
-
-#### 1.1.2 删除错误的配置
+##### 1.1.2 删除错误的配置
 
 要删除 Git 的全局配置中错误的项目，你可以使用 `git config --global --unset` 命令。
 
@@ -29,16 +29,14 @@ git config --global -l
 git config --global --unset
 ```
 
-
-
-### 创建仓库
+### 二、创建仓库
 
 ```
 git init 
 git clone
 ```
 
-### 回退版本
+#### 2.1回退版本
 
 ```
 git reset --soft
@@ -46,13 +44,13 @@ git reset --hard
 git reset --mixed
 ```
 
-### 查看差异
+#### 2.2查看差异
 
 ```
 git diff
 ```
 
-### 删除文件
+#### 2.3删除文件
 
 ```
 rm file;git add file 先从工作区删除文件，然后再暂存删除内容
@@ -68,15 +66,15 @@ git rm -r * 递归删除某个目录
  git remote -v # 查看当前仓库所对应的远程仓库的别名和地址
  ```
 
+### 三、项目分支
 
-
-### 查看项目分支
+#### 3.1查看项目分支
 
 ```
 git branch -a
 ```
 
-### 创建分支
+#### 3.2创建分支
 
 ```
 git checkout -b feature-A
@@ -87,19 +85,38 @@ git branch feature-A
 git chekcout feature-A
 ```
 
-分支上传
+分支上传 本地仓库推送版本记录到远程仓库
 
 ```
+git push 远程仓库别名 远程仓库分支
 git push orgin feature-A
 ```
 
-### 获取远程的分支
+```
+git push -u origin main 
+# -u的作用是将本地分支和远程分支进行关联，这样以后的git push命令就可以简化为git push 而不需要指定远程分支和本地分支的对应关系。
+git push origin main
+```
+
+#### 3.3远程仓库
+
+```
+git remote add 远程仓库别名 远程仓库地址
+git remote add origin https://xxx.git
+git remote remove 远程仓库别名
+```
+
+#### 3.4获取远程的分支
+
+同步远程分支到本地
 
 ```bash
 git checkout -b feature-D origin/feature-D
 ```
 
--b 参数的后面是本地仓库中新建分支的名称。为了便于理解，我们仍将器命名为feature-D,让它与远程仓库的对应分支保持同名。新建分支名称后面是获取来源的分支名称。
+-b 参数的后面是本地仓库中新建分支的名称。
+
+为了便于理解，我们仍将器命名为feature-D,让它与远程仓库的对应分支保持同名。新建分支名称后面是获取来源的分支名称。
 
 如果你想要下载（检出）一个远程分支并在本地开始工作，你可以使用 `git checkout` 命令。这将在本地创建一个与远程分支对应的跟踪分支。
 
@@ -115,11 +132,11 @@ git checkout -b <local-branch-name> origin/<remote-branch-name>
 git checkout -b my-feature-branch origin/feature-branch
 ```
 
-### 合并分支
+#### 3.5合并分支
 
 分支合并有两种方式：
 
-#### 本地分支间的合并
+##### 3.5.1本地分支间的合并
   比如，我在本地分支dev开发完一个功能后，先要把dev合并到本地的master分支，然后再推到远程仓库
   先从dev分支切换到master分支，使用checkout命令
   ```
@@ -140,7 +157,7 @@ git merge dev --no-ff
 
 在合并的时加上--no-ff参数，可以在历史记录中明确记录下本次分支合并。
 
-#### 远程分支合并到本地分支
+##### 3.5.2远程分支合并到本地分支
 
 远程分支合并到本地分支的前提是已经将dev分支的代码提交到远程仓库，那么此时远程仓库中的dev分支就是已经开发完成的代码。然后我们直接使用checkout命令从dev分支切换到master分支，接着使用pull命令将远程仓库的代码拉到本地的master即可
 ```
@@ -153,9 +170,7 @@ git pull origin dev
 git pull <远程仓库名> <远程仓库分支名>:<本地分支名>
 ```
 
-
-
-### 删除分支
+#### 3.6删除分支
 
 - 删除本地分支
 
@@ -213,7 +228,7 @@ To https://github.com/sunliguo2020/webcamSnapshot.git
 
 ```
 
-
+### 完整例子
 
 以从http://git.xxx.com/test.git上拉去fast分支为例：
 
@@ -232,8 +247,6 @@ git init
 git remote add origin http://git.xxx.com/test.git
 ```
 
-
-
 4、把远程分支拉去到本地
 命令：git fetch origin <远程分支名称>
 例如：git fetch origin fast
@@ -248,13 +261,15 @@ git remote add origin http://git.xxx.com/test.git
 命令：git pull origin <远程分支名称>
 例如：git pull origin fast
 
-### 终端乱码
+### 疑难杂症
+
+#### 终端乱码
 
 ```
 git config --global core.quotepath false
 ```
 
-### git checkout的作用
+#### git checkout的作用
 
 1、切换分支
 
