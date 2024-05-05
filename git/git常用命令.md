@@ -1,3 +1,9 @@
+
+
+![20210709143127423](git常用命令.assets/20210709143127423.png)
+
+
+
 ```
 git -v 
 ```
@@ -275,7 +281,9 @@ git config --global core.quotepath false
 
 2、恢复工作区文件
 
-当你想丢弃工作区中对某些文件的修改时，可以使用 `git checkout` 命令。它会用仓库中最后一次提交的状态来覆盖工作区中的文件。例如：
+当你想丢弃工作区中对某些文件的修改时，可以使用 `git checkout` 命令。
+
+它会用仓库中最后一次提交的状态来覆盖工作区中的文件。例如：
 
 ```bash
 git checkout -- filename.txt
