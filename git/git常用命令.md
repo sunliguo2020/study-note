@@ -77,18 +77,27 @@ git rm -r * 递归删除某个目录
 #### 3.1查看项目分支
 
 ```
-git branch -a
+git branch 列出本地已经存在的分支，并且当前分支会用*标记
+git branch -r 查看远程版本库的分支列表
+git branch -a 查看所有分支列表（包括本地和远程，remotes/开头的表示远程分支）
+git branch -v 查看一个分支的最后一次提交
+git branch --merged  查看哪些分支已经合并到当前分支
+git branch --no-merged 查看所有未合并工作的分支
 ```
 
-#### 3.2创建分支
+3.2创建分支
+
+创建并切换到新分支
 
 ```
 git checkout -b feature-A
 ```
 
+等同于
+
 ```
-git branch feature-A
-git chekcout feature-A
+git branch feature-A 	#	创建新分支
+git chekcout feature-A	# 切换到新分支
 ```
 
 分支上传 本地仓库推送版本记录到远程仓库
@@ -104,13 +113,67 @@ git push -u origin main
 git push origin main
 ```
 
-#### 3.3远程仓库
+#### 3.3从远程仓库pull（拉取）代码到本地分支
+
+1、指定远程分支和本地分支
+
+```
+git pull origin 远程分支名称:本地分支名称
+```
+
+origin 是远程仓库连接默认的对象名称。
+
+2、如果不写本地分支名称，则默认和远程分支同名
+
+```
+git pull origin 远程分支名称
+```
+
+#### 3.4将新分支推送到远程仓库
+
+方法1：使用git命令
+
+```
+git push orgin 分支名称
+```
+
+假如本地新建了dev的分支，远程仓库还没有这个分支，推送的命令为：
+
+```
+git push --set-upstream origin dev
+```
+
+>
+>
+>分析：
+>
+>git分支与远程主机存在对应分支，可能是单个可能是多个。 
+>
+>simple方式：如果当前分支只有一个追踪分支，那么git push origin到主机时，可以省略主机名。 
+>
+>matching方式：如果当前分支与多个主机存在追踪关系，那么git push --set-upstream origin master（省略形式为：git push -u origin master）将本地的master分支推送到origin主机（--set-upstream选项会指定一个默认主机），同时指定该主机为默认主机，后面使用可以不加任何参数使用git push。
+>
+>注意：
+>
+>Git 2.0版本之前，默认采用matching方法，现在改为默认采用simple方式。
+>
+
+方法2：直接使用GUI面板上使用Push功能。
+
+3.3远程仓库
 
 ```
 git remote add 远程仓库别名 远程仓库地址
-git remote add origin https://xxx.git
+
 git remote remove 远程仓库别名
 ```
+
+```
+git remote add origin https://github.com/username/repo.git
+#在这个示例中，我们为远程仓库设置了别名 origin，并将其 URL 设置为 https://github.com/username/repo.git。之后，我们就可以使用 git push origin main 或 git pull origin main 等命令来与这个远程仓库进行交互了。
+```
+
+
 
 #### 3.4获取远程的分支
 
@@ -143,6 +206,7 @@ git checkout -b my-feature-branch origin/feature-branch
 分支合并有两种方式：
 
 ##### 3.5.1本地分支间的合并
+
   比如，我在本地分支dev开发完一个功能后，先要把dev合并到本地的master分支，然后再推到远程仓库
   先从dev分支切换到master分支，使用checkout命令
   ```
@@ -178,20 +242,22 @@ git pull <远程仓库名> <远程仓库分支名>:<本地分支名>
 
 #### 3.6删除分支
 
-- 删除本地分支
+1、删除本地分支（不能删除当前所在分支，如果要删除，必须先切换到其他分支上）
 
 ```
 git branch -d <branchName>
 ```
 
-- 删除远程分支
+如果删除时报错，error:The branch '分支名称' is not fully merged.使用-D强制删除。
+
+2、删除远程分支
 
 ```
 git push origin :f2
 git push origin --delete [branch_name]
 ```
 
-
+注意：分支名称前有个冒号，分之前的冒号代表删除。
 
 ```
 git branch -d -r <branchname> 
@@ -234,9 +300,9 @@ To https://github.com/sunliguo2020/webcamSnapshot.git
 
 ```
 
-### 完整例子
+### 例1：
 
-以从http://git.xxx.com/test.git上拉去fast分支为例：
+以从http://git.xxx.com/test.git上拉取fast分支为例：
 
 1、新建空文件夹
 2、初始化git
@@ -255,17 +321,87 @@ git remote add origin http://git.xxx.com/test.git
 
 4、把远程分支拉去到本地
 命令：git fetch origin <远程分支名称>
-例如：git fetch origin fast
-1
-2
+例如：
+
+```
+git fetch origin fast
+```
+
 5、在本地建立分支localfast并切换到该分支，与远程分支建立连接
 命令：git checkout -b <本地分支名称> origin/<远程分支>
-例如：git checkout -b localfast origin/fast
-1
-2
+例如：
+
+```
+git checkout -b localfast origin/fast
+```
+
 6、拉取分支内容到本地分支
 命令：git pull origin <远程分支名称>
-例如：git pull origin fast
+
+```
+git pull origin fast
+```
+
+### 例2：
+
+1、我们现在位于dev分支，已经开发完自己负责的功能。
+
+```
+git add .
+git commit -m '功能已经完成，提交到xx分支'
+git push -u origin 分支名称
+```
+
+2、切换到master主分支
+
+```
+git checkout master
+```
+
+3、如果多人开发，需要拉取远程master
+
+```
+git pull origin master
+```
+
+4、dev合并到master
+
+```
+git merge dev
+```
+
+5、查看状态
+
+```
+git status
+```
+
+6、push到远程仓库
+
+```
+git push origin master
+```
+
+### 例3：
+
+1、本地新建分支，开发完成
+
+```
+git add .
+git commit  -m ''
+```
+
+git push 出现提示：
+
+```
+$ git push
+fatal: The current branch gui has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin gui
+```
+
+
 
 ### 疑难杂症
 
