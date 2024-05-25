@@ -85,7 +85,7 @@ git branch --merged  查看哪些分支已经合并到当前分支
 git branch --no-merged 查看所有未合并工作的分支
 ```
 
-3.2创建分支
+#### 3.2创建分支
 
 创建并切换到新分支
 
@@ -202,8 +202,6 @@ git remote remove 远程仓库别名
 git remote add origin https://github.com/username/repo.git
 #在这个示例中，我们为远程仓库设置了别名 origin，并将其 URL 设置为 https://github.com/username/repo.git。之后，我们就可以使用 git push origin main 或 git pull origin main 等命令来与这个远程仓库进行交互了。
 ```
-
-
 
 #### 3.4获取远程的分支
 
@@ -329,6 +327,14 @@ To https://github.com/sunliguo2020/webcamSnapshot.git
  - [deleted]         f2
 
 ```
+
+以图表形式查看分支
+
+```
+git log --graph
+```
+
+
 
 ### 例1：
 
