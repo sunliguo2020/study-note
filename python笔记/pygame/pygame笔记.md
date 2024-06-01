@@ -1,4 +1,39 @@
+#### 常用模块
+
+pygame.cdrom
+
+pygame.cursors
+
+pygame.Color
+
+pygame.display
+
+pygame.draw 绘制形状、线和点
+
+pygame.font 使用字体
+
+pygame.image 加载和存储图片
+
+pygame.joystick
+
+pygame.key
+
+pygame.mixer
+
+pygame.mouse
+
+display常用模块
+
+```python
+pygame.display.init()
+pygame.display.quit()
+pygame.display.get_init()
+```
+
+
+
 ### pygame坐标
+
 原点在左上角（0,0）
 x轴水平方向向右，逐渐增加
 y轴垂直方向向下，逐渐增加
@@ -74,3 +109,41 @@ screen.blit(monster_img, (560, 180))  # 绘制怪物
 pygame.display.update()  # 刷新屏幕内容
 ```
 
+### get_rect()
+
+在`pygame`库中，`get_rect()`方法常用于获取图像或Surface对象的矩形区域（或边界框）。这个矩形区域包含了图像或Surface的所有像素，并且可以用来进行碰撞检测、位置定位等。
+
+具体来说，`get_rect()`方法返回一个`pygame.Rect`对象，该对象有四个主要的属性：`x`（左上角x坐标）、`y`（左上角y坐标）、`width`（宽度）和`height`（高度）。
+
+但是，需要注意的是，当你对一个图像或Surface对象调用`get_rect()`方法时，默认情况下，返回的矩形区域的`(x, y)`坐标是`(0, 0)`，即左上角位于图像或Surface的左上角。这通常不是你想要的，因为你可能希望这个矩形与图像或Surface一起在屏幕上移动。
+
+因此，在实际使用中，你通常会先调用`get_rect()`方法获取一个矩形对象，然后设置这个对象的`(x, y)`属性为你想要的位置。例如：
+
+```python
+import pygame  
+  
+# 初始化pygame  
+pygame.init()  
+  
+# 创建一个窗口  
+screen = pygame.display.set_mode((800, 600))  
+  
+# 加载一个图像  
+image = pygame.image.load('my_image.png')  
+  
+# 获取图像的矩形区域  
+rect = image.get_rect()  
+  
+# 设置矩形区域的位置（例如，将其置于屏幕中央）  
+rect.center = (screen.get_width() // 2, screen.get_height() // 2)  
+  
+# 在屏幕上绘制图像（使用其矩形区域的位置）  
+screen.blit(image, rect.topleft)  
+  
+# 更新屏幕显示  
+pygame.display.flip()  
+  
+# 后续的游戏循环...
+```
+
+在上面的例子中，我们首先加载了一个图像，并使用`get_rect()`方法获取了它的矩形区域。然后，我们设置了矩形区域的中心位置为屏幕的中央。最后，我们使用`blit()`方法将图像绘制到屏幕上，其中`rect.topleft`给出了图像的左上角位置（这是由矩形区域的`(x, y)`坐标给出的）。
