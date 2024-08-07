@@ -113,6 +113,23 @@ git push -u origin main
 git push origin main
 ```
 
+删除错误的远程仓库名称
+
+```
+$ git remote -v
+orgin   https://github.com/sunliguo2020/study-note.git (fetch)
+orgin   https://github.com/sunliguo2020/study-note.git (push)
+origin  https://github.com/sunliguo2020/study-note.git (fetch)
+origin  https://github.com/sunliguo2020/study-note.git (push)
+
+```
+
+```
+git remote remove orgin
+```
+
+
+
 #### 3.3从远程仓库pull（拉取）代码到本地分支
 
 1、指定远程分支和本地分支
