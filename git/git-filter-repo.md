@@ -1,3 +1,7 @@
+不到迫不得已，不要轻易使用 `git filter-branch`，因为它重构了整个 Tree，所以每个开发人员都需要重新克隆仓库到本地，对于有很多开发者参与的大型项目来说，这么做会给很多人带来麻烦，与其事后对仓库内容进行修正，不如伊始就对每个 Commit 慎之又慎。
+
+
+
 ```
 pip install git-filter-repo
 ```
@@ -116,6 +120,18 @@ To illustrate how `git filter-repo` works, we'll show you how to remove your fil
      git filter-repo --force --invert-paths --path-regex .+\.csv
      ```
      
+     ### 删除单个目录
+     
+     要删除名为 `dir_to_remove` 的目录及其所有内容，你可以使用以下命令：
+     
+     git filter-repo --invert-paths --path dir_to_remove
+     
+     但是，这里有一个需要注意的地方：`git filter-repo` 的 `--path` 选项默认是包含指定路径的提交。因此，如果你直接使用 `--path dir_to_remove`，它会保留所有包含该目录的提交。为了删除这个目录，你需要结合使用 `--invert-paths` 选项，这会告诉 `git filter-repo` 保留所有**不**包含指定路径的提交。
+     
+     
+     
+     
+     
      Important
      
      If the file with sensitive data used to exist at any other paths (because it was moved or renamed), you must run this command on those paths, as well.
@@ -163,3 +179,4 @@ To illustrate how `git filter-repo` works, we'll show you how to remove your fil
    > To https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
    >  + 48dc599...051452f main -> main (forced update)
    ```
+
