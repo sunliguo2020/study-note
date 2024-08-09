@@ -124,13 +124,11 @@ To illustrate how `git filter-repo` works, we'll show you how to remove your fil
      
      要删除名为 `dir_to_remove` 的目录及其所有内容，你可以使用以下命令：
      
+     ```
      git filter-repo --invert-paths --path dir_to_remove
+     ```
      
      但是，这里有一个需要注意的地方：`git filter-repo` 的 `--path` 选项默认是包含指定路径的提交。因此，如果你直接使用 `--path dir_to_remove`，它会保留所有包含该目录的提交。为了删除这个目录，你需要结合使用 `--invert-paths` 选项，这会告诉 `git filter-repo` 保留所有**不**包含指定路径的提交。
-     
-     
-     
-     
      
      Important
      

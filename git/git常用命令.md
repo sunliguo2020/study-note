@@ -170,10 +170,6 @@ git pull origin 远程分支名称
 
 
 
-
-
-
-
 #### 3.4将新分支推送到远程仓库
 
 方法1：使用git命令
@@ -188,8 +184,6 @@ git push orgin 分支名称
 git push --set-upstream origin dev
 ```
 
->
->
 >分析：
 >
 >git分支与远程主机存在对应分支，可能是单个可能是多个。 
@@ -198,10 +192,26 @@ git push --set-upstream origin dev
 >
 >matching方式：如果当前分支与多个主机存在追踪关系，那么git push --set-upstream origin master（省略形式为：git push -u origin master）将本地的master分支推送到origin主机（--set-upstream选项会指定一个默认主机），同时指定该主机为默认主机，后面使用可以不加任何参数使用git push。
 >
->注意：
->
->Git 2.0版本之前，默认采用matching方法，现在改为默认采用simple方式。
->
+>注意：Git 2.0版本之前，默认采用matching方法，现在改为默认采用simple方式。
+
+命令 `git push --set-upstream origin master` 在 Git 版本控制系统中用于将本地的 `master` 分支推送到远程仓库的 `master` 分支，并设置这个远程分支作为本地分支的上游（upstream）。这样做的好处是，之后你可以使用简单的 `git pull` 命令来从远程仓库拉取并合并最新的更改，而不需要每次都指定远程仓库和分支。
+
+这条命令的各个部分含义如下：
+
+- `git push`：这是 Git 中用于将本地仓库的更改推送到远程仓库的命令。
+- `--set-upstream`：这个选项用于设置当前分支的上游（或称为跟踪）分支。上游分支是你在进行 `git pull` 或 `git fetch` 等操作时，Git 默认会与之同步的远程分支。
+- `origin`：这是远程仓库的默认名称（如果你没有自定义的话）。Git 使用这个名称来引用你克隆的远程仓库。
+- `master`：这是你想要推送的本地分支名称，同时也是你想要与之同步的远程分支名称（在这个例子中）。但需要注意的是，从 Git 2.28 版本开始，`master` 分支的默认名称被更改为 `main`，因此如果你的 Git 版本较新或者你的项目遵循了这个新的约定，你可能需要将 `master` 替换为 `main`。
+
+综上所述，如果你使用的是较新版本的 Git 或者你的项目已经采用了 `main` 作为默认分支，那么你应该使用：
+
+```bash
+git push --set-upstream origin main
+```
+
+这条命令会将本地的 `main` 分支推送到远程仓库的 `main` 分支，并设置远程的 `main` 分支为本地 `main` 分支的上游。
+
+另外，如果你还没有克隆远程仓库或者你的本地仓库中还没有 `master`（或 `main`）分支，你可能需要先使用 `git checkout -b master origin/master`（或相应的 `main` 分支命令）来从远程仓库检出并创建一个新的本地分支。不过，在较新版本的 Git 中，直接克隆仓库时通常会自动创建并检出 `main` 分支。
 
 方法2：直接使用GUI面板上使用Push功能。
 
@@ -293,6 +303,12 @@ git branch -d <branchName>
 
 如果删除时报错，error:The branch '分支名称' is not fully merged.使用-D强制删除。
 
+```
+$ git branch -d feature-onvif
+error: The branch 'feature-onvif' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D feature-onvif'.
+```
+
 2、删除远程分支
 
 ```
@@ -301,6 +317,15 @@ git push origin --delete [branch_name]
 ```
 
 注意：分支名称前有个冒号，分之前的冒号代表删除。
+
+```
+sunliguo@DESKTOP-F5FCNSM MINGW64 /f/github/webcamSnapshot (master)
+$ git push origin :feature-onvif
+To https://github.com/sunliguo2020/webcamSnapshot.git
+ - [deleted]         feature-onvif
+```
+
+
 
 ```
 git branch -d -r <branchname> 
