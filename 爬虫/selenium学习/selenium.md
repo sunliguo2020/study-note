@@ -20,9 +20,7 @@ Selenium VS 逆向
 - 无头模式
 - 标签截图
 
-### 二、必备操作
-
-
+### 二、安装
 
 ### 1、安装
 
@@ -30,15 +28,14 @@ Selenium VS 逆向
 pip install selenium
 ```
 
-
-
 ### 2、下载浏览器驱动
 - google chrome 驱动地址
 谷歌驱动的下载：
 114及之前版本： http://chromedriver.storage.googleapis.com/index.html
 117/118/119版本： https://googlechromelabs.github.io/chrome-for-testing/
+- https://registry.npmmirror.com/binary.html?path=chromedriver/
 
-### 快速上手-框架代码：
+### 三、快速上手-框架代码：
 ```python
 import time
 from selenium import webdriver
@@ -56,7 +53,9 @@ time.sleep(10)
 driver.close()
 ```
 
-### 2.2 寻找标签
+### 四、
+
+### 4.1寻找标签
 
 ```
 selenium中find_element定位方式
@@ -68,7 +67,6 @@ selenium中find_element定位方式
             find_element(By.PARTIAL_LINK_TEXT)
             find_element(By.LINK_TEXT)
             find_element(By.name)
-
 ```
 
 
@@ -132,13 +130,27 @@ driver.close()
 
 常见的执行操作：点击、输入
 
+```
 tag.click()
 
 tag.send_keys()
+```
+
+
 
 ### 2.4 执行JavaScript
 
+```
 driver.execute_script("")
+```
+
+```
+# 滑到底部
+js_buttom = 'document.documentElement.scrollTop =100000'
+browser.execute_script(js_buttom)
+```
+
+
 
 ### 2.5 等待执行
 
