@@ -36,6 +36,24 @@ pip install selenium
 - https://registry.npmmirror.com/binary.html?path=chromedriver/
 
 ### 三、快速上手-框架代码：
+
+selenium 3.X
+
+```
+from selenium import webdriver
+
+web = webdriver.Chrome(executable_path='./chromedriver.exe')
+
+url = 'https://www.lagou.com/wn/'
+
+web.get(url)
+print(web.title)
+```
+
+
+
+selenium 4.X
+
 ```python
 import time
 from selenium import webdriver
