@@ -5,8 +5,8 @@ echo -n $'\n\n'
 
 echo '<html>'
 #echo "<meta http-equiv=\"refresh\" content=\"0; url=ftp://lvren:woshilvren@$HTTP_HOST\">"
-echo 'ÕÕÆ¬ÉÏ´«µÄ·½·¨(ÓÚ200702042035ĞŞ¸Ä)   [ĞŞ¸Ä]ÂÌÒ°ÎŞ×Ù[2007/02/04ĞÇÆÚÌì20:34]'
-echo '<br>1.http://greenman.sdie.net/sshclient.exeÏÂÔØ²¢°²×°sftp,Ò»Â·µ¥»÷¡°ÏÂÒ»²½¡±¼´¿É¡£'
-echo '<br>2.ÔËĞĞ×ÀÃæÉÏµÄ¡°SSH Secure File Transfer Client¡±£¬µ¥»÷¡°connect¡±°´Å¥£¬host nameÎª"greenman.sdie.net"»ò¡°202.194.254.211¡±,usernameºÍpassword·Ö±ğlvrenºÍwoshilvren,ºóÃæÒ»¿´¾ÍÃ÷°×ÁË¡£'
+echo 'ç…§ç‰‡ä¸Šä¼ çš„æ–¹æ³•(äº200702042035ä¿®æ”¹)   [ä¿®æ”¹]ç»¿é‡æ— è¸ª[2007/02/04æ˜ŸæœŸå¤©20:34]'
+echo '<br>1.http://greenman.sdie.net/sshclient.exeä¸‹è½½å¹¶å®‰è£…sftp,ä¸€è·¯å•å‡»â€œä¸‹ä¸€æ­¥â€å³å¯ã€‚'
+echo '<br>2.è¿è¡Œæ¡Œé¢ä¸Šçš„â€œSSH Secure File Transfer Clientâ€ï¼Œå•å‡»â€œconnectâ€æŒ‰é’®ï¼Œhost nameä¸º"greenman.sdie.net"æˆ–â€œ202.194.254.211â€,usernameå’Œpasswordåˆ†åˆ«lvrenå’Œwoshilvren,åé¢ä¸€çœ‹å°±æ˜ç™½äº†ã€‚'
 
 echo "</html>"
