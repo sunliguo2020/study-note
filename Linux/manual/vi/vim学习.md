@@ -9,3 +9,9 @@
 永久禁用
 
 ​	在配置文件中.vimrc 添加 set mouse-=a
+
+## 配置vi支持utf-8
+```
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,gbk,gb2312,latin1
+```
