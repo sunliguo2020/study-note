@@ -1,54 +1,62 @@
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 """
-Created on 2020-04-19
-@author: sunliguo
-"""
+将当前目录下的文件按修改日期整理到子目录中
 
+用法:
+    python file_day.py [文件后缀]
+
+示例:
+    python file_day.py          # 整理所有 .txt 文件
+    python file_day.py .md      # 整理所有 .md 文件
+"""
 import os
+import sys
 import time
 
 
-def mymove_file(src, dst):
+def move_file(src, dst):
+    """移动文件，自动创建目标目录"""
     if not os.path.isfile(src):
-        print('%s not exist!' % (src))
-    else:
-        fpath, fname = os.path.split(dst)
-        print(fpath)
-    if not os.path.exists(fpath):
-        os.makedirs(fpath)
+        print(f"'{src}' 不存在!")
+        return False
+
+    dst_dir = os.path.dirname(dst)
+    if not os.path.exists(dst_dir):
+        os.makedirs(dst_dir)
+
     if os.path.isfile(dst):
-        print('%s not exist!' % (src))
-    else:
-        try:
-            os.rename(src, dst)
-    print('move {0}->{1}'.format(src, dst))
-    except Eeception as e:
-    print(e)
+        print(f"目标文件已存在: {dst}")
+        return False
+
+    try:
+        os.rename(src, dst)
+        print(f"移动: {src} -> {dst}")
+        return True
+    except Exception as e:
+        print(f"移动失败: {e}")
+        return False
 
 
-# file_list = [i for i in os.listdir('./') if i.endswith('.txt') and os.path.isfile(i)]
-# file_count = len(file_list)
-file_count = 0
-for file in os.listdir('./'):
-    file_full_path = os.path.join('./', file)
-    # print(file_full_path)
-    if not file_full_path.endswith('.txt'):
-        continue
-    mtime = os.stat(file_full_path).st_mtime
-    '''
-    atime = os.stat(file_full_path).st_atime
-    ctime = os.stat(file_full_path).st_ctime
-    '''
-    file_modify_time = time.strftime('%Y-%m-%d', time.localtime(mtime))
-    '''file_access_time = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(atime))
-    file_create_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(ctime))
-    # print(mtime)'''
-    # print(file_full_path,"mtime",file_modify_time)
-    '''print(file_full_path, "ctime", file_create_time)
-    print(file_full_path, "atime", file_access_time)'''
-    # print(type(file_modify_time))
-    dstfile = os.path.join('./' + file_modify_time, file)
-    print('file_count:{0}'.format(file_count))
-    mymove_file(file_full_path, dstfile)
-    file_count = file_count + 1
+def organize_by_date(ext=".txt"):
+    """按文件修改日期整理文件"""
+    count = 0
+    for file in os.listdir("."):
+        file_path = os.path.join(".", file)
+        if not os.path.isfile(file_path) or not file.endswith(ext):
+            continue
+
+        mtime = os.stat(file_path).st_mtime
+        date_str = time.strftime("%Y-%m-%d", time.localtime(mtime))
+        dst_path = os.path.join(".", date_str, file)
+
+        if move_file(file_path, dst_path):
+            count += 1
+
+    print(f"共整理了 {count} 个文件")
+
+
+if __name__ == "__main__":
+    ext = sys.argv[1] if len(sys.argv) > 1 else ".txt"
+    if not ext.startswith("."):
+        ext = "." + ext
+    organize_by_date(ext)

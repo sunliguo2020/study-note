@@ -1,33 +1,37 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-'''
-Created on 2016-7-18
+#!/usr/bin/env python3
+"""
+列出当前目录下的所有文件并保存到文本文件
 
-@author: sunliguo
-'''
+用法:
+    python listFile2txt.py [目录路径] [输出文件名]
+
+示例:
+    python listFile2txt.py              # 列出当前目录，输出到 outfile
+    python listFile2txt.py /path        # 列出指定目录
+    python listFile2txt.py . filelist   # 指定输出文件名
+"""
 import os
+import sys
 
-'''
-def listFile2txt(dir,file,wildcard=".txt",resursion=0):
-    #exts = wildcard.split(" ")
-    count=0
-    files = os.listdir(dir)
-    for name in files:
-        if os.path.isfile(name) and name.endswith(wildcard):
-            file.write(name+'\n')
-            count = count +1
-            print count,name      '''
-                  
-file = open("outfile","w+")
 
-#listFile2txt(dir,file)
-filelist = os.walk("./").next()[2]
+def list_files(directory=".", output="outfile"):
+    """列出目录中的文件并保存"""
+    if not os.path.isdir(directory):
+        print(f"错误: '{directory}' 不是有效的目录")
+        return
 
-file.write(repr(filelist).replace("', '",'\n').replace("['","").replace("']",""))
-file.seek(0)
-#print "len = ",len(file.readlines())
-j=1
-for i in file.readlines():
-    print j,i.replace("\n",'')
-    j=j+1
-file.close()            
+    files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+
+    with open(output, "w", encoding="utf-8") as f:
+        for file in files:
+            f.write(file + "\n")
+
+    print(f"共 {len(files)} 个文件，已保存到 {output}")
+    for i, file in enumerate(files, 1):
+        print(f"{i:4d}. {file}")
+
+
+if __name__ == "__main__":
+    directory = sys.argv[1] if len(sys.argv) > 1 else "."
+    output = sys.argv[2] if len(sys.argv) > 2 else "outfile"
+    list_files(directory, output)
